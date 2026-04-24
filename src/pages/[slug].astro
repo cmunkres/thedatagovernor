@@ -1,0 +1,87 @@
+---
+// Serves WordPress-style root-level slugs: /my-post-title/
+// All blog posts route through here to preserve existing WP URLs exactly.
+import { getCollection } from 'astro:content';
+import BlogPost from '@/layouts/BlogPost.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  return posts.map(post => ({
+    params: { slug: post.data.wpSlug ?? post.slug },
+    props: { post },
+  }));
+}
+
+interface FaqPair { q: string; a: string; }
+
+function parseFaq(body: string): FaqPair[] {
+  const lines = body.split('\n');
+  const pairs: FaqPair[] = [];
+
+  // Find the line index of a FAQ section heading
+  const faqHeadingRe = /^#{1,3}\s+(?:frequently\s+asked\s+questions|faq|faqs|common\s+questions)/i;
+  const faqStart = lines.findIndex(l => faqHeadingRe.test(l));
+  if (faqStart === -1) return [];
+
+  // Collect lines until the next same-or-higher heading (marks end of FAQ section)
+  const sectionDepth = (lines[faqStart].match(/^(#{1,3})/) || ['', '#'])[1].length;
+  const endRe = new RegExp(`^#{1,${sectionDepth}}\\s`);
+  let i = faqStart + 1;
+  const sectionLines: string[] = [];
+  while (i < lines.length) {
+    if (i !== faqStart && endRe.test(lines[i]) && !faqHeadingRe.test(lines[i])) break;
+    sectionLines.push(lines[i]);
+    i++;
+  }
+
+  // Extract ### question / answer pairs from the section
+  let currentQ = '';
+  let answerBuf: string[] = [];
+  const flush = () => {
+    if (currentQ && answerBuf.length) {
+      const a = answerBuf
+        .join(' ')
+        .replace(/\*\*/g, '')
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+        .replace(/\s+/g, ' ')
+        .trim();
+      if (a) pairs.push({ q: currentQ, a });
+    }
+  };
+
+  for (const line of sectionLines) {
+    if (/^#{2,4}\s/.test(line)) {
+      flush();
+      currentQ = line.replace(/^#{2,4}\s+/, '').trim();
+      answerBuf = [];
+    } else if (currentQ && line.trim()) {
+      answerBuf.push(line.trim());
+    }
+  }
+  flush();
+
+  return pairs.slice(0, 10); // Google supports up to 10 FAQ items
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const slug = post.data.wpSlug ?? post.slug;
+const faqPairs = parseFaq(post.body);
+---
+
+<BlogPost
+  title={post.data.title}
+  description={post.data.description}
+  pubDate={post.data.pubDate}
+  updatedDate={post.data.updatedDate}
+  author={post.data.author}
+  categories={post.data.categories}
+  tags={post.data.tags}
+  slug={slug}
+  image={post.data.image}
+  imageAlt={post.data.imageAlt}
+  ogImage={post.data.ogImage}
+  faqPairs={faqPairs}
+>
+  <Content />
+</BlogPost>

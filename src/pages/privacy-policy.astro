@@ -1,0 +1,173 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+const updated = new Date('2024-01-01');
+---
+
+<BaseLayout
+  title="Privacy Policy | The Data Governor"
+  description="Privacy policy for thedatagovernor.com — how we collect, use, and protect your information."
+  canonicalPath="/privacy-policy/"
+>
+  <div class="page-wrap">
+    <div class="page-header">
+      <a href="/" class="label" style="font-size:0.65rem; letter-spacing:0.14em;">The Data Governor</a>
+      <h1 class="page-title">Privacy Policy</h1>
+      <p class="page-updated">Last updated: {updated.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+    </div>
+    <div class="article-rule" aria-hidden="true"></div>
+
+    <div class="page-body prose">
+      <p>
+        Your privacy is important to us. This Privacy Policy explains how The Data Governor
+        ("we," "us," or "our") collects, uses, and protects information when you visit
+        <strong>thedatagovernor.com</strong>.
+      </p>
+
+      <h2>Information We Collect</h2>
+      <p>
+        We collect information you voluntarily provide (such as when contacting us via email) and
+        information collected automatically when you visit our site, including:
+      </p>
+      <ul>
+        <li>Log data (IP address, browser type, pages visited, referring URL)</li>
+        <li>Cookies and similar tracking technologies</li>
+        <li>Device information (screen size, operating system)</li>
+      </ul>
+
+      <h2>How We Use Your Information</h2>
+      <p>We use collected information to:</p>
+      <ul>
+        <li>Analyze site traffic and improve content</li>
+        <li>Respond to inquiries and support requests</li>
+        <li>Serve relevant advertisements (via Google AdSense)</li>
+        <li>Comply with legal obligations</li>
+      </ul>
+
+      <h2>Google AdSense & Advertising</h2>
+      <p>
+        This site uses Google AdSense, which uses cookies to serve ads based on your prior visits to this
+        and other websites. Google's use of advertising cookies enables it and its partners to serve ads
+        to you based on your visit to this site and/or other sites on the internet.
+      </p>
+      <p>
+        You may opt out of personalized advertising by visiting
+        <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>
+        or <a href="https://optout.aboutads.info/" target="_blank" rel="noopener">aboutads.info</a>.
+      </p>
+
+      <h2>Affiliate Links</h2>
+      <p>
+        Some links on this site are affiliate links. If you click and make a purchase, we may receive a
+        commission at no additional cost to you. See our <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+        for full details.
+      </p>
+
+      <h2>Cookies</h2>
+      <p>
+        We use cookies for analytics and advertising purposes. You can disable cookies in your browser
+        settings, though this may affect site functionality.
+      </p>
+
+      <h2>Third-Party Services</h2>
+      <p>We may use the following third-party services, each with their own privacy policies:</p>
+      <ul>
+        <li><strong>Google Analytics</strong> — site traffic analysis</li>
+        <li><strong>Google AdSense</strong> — advertising</li>
+        <li><strong>YouTube</strong> — embedded video content</li>
+      </ul>
+
+      <h2>Data Retention</h2>
+      <p>
+        We retain personal data only as long as necessary to provide our services or comply with legal
+        requirements. Server logs are typically retained for 30–90 days.
+      </p>
+
+      <h2>Your Rights</h2>
+      <p>
+        Depending on your jurisdiction (EU/EEA, California, etc.), you may have rights to access,
+        correct, delete, or restrict processing of your personal data. Contact us at
+        <a href="mailto:thedatagovernor@gmail.com">thedatagovernor@gmail.com</a> to exercise these rights.
+      </p>
+
+      <h2>Children's Privacy</h2>
+      <p>
+        This site is not directed at children under 13. We do not knowingly collect personal information
+        from children under 13.
+      </p>
+
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update this policy periodically. The updated date at the top of this page reflects the
+        most recent revision. Continued use of the site after changes constitutes acceptance.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this privacy policy? Email us at
+        <a href="mailto:thedatagovernor@gmail.com">thedatagovernor@gmail.com</a>.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: 2.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  .page-updated {
+    font-family: var(--font-ui);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0;
+  }
+
+  .article-rule {
+    height: 3px;
+    background: linear-gradient(90deg, var(--red) 0%, var(--gold) 50%, transparent 100%);
+    margin-bottom: 2.5rem;
+  }
+
+  .page-body {
+    max-width: 740px;
+    padding-bottom: 4rem;
+  }
+
+  .prose {
+    font-family: var(--font-body);
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: var(--ink);
+  }
+  .prose p { margin-bottom: 1.4rem; }
+  .prose h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 2rem 0 0.6rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+  }
+  .prose ul { padding-left: 1.5rem; margin-bottom: 1.4rem; }
+  .prose li { margin-bottom: 0.4rem; padding-left: 0.25rem; }
+  .prose li::marker { color: var(--red); }
+  .prose a { color: var(--red); text-decoration: underline; text-underline-offset: 3px; }
+  .prose a:hover { color: var(--red-dark); }
+  .prose strong { font-weight: 700; }
+</style>

@@ -1,0 +1,150 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About | The Data Governor"
+  description="Clinton Munkres — data governance practitioner with 20 years of experience in enterprise data management."
+  canonicalPath="/about/"
+  schema={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://thedatagovernor.com/about/#person",
+    "name": "Clinton Munkres",
+    "url": "https://thedatagovernor.com/about/",
+    "jobTitle": "Data Governance Professional",
+    "description": "Data governance practitioner with nearly 20 years of experience helping organizations design and implement enterprise data programs across financial services, healthcare, and retail.",
+    "knowsAbout": ["Data Governance", "Data Management", "Metadata Management", "Data Strategy", "Data Quality", "Master Data Management", "Data Lineage", "Compliance"],
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://thedatagovernor.com/#organization",
+      "name": "The Data Governor",
+      "url": "https://thedatagovernor.com/",
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/clintonmunkres/",
+      "https://www.youtube.com/@thedatagovernor",
+    ],
+  })}
+>
+  <div class="page-wrap">
+    <div class="page-header">
+      <a href="/" class="label" style="font-size:0.65rem; letter-spacing:0.14em;">The Data Governor</a>
+      <h1 class="page-title">About</h1>
+    </div>
+    <div class="article-rule" aria-hidden="true"></div>
+
+    <div class="page-body prose">
+      <p>
+        Welcome to <strong>The Data Governor</strong> — a practitioner blog dedicated to the real-world challenges of
+        data governance, data management, metadata, and data strategy.
+      </p>
+
+      <h2>About the Author</h2>
+      <p>
+        My name is <strong>Clinton Munkres</strong>. I'm a data governance professional with nearly 20 years of
+        experience helping organizations design and implement enterprise data programs. I've worked across industries
+        including financial services, healthcare, and retail — and I've seen the full spectrum of what works and
+        what doesn't when it comes to governing data at scale.
+      </p>
+      <p>
+        I started this blog because I believe practitioners deserve more than theory. Most data governance
+        literature is written at 30,000 feet. The Data Governor is written from the trenches — with a focus on
+        practical frameworks, real-world examples, and the organizational dynamics that determine whether governance
+        programs succeed or fail.
+      </p>
+
+      <h2>What You'll Find Here</h2>
+      <ul>
+        <li>Deep dives on data governance frameworks (DAMA, DCAM, and beyond)</li>
+        <li>Metadata management and data cataloging strategies</li>
+        <li>Data quality, data lineage, and master data management</li>
+        <li>Career advice for data professionals</li>
+        <li>Compliance considerations (GDPR, CCPA, and sector-specific regulation)</li>
+        <li>Commentary on industry tools and vendor landscape</li>
+      </ul>
+
+      <h2>Connect</h2>
+      <p>
+        I'm always interested in connecting with fellow practitioners.
+        You can find me on <a href="https://www.linkedin.com/in/clintonmunkres/" target="_blank" rel="noopener">LinkedIn</a>,
+        or reach me directly via the <a href="/contact/">contact page</a>.
+      </p>
+      <p>
+        If you'd like to follow along, subscribe to the <a href="/rss.xml">RSS feed</a> or
+        check out the <a href="/data-governance-videos/">video channel</a> for recorded presentations and walkthroughs.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: 2.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  .article-rule {
+    height: 3px;
+    background: linear-gradient(90deg, var(--red) 0%, var(--gold) 50%, transparent 100%);
+    margin-bottom: 2.5rem;
+  }
+
+  .page-body {
+    max-width: 740px;
+    padding-bottom: 4rem;
+  }
+
+  .prose {
+    font-family: var(--font-body);
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: var(--ink);
+  }
+
+  .prose p { margin-bottom: 1.4rem; }
+
+  .prose h2 {
+    font-family: var(--font-display);
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 2.5rem 0 0.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .prose ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .prose li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.25rem;
+  }
+
+  .prose li::marker { color: var(--red); }
+
+  .prose a {
+    color: var(--red);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  .prose a:hover { color: var(--red-dark); }
+
+  .prose strong { font-weight: 700; color: var(--ink); }
+</style>

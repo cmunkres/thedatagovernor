@@ -1,0 +1,107 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Affiliate Disclosure | The Data Governor"
+  description="Affiliate disclosure for thedatagovernor.com — we may earn commissions from qualifying purchases."
+  canonicalPath="/affiliate-disclosure/"
+>
+  <div class="page-wrap">
+    <div class="page-header">
+      <a href="/" class="label" style="font-size:0.65rem; letter-spacing:0.14em;">The Data Governor</a>
+      <h1 class="page-title">Affiliate Disclosure</h1>
+    </div>
+    <div class="article-rule" aria-hidden="true"></div>
+
+    <div class="page-body prose">
+      <p>
+        In the interest of full transparency, please be aware that some links on
+        <strong>thedatagovernor.com</strong> are affiliate links. This means that if you click on a link
+        and make a qualifying purchase, The Data Governor may receive a small commission — at
+        <strong>no additional cost to you</strong>.
+      </p>
+
+      <h2>What This Means</h2>
+      <p>
+        Affiliate links allow me to earn a small referral fee when you purchase products or services
+        I recommend. These commissions help support the cost of running this site and allow me to
+        continue creating free content for data professionals.
+      </p>
+
+      <h2>My Editorial Standards</h2>
+      <p>
+        Affiliate relationships do <strong>not</strong> influence my editorial content. I only recommend
+        products and services that I genuinely believe provide value to data governance and data management
+        practitioners. All opinions expressed on this site are my own.
+      </p>
+      <p>
+        I will always disclose when a link is an affiliate link. If I'm ever compensated to write about a
+        product or service, that will be clearly noted in the content.
+      </p>
+
+      <h2>Amazon Associates</h2>
+      <p>
+        The Data Governor is a participant in the Amazon Services LLC Associates Program, an affiliate
+        advertising program designed to provide a means for sites to earn advertising fees by advertising
+        and linking to Amazon.com.
+      </p>
+
+      <h2>Questions</h2>
+      <p>
+        If you have any questions about our affiliate relationships, please
+        <a href="/contact/">contact us</a>.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: 2.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  .article-rule {
+    height: 3px;
+    background: linear-gradient(90deg, var(--red) 0%, var(--gold) 50%, transparent 100%);
+    margin-bottom: 2.5rem;
+  }
+
+  .page-body {
+    max-width: 740px;
+    padding-bottom: 4rem;
+  }
+
+  .prose {
+    font-family: var(--font-body);
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: var(--ink);
+  }
+  .prose p { margin-bottom: 1.4rem; }
+  .prose h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 2rem 0 0.6rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+  }
+  .prose a { color: var(--red); text-decoration: underline; text-underline-offset: 3px; }
+  .prose a:hover { color: var(--red-dark); }
+  .prose strong { font-weight: 700; }
+</style>

@@ -1,0 +1,702 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Exclude placeholder
+const realPosts = posts.filter(p => (p.data.wpSlug ?? p.slug) !== 'welcome');
+
+const hero = realPosts[0];
+const featured = realPosts.slice(1, 4);
+const sidebar = realPosts.slice(4, 9);
+const grid = realPosts.slice(9, 21);
+
+function slug(p: typeof hero) { return p.data.wpSlug ?? p.slug; }
+function cat(p: typeof hero) { return p.data.categories?.[0] ?? 'Data Governance'; }
+function catSlug(c: string) { return c.toLowerCase().replace(/\s+/g, '-'); }
+function fmt(d: Date) {
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+// Collect unique categories with counts
+const catCounts = new Map<string, number>();
+for (const p of realPosts) {
+  for (const c of p.data.categories ?? []) {
+    catCounts.set(c, (catCounts.get(c) ?? 0) + 1);
+  }
+}
+const topCats = [...catCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8);
+
+// ── Graph geometry ──────────────────────────────
+const cx = 600, cy = 285, cr = 64, rx = 320, ry = 195;
+const nw = 190, nh = 62;
+
+function edgePath(cx: number, cy: number, cr: number, nx: number, ny: number, nw = 190, nh = 62) {
+  const dx = nx - cx, dy = ny - cy;
+  const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+  const ux = dx / dist, uy = dy / dist;
+
+  // Start: point on center circle edge
+  const sx = cx + ux * cr;
+  const sy = cy + uy * cr;
+
+  // End: correct rect-boundary intersection
+  // Ray from rect center in direction (-ux, -uy) toward graph center
+  const hw = nw / 2, hh = nh / 2;
+  const rdx = -ux, rdy = -uy;
+  let t = Infinity;
+  if (Math.abs(rdx) > 1e-6) { const tx = (rdx > 0 ? hw : -hw) / rdx; if (tx > 0) t = Math.min(t, tx); }
+  if (Math.abs(rdy) > 1e-6) { const ty = (rdy > 0 ? hh : -hh) / rdy; if (ty > 0) t = Math.min(t, ty); }
+  const ex = nx + rdx * t;
+  const ey = ny + rdy * t;
+
+  const c1x = sx + ux * dist * 0.3, c1y = sy + uy * dist * 0.3;
+  const c2x = ex + rdx * dist * 0.3, c2y = ey + rdy * dist * 0.3;
+  return `M${sx.toFixed(1)},${sy.toFixed(1)} C${c1x.toFixed(1)},${c1y.toFixed(1)} ${c2x.toFixed(1)},${c2y.toFixed(1)} ${ex.toFixed(1)},${ey.toFixed(1)}`;
+}
+
+const graphNodes = topCats.map(([name, count], i) => {
+  const angle = (i / topCats.length) * Math.PI * 2 - Math.PI / 2;
+  const nx = Math.round(cx + Math.cos(angle) * rx);
+  const ny = Math.round(cy + Math.sin(angle) * ry);
+  return {
+    name,
+    count,
+    x: nx,
+    y: ny,
+    href: `/category/${catSlug(name)}/`,
+    delay: (i * 0.18).toFixed(2),
+    path: edgePath(cx, cy, cr, nx, ny, nw, nh),
+  };
+});
+
+const totalPosts = realPosts.length;
+const catCount = catCounts.size;
+---
+
+<BaseLayout
+  title="The Data Governor — Data Governance Mastery: Essential Insight for Professionals"
+  description="Data Governance Mastery: Essential Insight for Professionals. Practitioner-level coverage of data governance frameworks, data management, metadata, compliance, and data strategy."
+  canonicalPath="/"
+  schema={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://thedatagovernor.com/#website",
+        "url": "https://thedatagovernor.com/",
+        "name": "The Data Governor",
+        "description": "Data Governance Mastery: Essential Insight for Professionals",
+        "publisher": { "@id": "https://thedatagovernor.com/#organization" },
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://thedatagovernor.com/#organization",
+        "name": "The Data Governor",
+        "url": "https://thedatagovernor.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thedatagovernor.com/logo.png",
+          "width": 512,
+          "height": 512,
+        },
+        "sameAs": [
+          "https://www.youtube.com/@thedatagovernor",
+          "https://www.linkedin.com/in/clintonmunkres/",
+        ],
+      },
+    ],
+  })}
+>
+  <!-- ── GRAPH HERO (full-bleed) ───────────────── -->
+  <section class="graph-hero" aria-label="Data Governor topic lineage">
+    <svg
+      class="graph-svg"
+      viewBox="0 0 1200 590"
+      preserveAspectRatio="xMidYMid meet"
+      width="100%"
+      role="img"
+      aria-label="Topic lineage graph connecting The Data Governor to eight core categories"
+    >
+      <defs>
+        <clipPath id="logo-clip">
+          <circle cx={cx} cy={cy} r={cr - 4} />
+        </clipPath>
+      </defs>
+
+      <!-- Edges -->
+      {graphNodes.map((n, i) => (
+        <g class="graph-edge" style={`--edge-delay: ${n.delay}s`}>
+          <path class="graph-edge-line" d={n.path} fill="none" />
+          <circle r="2.5" fill="#b5541a" opacity="0.7">
+            <animateMotion
+              dur="3.2s"
+              repeatCount="indefinite"
+              begin={`${i * 0.35}s`}
+              path={n.path}
+            />
+          </circle>
+          <circle r="2.5" fill="#b5541a" opacity="0.55">
+            <animateMotion
+              dur="3.2s"
+              repeatCount="indefinite"
+              begin={`${i * 0.35 + 1.6}s`}
+              path={n.path}
+            />
+          </circle>
+        </g>
+      ))}
+
+      <!-- Center hub -->
+      <g class="graph-center">
+        <circle class="center-pulse-ring" cx={cx} cy={cy} r="82" fill="none" stroke="#b5541a" stroke-width="1.5" opacity="0.25" />
+        <circle cx={cx} cy={cy} r={cr} fill="#1a1f2e" stroke="#b5541a" stroke-width="2.5" />
+        <image
+          href="/logo.png"
+          x={cx - 32}
+          y={cy - 32}
+          width="64"
+          height="64"
+          clip-path="url(#logo-clip)"
+          preserveAspectRatio="xMidYMid meet"
+        />
+      </g>
+
+      <!-- Category nodes -->
+      {graphNodes.map((n) => (
+        <a href={n.href} class="graph-node-link">
+          <g class="graph-node-group" data-node>
+            <rect
+              class="graph-node-rect"
+              x={n.x - nw / 2}
+              y={n.y - nh / 2}
+              width={nw}
+              height={nh}
+              rx="8"
+              ry="8"
+            />
+            <text
+              class="graph-node-label"
+              x={n.x}
+              y={n.y - 4}
+              text-anchor="middle"
+              dominant-baseline="middle"
+            >{n.name}</text>
+            <text
+              class="graph-node-count"
+              x={n.x}
+              y={n.y + 12}
+              text-anchor="middle"
+              dominant-baseline="middle"
+            >{n.count} {n.count === 1 ? 'article' : 'articles'}</text>
+          </g>
+        </a>
+      ))}
+    </svg>
+
+    <p class="graph-caption">
+      Explore {totalPosts} articles across {catCount} topics
+    </p>
+  </section>
+
+  <div class="page-wrap">
+
+    <!-- ── TAGLINE ──────────────────────────────────── -->
+    <div class="site-tagline">
+      <h2 class="site-tagline__text">Data Governance Mastery: Essential Insight for Professionals</h2>
+    </div>
+
+    <!-- ── DIVIDER ───────────────────────────────────── -->
+    <div class="gold-rule" aria-hidden="true"></div>
+
+    <!-- ── MAIN GRID ─────────────────────────────────── -->
+    <section class="main-grid">
+      <!-- Featured column -->
+      <div class="main-grid__featured">
+        {featured.map((p) => (
+          <article class="feature-card animate-in">
+            <a href={`/category/${catSlug(cat(p))}/`} class="label">{cat(p)}</a>
+            <a href={`/${slug(p)}/`} class="feature-card__link">
+              <h2 class="feature-card__headline">{p.data.title}</h2>
+            </a>
+            <p class="feature-card__excerpt">{p.data.description}</p>
+            <span class="feature-card__date">{fmt(p.data.pubDate)}</span>
+          </article>
+        ))}
+      </div>
+
+      <!-- Sidebar: quick reads -->
+      <aside class="sidebar">
+        <div class="section-rule" style="margin-top:0; margin-bottom: 1rem;">
+          <h2>Quick Reads</h2>
+        </div>
+        <ol class="sidebar__list">
+          {sidebar.map((p, i) => (
+            <li class="sidebar__item animate-in">
+              <span class="sidebar__num">{String(i + 1).padStart(2, '0')}</span>
+              <div class="sidebar__content">
+                <a href={`/category/${catSlug(cat(p))}/`} class="label" style="font-size:0.62rem">{cat(p)}</a>
+                <a href={`/${slug(p)}/`} class="sidebar__title">{p.data.title}</a>
+                <span class="sidebar__date">{fmt(p.data.pubDate)}</span>
+              </div>
+            </li>
+          ))}
+        </ol>
+        <a href="/blog/" class="sidebar__all">View all {realPosts.length} articles →</a>
+      </aside>
+    </section>
+
+    <!-- ── CATEGORY BAND ─────────────────────────────── -->
+    <section class="cat-band">
+      <span class="cat-band__label">Browse by topic</span>
+      <div class="cat-band__pills">
+        {topCats.map(([name, count]) => (
+          <a href={`/category/${catSlug(name)}/`} class="cat-pill">
+            {name}
+            <span class="cat-pill__count">{count}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- ── MORE ARTICLES GRID ────────────────────────── -->
+    <div class="section-rule">
+      <h2>More from the archive</h2>
+    </div>
+
+    <section class="article-grid">
+      {grid.map((p) => (
+        <article class="article-card animate-in">
+          <a href={`/category/${catSlug(cat(p))}/`} class="label">{cat(p)}</a>
+          <a href={`/${slug(p)}/`} class="article-card__link">
+            <h3 class="article-card__headline">{p.data.title}</h3>
+          </a>
+          <p class="article-card__excerpt">{p.data.description}</p>
+          <span class="article-card__date">{fmt(p.data.pubDate)}</span>
+        </article>
+      ))}
+    </section>
+
+    <div class="archive-cta">
+      <a href="/blog/" class="archive-btn">Browse all {realPosts.length} articles</a>
+    </div>
+
+  </div>
+</BaseLayout>
+
+<style>
+  /* ── Graph hero (full-bleed) ────────────────── */
+  .graph-hero {
+    background: #1a1f2e;
+    padding: 2.5rem 0 1.75rem;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+  }
+
+  .graph-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 580px;
+  }
+
+  .graph-caption {
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(200, 192, 184, 0.5);
+    text-align: center;
+    margin: 0.5rem auto 0;
+  }
+
+  /* Edges */
+  .graph-edge-line {
+    stroke: rgba(107, 143, 174, 0.55);
+    stroke-width: 2;
+    stroke-dasharray: 8 5;
+    animation: dash-flow 1.8s linear infinite;
+    animation-delay: var(--edge-delay, 0s);
+  }
+
+  @keyframes dash-flow {
+    to { stroke-dashoffset: -22; }
+  }
+
+  /* Center pulse ring */
+  .center-pulse-ring {
+    transform-origin: 600px 250px;
+    animation: center-pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes center-pulse {
+    0%, 100% { opacity: 0.2; r: 68; }
+    50% { opacity: 0.5; r: 74; }
+  }
+
+  /* Category nodes */
+  .graph-node-link { cursor: pointer; outline: none; }
+
+  .graph-node-rect {
+    fill: rgba(255, 255, 255, 0.07);
+    stroke: rgba(107, 143, 174, 0.5);
+    stroke-width: 1.5;
+    transition: fill 0.18s ease, stroke 0.18s ease;
+  }
+
+  .graph-node-label {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    fill: #ddd8d0;
+    pointer-events: none;
+    transition: fill 0.18s ease;
+  }
+
+  .graph-node-count {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    fill: rgba(200, 192, 184, 0.65);
+    pointer-events: none;
+    transition: fill 0.18s ease;
+  }
+
+  .graph-node-group.hovered .graph-node-rect,
+  .graph-node-link:focus-visible .graph-node-rect {
+    fill: rgba(181, 84, 26, 0.18);
+    stroke: #b5541a;
+    stroke-width: 1.5;
+  }
+
+  .graph-node-group.hovered .graph-node-label,
+  .graph-node-link:focus-visible .graph-node-label {
+    fill: #ffffff;
+  }
+
+  .graph-node-group.hovered .graph-node-count,
+  .graph-node-link:focus-visible .graph-node-count {
+    fill: rgba(255, 255, 255, 0.75);
+  }
+
+  /* ── Site tagline ──────────────────────────── */
+  .site-tagline {
+    padding: 1.75rem 0 0;
+  }
+
+  .site-tagline__text {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+    font-weight: 400;
+    color: var(--ink-mid);
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  /* ── Gold divider ──────────────────────────── */
+  .gold-rule {
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold) 0%, var(--rule) 60%, transparent 100%);
+    margin: 2.5rem 0 2.5rem;
+  }
+
+  /* ── Main grid ──────────────────────────────── */
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 3rem;
+    margin-bottom: var(--gap-lg);
+    padding-bottom: var(--gap-lg);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .main-grid__featured {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Featured cards */
+  .feature-card {
+    padding: 1.6rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .feature-card:first-child { padding-top: 0; }
+  .feature-card:last-child { border-bottom: none; }
+
+  .feature-card__link { text-decoration: none; display: block; }
+
+  .feature-card__headline {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+    font-weight: 600;
+    line-height: 1.15;
+    color: var(--ink);
+    margin: 0.4rem 0 0.65rem;
+    transition: color 0.15s;
+  }
+  .feature-card__link:hover .feature-card__headline { color: var(--red); }
+
+  .feature-card__excerpt {
+    font-size: 0.93rem;
+    line-height: 1.6;
+    color: var(--ink-mid);
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .feature-card__date {
+    font-family: var(--font-ui);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  /* Sidebar */
+  .sidebar {
+    border-left: 1px solid var(--rule);
+    padding-left: 2rem;
+  }
+
+  .sidebar__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .sidebar__item {
+    display: flex;
+    gap: 1rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: flex-start;
+  }
+  .sidebar__item:last-child { border-bottom: none; }
+
+  .sidebar__num {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--rule-dark);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 2rem;
+    text-align: right;
+  }
+
+  .sidebar__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .sidebar__title {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .sidebar__title:hover { color: var(--red); }
+
+  .sidebar__date {
+    font-family: var(--font-ui);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  .sidebar__all {
+    display: block;
+    margin-top: 1.25rem;
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--red);
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+  .sidebar__all:hover { opacity: 0.75; }
+
+  /* ── Category band ──────────────────────────── */
+  .cat-band {
+    background: var(--dark-bg);
+    margin: 0 -2rem var(--gap-lg);
+    padding: 1.25rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .cat-band__label {
+    font-family: var(--font-ui);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .cat-band__pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .cat-pill {
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: #c8c0b8;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 0.3rem 0.75rem;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .cat-pill:hover { background: var(--red); color: #fff; border-color: var(--red); }
+
+  .cat-pill__count {
+    font-size: 0.6rem;
+    opacity: 0.6;
+  }
+
+  /* ── Article grid ───────────────────────────── */
+  .article-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+
+  .article-card {
+    padding: 1.25rem;
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .article-card:nth-child(4n) { border-right: none; }
+  .article-card:nth-last-child(-n+4) { border-bottom: none; }
+
+  .article-card__link { text-decoration: none; display: block; }
+
+  .article-card__headline {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--ink);
+    margin: 0.4rem 0 0.5rem;
+    transition: color 0.15s;
+  }
+  .article-card__link:hover .article-card__headline { color: var(--red); }
+
+  .article-card__excerpt {
+    font-size: 0.82rem;
+    line-height: 1.55;
+    color: var(--ink-mid);
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .article-card__date {
+    font-family: var(--font-ui);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  /* ── Archive CTA ────────────────────────────── */
+  .archive-cta {
+    text-align: center;
+    padding: var(--gap-lg) 0 var(--gap);
+  }
+
+  .archive-btn {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--parchment);
+    background: var(--ink);
+    padding: 0.75rem 2rem;
+    border: 2px solid var(--ink);
+    transition: background 0.15s, color 0.15s;
+  }
+  .archive-btn:hover { background: var(--red); border-color: var(--red); color: #fff; }
+
+  /* ── Responsive ─────────────────────────────── */
+  @media (max-width: 1024px) {
+    .article-grid { grid-template-columns: repeat(3, 1fr); }
+    .article-card:nth-child(4n) { border-right: 1px solid var(--rule); padding-right: 1.25rem; }
+    .article-card:nth-child(3n) { border-right: none; padding-right: 0; }
+  }
+
+  @media (max-width: 860px) {
+    .main-grid { grid-template-columns: 1fr; gap: 0; }
+    .sidebar { border-left: none; padding-left: 0; border-top: 2px solid var(--ink); padding-top: 1.5rem; }
+    .article-grid { grid-template-columns: repeat(2, 1fr); }
+    .article-card:nth-child(3n) { border-right: 1px solid var(--rule); padding-right: 1.25rem; }
+    .article-card:nth-child(2n) { border-right: none; padding-right: 0; }
+    .cat-band { margin: 0 -1rem var(--gap-lg); padding: 1rem; }
+    .graph-hero { padding: 1.25rem 0 1rem; }
+  }
+
+  @media (max-width: 560px) {
+    .article-grid { grid-template-columns: 1fr; }
+    .article-card { border-right: none !important; padding-right: 0 !important; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .graph-edge-line,
+    .center-pulse-ring { animation: none; }
+    .graph-svg animateMotion { display: none; }
+  }
+</style>
+
+<script>
+  // Hover behavior for graph nodes
+  const nodeGroups = document.querySelectorAll<SVGGElement>('.graph-node-group');
+  nodeGroups.forEach((g) => {
+    const parent = g.parentElement; // the <a> wrapper
+    const target = parent ?? g;
+    target.addEventListener('mouseenter', () => g.classList.add('hovered'));
+    target.addEventListener('mouseleave', () => g.classList.remove('hovered'));
+    target.addEventListener('focus', () => g.classList.add('hovered'), true);
+    target.addEventListener('blur', () => g.classList.remove('hovered'), true);
+  });
+</script>

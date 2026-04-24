@@ -1,0 +1,613 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface FaqPair { q: string; a: string; }
+
+export interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  author?: string;
+  categories?: string[];
+  tags?: string[];
+  slug: string;
+  image?: string;
+  imageAlt?: string;
+  ogImage?: string;
+  faqPairs?: FaqPair[];
+}
+
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  author = 'The Data Governor',
+  categories = [],
+  tags = [],
+  slug,
+  image,
+  imageAlt = title,
+  ogImage,
+  faqPairs = [],
+} = Astro.props;
+
+const primaryCategory = categories[0];
+const catSlug = primaryCategory?.toLowerCase().replace(/\s+/g, '-');
+
+const fmtLong = pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+const fmtUpdated = updatedDate?.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<BaseLayout
+  title={`${title} | The Data Governor`}
+  description={description}
+  canonicalPath={`/${slug}/`}
+  ogImage={ogImage ?? image ?? '/logo.png'}
+  pubDate={pubDate}
+  type="article"
+  schema={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": `https://thedatagovernor.com/${slug}/#article`,
+        "headline": title,
+        "description": description,
+        "url": `https://thedatagovernor.com/${slug}/`,
+        "datePublished": pubDate.toISOString(),
+        "dateModified": (updatedDate ?? pubDate).toISOString(),
+        "author": { "@type": "Person", "@id": "https://thedatagovernor.com/about/#person", "name": author },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://thedatagovernor.com/#organization",
+          "name": "The Data Governor",
+          "url": "https://thedatagovernor.com",
+          "logo": { "@type": "ImageObject", "url": "https://thedatagovernor.com/logo.png" }
+        },
+        "image": ogImage ? `https://thedatagovernor.com${ogImage}` : `https://thedatagovernor.com/logo.png`,
+        "mainEntityOfPage": { "@type": "WebPage", "@id": `https://thedatagovernor.com/${slug}/` },
+        ...(categories.length > 0 ? { "articleSection": categories[0] } : {}),
+        ...(tags.length > 0 ? { "keywords": tags.join(', ') } : {}),
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thedatagovernor.com/" },
+          ...(categories[0] ? [{
+            "@type": "ListItem",
+            "position": 2,
+            "name": categories[0],
+            "item": `https://thedatagovernor.com/category/${categories[0].toLowerCase().replace(/\s+/g, '-')}/`,
+          }] : []),
+          {
+            "@type": "ListItem",
+            "position": categories[0] ? 3 : 2,
+            "name": title,
+            "item": `https://thedatagovernor.com/${slug}/`,
+          },
+        ],
+      },
+      ...(faqPairs.length > 0 ? [{
+        "@type": "FAQPage",
+        "mainEntity": faqPairs.map(({ q, a }) => ({
+          "@type": "Question",
+          "name": q,
+          "acceptedAnswer": { "@type": "Answer", "text": a },
+        })),
+      }] : []),
+    ],
+  })}
+>
+  <!-- Article header -->
+  <header class="article-header">
+    <div class="article-header__inner" class:list={[image ? 'article-header__inner--with-img' : '']}>
+      {image && (
+        <div class="article-header__thumb">
+          <img
+            src={image}
+            alt={imageAlt}
+            width="480"
+            height="320"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+      )}
+
+      <div class="article-header__text">
+        {primaryCategory && (
+          <a href={`/category/${catSlug}/`} class="label article-header__cat">{primaryCategory}</a>
+        )}
+        <h1 class="article-header__title">{title}</h1>
+        <p class="article-header__deck">{description}</p>
+        <div class="article-header__meta">
+          <span class="article-header__author">{author}</span>
+          <span class="article-header__sep" aria-hidden="true">·</span>
+          <time datetime={pubDate.toISOString()} class="article-header__date">{fmtLong}</time>
+          {updatedDate && (
+            <>
+              <span class="article-header__sep" aria-hidden="true">·</span>
+              <span class="article-header__updated">Updated <time datetime={updatedDate.toISOString()}>{fmtUpdated}</time></span>
+            </>
+          )}
+        </div>
+
+        <!-- Tags/categories -->
+        {(categories.length > 0 || tags.length > 0) && (
+          <div class="article-header__tags">
+            {categories.map(c => (
+              <a href={`/category/${c.toLowerCase().replace(/\s+/g, '-')}/`} class="tag-pill tag-pill--cat">{c}</a>
+            ))}
+            {tags.slice(0, 6).map(t => (
+              <span class="tag-pill">{t}</span>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  </header>
+
+  <!-- Thin red rule under header -->
+  <div class="article-rule" aria-hidden="true"></div>
+
+  <!-- Article body -->
+  <div class="article-layout">
+    <article class="article-body prose">
+      <slot />
+    </article>
+
+    <!-- Sticky sidebar -->
+    <aside class="article-sidebar">
+      <div class="article-sidebar__inner">
+        <div class="article-sidebar__section">
+          <h4 class="article-sidebar__heading">Category</h4>
+          {primaryCategory
+            ? <a href={`/category/${catSlug}/`} class="label">{primaryCategory}</a>
+            : <span class="label">General</span>
+          }
+        </div>
+        {tags.length > 0 && (
+          <div class="article-sidebar__section">
+            <h4 class="article-sidebar__heading">Topics</h4>
+            <div class="article-sidebar__tags">
+              {tags.slice(0, 8).map(t => (
+                <span class="sidebar-tag">{t}</span>
+              ))}
+            </div>
+          </div>
+        )}
+        <div class="article-sidebar__section">
+          <h4 class="article-sidebar__heading">Published</h4>
+          <span class="article-sidebar__date">{fmtLong}</span>
+        </div>
+        <a href="/blog/" class="article-sidebar__back">← All articles</a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Post footer nav -->
+  <div class="page-wrap">
+    <div class="article-footer">
+      <a href="/blog/" class="article-footer__back">← Back to all articles</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  /* ── Article header ────────────────────────────────── */
+  .article-header {
+    background: var(--dark-bg);
+    color: #f0ece6;
+    padding: 3rem 2rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .article-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 80% 50%, rgba(193,18,31,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .article-header__inner {
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .article-header__cat {
+    color: var(--gold) !important;
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  .article-header__cat:hover { color: #fff !important; }
+
+  .article-header__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: #f8f5f0;
+    margin-bottom: 1.1rem;
+  }
+
+  .article-header__deck {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    line-height: 1.65;
+    color: #a09890;
+    font-style: italic;
+    max-width: 680px;
+    margin-bottom: 1.5rem;
+  }
+
+  .article-header__meta {
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #786e66;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .article-header__author { color: #a09890; }
+  .article-header__sep { opacity: 0.4; }
+  .article-header__updated { color: #786e66; }
+
+  .article-header__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .tag-pill {
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 0.25rem 0.6rem;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #a09890;
+    border-radius: 2px;
+  }
+
+  .tag-pill--cat {
+    background: rgba(193,18,31,0.25);
+    border-color: rgba(193,18,31,0.4);
+    color: #e8a0a5;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+  .tag-pill--cat:hover { background: var(--red); color: #fff; }
+
+  /* ── Header with thumbnail ───────────────────────── */
+  .article-header__inner--with-img {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .article-header__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-header__thumb {
+    flex-shrink: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .article-header__thumb img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    border-radius: 3px;
+  }
+
+  /* ── Rule ───────────────────────────────────────── */
+  .article-rule {
+    height: 3px;
+    background: linear-gradient(90deg, var(--red) 0%, var(--gold) 50%, transparent 100%);
+  }
+
+  /* ── Two-column article layout ──────────────────── */
+  .article-layout {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    align-items: start;
+  }
+
+  /* ── Prose / article body ───────────────────────── */
+  .article-body {
+    padding: 3rem 3rem 3rem 0;
+    border-right: 1px solid var(--rule);
+    max-width: 740px;
+  }
+
+  .prose {
+    font-family: var(--font-body);
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: var(--ink);
+  }
+
+  /* Drop cap on first paragraph */
+  .prose :global(p:first-of-type::first-letter) {
+    font-family: var(--font-body);
+    font-size: 3.2em;
+    font-weight: 700;
+    float: left;
+    line-height: 0.82;
+    margin: 0.05em 0.1em 0 0;
+    color: var(--red);
+  }
+
+  .prose :global(h2) {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--ink);
+    margin: 2.5rem 0 0.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .prose :global(h3) {
+    font-family: var(--font-display);
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--ink);
+    margin: 2rem 0 0.5rem;
+  }
+
+  .prose :global(h4) {
+    font-family: var(--font-ui);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-mid);
+    margin: 1.75rem 0 0.5rem;
+  }
+
+  .prose :global(p) { margin-bottom: 1.4rem; }
+
+  .prose :global(a) {
+    color: var(--red);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  .prose :global(a:hover) { color: var(--red-dark); }
+
+  .prose :global(blockquote) {
+    margin: 2rem 0;
+    padding: 1.5rem 1.75rem;
+    border-left: 4px solid var(--red);
+    background: rgba(193,18,31,0.04);
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: var(--ink-mid);
+  }
+
+  .prose :global(blockquote p:last-child) { margin-bottom: 0; }
+
+  .prose :global(ul),
+  .prose :global(ol) {
+    padding-left: 1.5rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .prose :global(li) {
+    margin-bottom: 0.5rem;
+    padding-left: 0.25rem;
+  }
+
+  .prose :global(li::marker) { color: var(--red); }
+
+  .prose :global(code) {
+    font-size: 0.85em;
+    background: rgba(25,22,18,0.07);
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+    font-family: 'Fira Code', 'Courier New', monospace;
+  }
+
+  .prose :global(pre) {
+    background: var(--dark-bg);
+    color: #d0c8c0;
+    padding: 1.5rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin-bottom: 1.4rem;
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .prose :global(pre code) {
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+  }
+
+  .prose :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.4rem;
+    font-size: 0.9rem;
+  }
+
+  .prose :global(th) {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--ink);
+    color: #f8f5f0;
+    padding: 0.6rem 0.9rem;
+    text-align: left;
+  }
+
+  .prose :global(td) {
+    padding: 0.6rem 0.9rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  .prose :global(tr:nth-child(even) td) { background: rgba(25,22,18,0.03); }
+
+  .prose :global(hr) {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 2.5rem 0;
+  }
+
+  .prose :global(img) {
+    border-radius: 2px;
+    margin: 1.5rem 0;
+    max-width: 100%;
+  }
+
+  /* ── Sidebar ────────────────────────────────────── */
+  .article-sidebar {
+    position: sticky;
+    top: 80px;
+  }
+
+  .article-sidebar__inner {
+    padding: 2rem 0 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .article-sidebar__section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .article-sidebar__heading {
+    font-family: var(--font-ui);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 0.25rem;
+  }
+
+  .article-sidebar__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .sidebar-tag {
+    font-family: var(--font-ui);
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    color: var(--ink-mid);
+    background: rgba(25,22,18,0.06);
+    padding: 0.2rem 0.5rem;
+    border-radius: 2px;
+  }
+
+  .article-sidebar__date {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    color: var(--ink-mid);
+  }
+
+  .article-sidebar__back {
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--red);
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+  .article-sidebar__back:hover { opacity: 0.75; }
+
+  /* ── Article footer ─────────────────────────────── */
+  .article-footer {
+    padding: 2rem 0 3rem;
+    border-top: 1px solid var(--rule);
+    margin-top: 1rem;
+  }
+
+  .article-footer__back {
+    font-family: var(--font-ui);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-mid);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .article-footer__back:hover { color: var(--red); }
+
+  /* ── Responsive ─────────────────────────────────── */
+  @media (max-width: 900px) {
+    .article-layout {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+    .article-body {
+      border-right: none;
+      padding: 2rem 0;
+    }
+    .article-sidebar {
+      position: static;
+      border-top: 1px solid var(--rule);
+    }
+    .article-sidebar__inner {
+      padding: 1.5rem 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .article-sidebar__section { min-width: 140px; }
+    .article-header { padding: 2rem 1rem; }
+    .article-header__inner--with-img { grid-template-columns: 1fr; }
+    .article-header__thumb { aspect-ratio: 16 / 7; order: -1; border-radius: 3px; }
+
+    /* Hide drop cap on mobile (too large) */
+    .prose :global(p:first-of-type::first-letter) {
+      font-size: 3em;
+    }
+  }
+</style>

@@ -1,0 +1,345 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+interface YTVideo {
+  id: string;
+  title: string;
+  published: string;
+  thumbnail: string;
+  description: string;
+}
+
+let videos: YTVideo[] = [];
+let channelId = '';
+let fetchError = false;
+
+// Step 1: Get channel ID from channel handle page
+try {
+  const chanRes = await fetch('https://www.youtube.com/@thedatagovernor', {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (compatible; AstroSSG/1.0)',
+      'Accept-Language': 'en-US,en;q=0.9',
+    },
+    signal: AbortSignal.timeout(8000),
+  });
+
+  if (chanRes.ok) {
+    const html = await chanRes.text();
+    // YouTube embeds channelId in the page JSON
+    const match = html.match(/"channelId":"(UC[^"]+)"/);
+    if (match) channelId = match[1];
+  }
+} catch {
+  fetchError = true;
+}
+
+// Step 2: Fetch RSS feed with channel ID
+if (channelId) {
+  try {
+    const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
+    const rssRes = await fetch(rssUrl, {
+      signal: AbortSignal.timeout(8000),
+    });
+    if (rssRes.ok) {
+      const xml = await rssRes.text();
+      // Parse entries from Atom feed
+      const entries = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)];
+      for (const [, entry] of entries.slice(0, 12)) {
+        const idMatch = entry.match(/<yt:videoId>([^<]+)<\/yt:videoId>/);
+        const titleMatch = entry.match(/<title>([^<]+)<\/title>/);
+        const pubMatch = entry.match(/<published>([^<]+)<\/published>/);
+        const descMatch = entry.match(/<media:description>([^<]*)<\/media:description>/);
+        if (idMatch && titleMatch) {
+          const id = idMatch[1];
+          videos.push({
+            id,
+            title: titleMatch[1].replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&#39;/g, "'").replace(/&quot;/g, '"'),
+            published: pubMatch ? new Date(pubMatch[1]).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '',
+            thumbnail: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
+            description: (descMatch?.[1] ?? '').slice(0, 180).replace(/&amp;/g, '&'),
+          });
+        }
+      }
+    }
+  } catch {
+    fetchError = true;
+  }
+}
+---
+
+<BaseLayout
+  title="Data Governance Videos | The Data Governor"
+  description="Video content on data governance, data management, and data strategy from The Data Governor YouTube channel."
+  canonicalPath="/data-governance-videos/"
+>
+  <div class="page-wrap">
+    <div class="page-header">
+      <a href="/" class="label" style="font-size:0.65rem; letter-spacing:0.14em;">The Data Governor</a>
+      <h1 class="page-title">Data Governance Videos</h1>
+      <p class="page-deck">
+        Walkthroughs, presentations, and practitioner insights from the
+        <a href="https://www.youtube.com/@thedatagovernor" target="_blank" rel="noopener">Data Governor YouTube channel</a>.
+      </p>
+    </div>
+    <div class="article-rule" aria-hidden="true"></div>
+
+    {videos.length > 0 ? (
+      <section class="video-grid" aria-label="Recent videos">
+        {videos.map((v) => (
+          <article class="video-card">
+            <a
+              href={`https://www.youtube.com/watch?v=${v.id}`}
+              class="video-card__thumb-link"
+              target="_blank"
+              rel="noopener"
+              aria-label={v.title}
+            >
+              <div class="video-card__thumb">
+                <img
+                  src={v.thumbnail}
+                  alt={v.title}
+                  width="480"
+                  height="270"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="video-card__play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="48" height="48">
+                    <circle cx="12" cy="12" r="12" fill="rgba(0,0,0,0.65)" />
+                    <polygon points="10,8 18,12 10,16" fill="#fff" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <div class="video-card__body">
+              <a
+                href={`https://www.youtube.com/watch?v=${v.id}`}
+                class="video-card__title"
+                target="_blank"
+                rel="noopener"
+              >
+                {v.title}
+              </a>
+              {v.published && <span class="video-card__date">{v.published}</span>}
+              {v.description && <p class="video-card__desc">{v.description}{v.description.length >= 180 ? '…' : ''}</p>}
+            </div>
+          </article>
+        ))}
+      </section>
+    ) : (
+      <div class="channel-fallback">
+        <div class="channel-fallback__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="64" height="64">
+            <rect width="48" height="48" rx="8" fill="#b5541a" />
+            <polygon points="20,14 38,24 20,34" fill="#fff" />
+          </svg>
+        </div>
+        <h2>Watch on YouTube</h2>
+        <p>
+          Subscribe to The Data Governor on YouTube for video content covering data governance
+          frameworks, data management practices, and practitioner insights.
+        </p>
+        <a
+          href="https://www.youtube.com/@thedatagovernor"
+          class="channel-btn"
+          target="_blank"
+          rel="noopener"
+        >
+          Visit the Channel →
+        </a>
+      </div>
+    )}
+
+    <div class="channel-subscribe">
+      <p>
+        Subscribe on YouTube for new content:
+        <a href="https://www.youtube.com/@thedatagovernor" target="_blank" rel="noopener">
+          youtube.com/@thedatagovernor
+        </a>
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: 2.5rem 0 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  .page-deck {
+    font-size: 1rem;
+    color: var(--ink-mid);
+    margin: 0;
+    line-height: 1.6;
+  }
+  .page-deck a { color: var(--red); text-decoration: underline; text-underline-offset: 3px; }
+
+  .article-rule {
+    height: 3px;
+    background: linear-gradient(90deg, var(--red) 0%, var(--gold) 50%, transparent 100%);
+    margin-bottom: 2.5rem;
+  }
+
+  /* ── Video grid ── */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .video-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .video-card__thumb-link { display: block; }
+
+  .video-card__thumb {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--dark-bg);
+  }
+
+  .video-card__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.25s ease;
+  }
+  .video-card__thumb-link:hover .video-card__thumb img {
+    transform: scale(1.04);
+  }
+
+  .video-card__play {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .video-card__thumb-link:hover .video-card__play { opacity: 1; }
+
+  .video-card__body {
+    padding: 0.75rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .video-card__title {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.15s;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .video-card__title:hover { color: var(--red); }
+
+  .video-card__date {
+    font-family: var(--font-ui);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  .video-card__desc {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--ink-mid);
+    margin: 0.2rem 0 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* ── Fallback (no videos loaded) ── */
+  .channel-fallback {
+    text-align: center;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .channel-fallback h2 {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .channel-fallback p {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--ink-mid);
+    margin: 0;
+  }
+
+  .channel-btn {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--parchment);
+    background: var(--red);
+    padding: 0.75rem 2rem;
+    border: 2px solid var(--red);
+    transition: background 0.15s, color 0.15s;
+    margin-top: 0.5rem;
+  }
+  .channel-btn:hover { background: var(--red-dark); border-color: var(--red-dark); }
+
+  /* ── Subscribe footer ── */
+  .channel-subscribe {
+    border-top: 1px solid var(--rule);
+    padding: 1.5rem 0 3rem;
+    font-family: var(--font-ui);
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    color: var(--ink-faint);
+    text-align: center;
+  }
+  .channel-subscribe a { color: var(--red); text-decoration: underline; text-underline-offset: 3px; }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .video-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 560px) {
+    .video-grid { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,0 +1,226 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  const categoryMap = new Map<string, typeof posts>();
+
+  for (const post of posts) {
+    for (const cat of post.data.categories ?? []) {
+      const s = cat.toLowerCase().replace(/\s+/g, '-');
+      if (!categoryMap.has(s)) categoryMap.set(s, []);
+      categoryMap.get(s)!.push(post);
+    }
+  }
+
+  return [...categoryMap.entries()].map(([s, catPosts]) => ({
+    params: { category: s },
+    props: {
+      label: catPosts[0].data.categories.find(c => c.toLowerCase().replace(/\s+/g, '-') === s) ?? s,
+      posts: catPosts
+        .filter(p => (p.data.wpSlug ?? p.slug) !== 'welcome')
+        .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()),
+    },
+  }));
+}
+
+const { label, posts } = Astro.props;
+
+function slug(p: typeof posts[0]) { return p.data.wpSlug ?? p.slug; }
+function cat(p: typeof posts[0]) { return p.data.categories?.[0] ?? ''; }
+function catSlug(c: string) { return c.toLowerCase().replace(/\s+/g, '-'); }
+function fmt(d: Date) {
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+---
+
+<BaseLayout
+  title={`${label} | The Data Governor`}
+  description={`All articles in the ${label} category — practitioner insights on ${label.toLowerCase()}.`}
+  canonicalPath={`/category/${Astro.params.category}/`}
+>
+  <div class="page-wrap">
+    <!-- Category header -->
+    <header class="cat-header animate-in">
+      <span class="cat-header__eyebrow">Category</span>
+      <h1 class="cat-header__title">{label}</h1>
+      <p class="cat-header__count">{posts.length} article{posts.length !== 1 ? 's' : ''}</p>
+    </header>
+
+    <!-- Featured first post -->
+    {posts[0] && (
+      <section class="cat-hero animate-in">
+        <a href={`/category/${catSlug(cat(posts[0]))}/`} class="label">{cat(posts[0])}</a>
+        <a href={`/${slug(posts[0])}/`} class="cat-hero__link">
+          <h2 class="cat-hero__title">{posts[0].data.title}</h2>
+        </a>
+        <p class="cat-hero__excerpt">{posts[0].data.description}</p>
+        <time datetime={posts[0].data.pubDate.toISOString()} class="cat-hero__date">
+          {fmt(posts[0].data.pubDate)}
+        </time>
+      </section>
+    )}
+
+    <div class="cat-divider" aria-hidden="true"></div>
+
+    <!-- Rest of posts -->
+    <div class="cat-list">
+      {posts.slice(1).map((p) => (
+        <article class="cat-item animate-in">
+          <div class="cat-item__body">
+            <a href={`/${slug(p)}/`} class="cat-item__title">{p.data.title}</a>
+            <p class="cat-item__excerpt">{p.data.description}</p>
+          </div>
+          <time datetime={p.data.pubDate.toISOString()} class="cat-item__date">
+            {fmt(p.data.pubDate)}
+          </time>
+        </article>
+      ))}
+    </div>
+
+    <div class="cat-back">
+      <a href="/blog/">← All articles</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .cat-header {
+    padding: 3rem 0 0;
+  }
+
+  .cat-header__eyebrow {
+    font-family: var(--font-ui);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .cat-header__title {
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+  }
+
+  .cat-header__count {
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  /* Hero post */
+  .cat-hero {
+    padding: 2.5rem 0 2rem;
+    max-width: 760px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .cat-hero__link { text-decoration: none; display: block; }
+
+  .cat-hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--ink);
+    margin: 0.5rem 0 0.75rem;
+    transition: color 0.15s;
+  }
+  .cat-hero__link:hover .cat-hero__title { color: var(--red); }
+
+  .cat-hero__excerpt {
+    font-style: italic;
+    color: var(--ink-mid);
+    line-height: 1.65;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .cat-hero__date {
+    font-family: var(--font-ui);
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  .cat-divider {
+    height: 1px;
+    background: var(--rule);
+  }
+
+  /* List */
+  .cat-list { display: flex; flex-direction: column; }
+
+  .cat-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: start;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--rule);
+    transition: background 0.15s;
+  }
+  .cat-item:hover { background: rgba(25,22,18,0.025); margin: 0 -0.75rem; padding: 1.25rem 0.75rem; }
+
+  .cat-item__title {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--ink);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.3rem;
+    transition: color 0.15s;
+  }
+  .cat-item__title:hover { color: var(--red); }
+
+  .cat-item__excerpt {
+    font-size: 0.85rem;
+    color: var(--ink-mid);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .cat-item__date {
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    white-space: nowrap;
+    padding-top: 0.2rem;
+  }
+
+  .cat-back {
+    padding: 2rem 0 3rem;
+    font-family: var(--font-ui);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .cat-back a { color: var(--ink-mid); text-decoration: none; }
+  .cat-back a:hover { color: var(--red); }
+
+  @media (max-width: 640px) {
+    .cat-item { grid-template-columns: 1fr; gap: 0.25rem; }
+  }
+</style>

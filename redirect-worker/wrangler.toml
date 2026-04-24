@@ -1,0 +1,8 @@
+name = "thedatagovernor-redirect"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+# Route all .info traffic through this worker
+# In Cloudflare dashboard: Workers & Pages → thedatagovernor-redirect → Triggers → Routes
+# Add route: thedatagovernor.info/*
+# Add route: www.thedatagovernor.info/*

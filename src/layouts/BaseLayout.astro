@@ -1,0 +1,587 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  canonicalPath?: string;
+  ogImage?: string;
+  pubDate?: Date;
+  type?: 'website' | 'article';
+  schema?: string;
+}
+
+const {
+  title,
+  description,
+  canonicalPath = Astro.url.pathname,
+  ogImage = '/logo.png',
+  pubDate,
+  type = 'website',
+  schema,
+} = Astro.props;
+
+const siteUrl = 'https://thedatagovernor.com';
+const canonical = canonicalPath
+  ? `${siteUrl}${canonicalPath.endsWith('/') ? canonicalPath : canonicalPath + '/'}`
+  : siteUrl;
+const ogImageAbsolute = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+
+const now = new Date();
+const dateString = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Performance: preconnect before font request -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts: Roboto family (body + UI) — display uses system-ui stack -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Roboto+Condensed:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageAbsolute} />
+    <meta property="og:site_name" content="The Data Governor" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageAbsolute} />
+    {pubDate && <meta property="article:published_time" content={pubDate.toISOString()} />}
+
+    <link rel="sitemap" href="/sitemap.xml" />
+    <link rel="alternate" type="application/rss+xml" title="The Data Governor" href="/rss.xml" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+
+    {schema && <script type="application/ld+json" set:html={schema} />}
+
+    <!-- Set theme before paint to prevent flash -->
+    <script is:inline>
+      (function() {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = stored || (prefersDark ? 'dark' : 'light');
+      })();
+    </script>
+  </head>
+  <body>
+
+    <!-- Top utility bar -->
+    <div class="top-bar">
+      <span class="top-bar__date">{dateString}</span>
+      <div class="top-bar__links">
+        <a href="/rss.xml">RSS</a>
+        <span class="sep">·</span>
+        <a href="/blog/">Archive</a>
+      </div>
+    </div>
+
+    <!-- Masthead -->
+    <header class="masthead">
+      <div class="masthead__inner">
+        <a href="/" class="masthead__brand">
+          <img src="/logo.png" alt="" class="masthead__logo" aria-hidden="true" />
+          <div class="masthead__wordmark">
+            <span class="masthead__the">The</span>
+            <span class="masthead__name">Data Governor</span>
+          </div>
+        </a>
+
+        <nav class="masthead__nav" aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="/blog/">All Articles</a>
+          <a href="/category/data-governance/">Data Governance</a>
+          <a href="/category/data-management/">Data Management</a>
+          <a href="/data-governance-videos/">Videos</a>
+          <a href="/about/">About</a>
+        </nav>
+
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode" title="Toggle dark mode">
+          <svg class="theme-toggle__icon theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <!-- Mobile nav -->
+      <nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
+        <a href="/">Home</a>
+        <a href="/blog/">All Articles</a>
+        <a href="/category/data-governance/">Data Governance</a>
+        <a href="/category/data-management/">Data Management</a>
+        <a href="/data-governance-videos/">Videos</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/rss.xml">RSS Feed</a>
+      </nav>
+    </header>
+
+    <!-- Red rule under masthead -->
+    <div class="masthead-rule" aria-hidden="true"></div>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <img src="/logo.png" alt="The Data Governor" class="site-footer__logo" />
+          <p>Practitioner insights on data governance,<br/>data management, and data strategy.</p>
+        </div>
+        <div class="site-footer__links">
+          <h4>Topics</h4>
+          <a href="/category/data-governance/">Data Governance</a>
+          <a href="/category/data-management/">Data Management</a>
+          <a href="/category/compliance/">Compliance</a>
+          <a href="/category/career-in-data/">Career in Data</a>
+          <a href="/blog/">All Articles</a>
+        </div>
+        <div class="site-footer__links">
+          <h4>Site</h4>
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/data-governance-videos/">Videos</a>
+          <a href="/rss.xml">RSS Feed</a>
+          <a href="/sitemap.xml">Sitemap</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>&copy; {now.getFullYear()} The Data Governor. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile nav
+      const toggle = document.querySelector('.nav-toggle');
+      const mobileNav = document.getElementById('mobile-nav');
+      toggle?.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        mobileNav?.classList.toggle('open');
+        mobileNav?.setAttribute('aria-hidden', String(expanded));
+      });
+
+      // Theme toggle
+      const themeBtn = document.getElementById('theme-toggle');
+      function applyTheme(theme: string) {
+        document.documentElement.dataset.theme = theme;
+        localStorage.setItem('theme', theme);
+        if (themeBtn) {
+          themeBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+        }
+      }
+      // Sync button label with current theme on load
+      applyTheme(document.documentElement.dataset.theme || 'light');
+      themeBtn?.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+      });
+    </script>
+
+  </body>
+</html>
+
+<style is:global>
+  /* ── Design tokens ─────────────────────────────── */
+  :root {
+    --parchment:   #f4f6f8;
+    --ink:         #1a1f2e;
+    --ink-mid:     #404860;
+    --ink-faint:   #8890a8;
+    --rule:        #d4d8e2;
+    --rule-dark:   #b8bece;
+    --red:         #b5541a;
+    --red-dark:    #8c3c0e;
+    --gold:        #6b8fae;
+    --dark-bg:     #1a1f2e;
+    --dark-surface:#242a3d;
+
+    --font-display: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-body:    'Roboto', 'Arial', sans-serif;
+    --font-ui:      'Roboto Condensed', 'Arial Narrow', sans-serif;
+
+    --measure:     68ch;
+    --gap:         1.5rem;
+    --gap-lg:      3rem;
+  }
+
+  /* ── Dark mode token overrides ─────────────────── */
+  [data-theme="dark"] {
+    --parchment:   #111520;
+    --ink:         #dedad3;
+    --ink-mid:     #9a9298;
+    --ink-faint:   #5e5860;
+    --rule:        rgba(255,255,255,0.09);
+    --rule-dark:   rgba(255,255,255,0.16);
+    --dark-bg:     #080c12;
+    --dark-surface:#131820;
+  }
+
+  /* ── Reset ─────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 17px; scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--parchment);
+    color: var(--ink);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; }
+  a:hover { color: var(--red); }
+
+  /* ── Top bar ────────────────────────────────────── */
+  .top-bar {
+    background: var(--dark-bg);
+    color: #a09890;
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 2rem;
+  }
+  .top-bar a { color: #a09890; text-decoration: none; }
+  .top-bar a:hover { color: #f8f5f0; }
+  .top-bar .sep { margin: 0 0.4rem; opacity: 0.4; }
+
+  /* ── Masthead ───────────────────────────────────── */
+  .masthead {
+    background: var(--parchment);
+    border-bottom: 1px solid var(--rule);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 0 var(--rule), 0 4px 12px rgba(25,22,18,0.06);
+  }
+
+  .masthead__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0.85rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .masthead__brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .masthead__logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+  }
+
+  .masthead__wordmark {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  .masthead__the {
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--red);
+  }
+
+  .masthead__name {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+
+  .masthead__nav {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+    margin-left: auto;
+    flex-wrap: wrap;
+  }
+
+  .masthead__nav a {
+    font-family: var(--font-ui);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ink-mid);
+    padding: 0.35rem 0.75rem;
+    border-radius: 2px;
+    transition: color 0.15s, background 0.15s;
+    white-space: nowrap;
+  }
+  .masthead__nav a:hover { color: var(--red); background: rgba(193,18,31,0.06); }
+
+  /* ── Theme toggle ──────────────────────────────── */
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background: none;
+    border: 1px solid var(--rule-dark);
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--ink-mid);
+    transition: color 0.15s, border-color 0.15s, background 0.15s;
+    flex-shrink: 0;
+  }
+  .theme-toggle:hover { color: var(--red); border-color: var(--red); background: rgba(181,84,26,0.08); }
+
+  /* Show sun in dark mode, moon in light mode */
+  .theme-toggle__sun  { display: none; }
+  .theme-toggle__moon { display: block; }
+  [data-theme="dark"] .theme-toggle__sun  { display: block; }
+  [data-theme="dark"] .theme-toggle__moon { display: none; }
+
+  /* ── Red rule ───────────────────────────────────── */
+  .masthead-rule {
+    height: 3px;
+    background: linear-gradient(90deg, var(--red) 0%, var(--red-dark) 60%, var(--gold) 100%);
+  }
+
+  /* ── Mobile nav ─────────────────────────────────── */
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    margin-left: auto;
+  }
+  .nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--ink);
+    transition: transform 0.2s, opacity 0.2s;
+  }
+
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: var(--dark-bg);
+    padding: 1rem 2rem;
+  }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav a {
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #d0c8c0;
+    text-decoration: none;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .mobile-nav a:last-child { border-bottom: none; }
+  .mobile-nav a:hover { color: #fff; }
+
+  @media (max-width: 860px) {
+    .masthead__nav { display: none; }
+    .nav-toggle { display: flex; }
+    .top-bar { padding: 0.4rem 1rem; }
+    .top-bar__date { display: none; }
+    .masthead__inner { padding: 0.75rem 1rem; }
+  }
+
+  /* ── Footer ─────────────────────────────────────── */
+  .site-footer {
+    background: var(--dark-bg);
+    color: #a09890;
+    margin-top: var(--gap-lg);
+    border-top: 3px solid var(--red);
+  }
+
+  .site-footer__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .site-footer__logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    opacity: 0.85;
+  }
+
+  .site-footer__brand p {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #786e66;
+    margin-top: 0.5rem;
+  }
+
+  .site-footer__links h4 {
+    font-family: var(--font-ui);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .site-footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .site-footer__links a {
+    font-family: var(--font-ui);
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: #786e66;
+    transition: color 0.15s;
+  }
+  .site-footer__links a:hover { color: #f8f5f0; }
+
+  .site-footer__bottom {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: #504840;
+  }
+
+  @media (max-width: 760px) {
+    .site-footer__inner { grid-template-columns: 1fr; gap: 2rem; padding: 2rem 1rem; }
+    .site-footer__bottom { padding: 1rem; }
+  }
+
+  /* ── Utility classes ─────────────────────────────── */
+  .label {
+    font-family: var(--font-ui);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--red);
+    text-decoration: none;
+  }
+  .label:hover { color: var(--red-dark); }
+
+  .section-rule {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: var(--gap-lg) 0 var(--gap);
+  }
+  .section-rule::before {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: var(--ink);
+  }
+  .section-rule h2 {
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .section-rule::after {
+    content: '';
+    flex: 4;
+    height: 1px;
+    background: var(--rule-dark);
+  }
+
+  /* ── Page wrapper ───────────────────────────────── */
+  .page-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  @media (max-width: 760px) {
+    .page-wrap { padding: 0 1rem; }
+  }
+
+  /* ── Animation ──────────────────────────────────── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-in {
+    animation: fadeUp 0.5s ease both;
+  }
+  .animate-in:nth-child(1) { animation-delay: 0.05s; }
+  .animate-in:nth-child(2) { animation-delay: 0.12s; }
+  .animate-in:nth-child(3) { animation-delay: 0.19s; }
+  .animate-in:nth-child(4) { animation-delay: 0.26s; }
+  .animate-in:nth-child(5) { animation-delay: 0.33s; }
+  .animate-in:nth-child(6) { animation-delay: 0.40s; }
+  .animate-in:nth-child(7) { animation-delay: 0.47s; }
+  .animate-in:nth-child(8) { animation-delay: 0.54s; }
+</style>

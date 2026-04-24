@@ -1,0 +1,23 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Page Not Found | The Data Governor"
+  description="This page could not be found."
+  canonicalPath="/404/"
+>
+  <div class="not-found">
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <a href="/">Return to home &rarr;</a>
+  </div>
+</BaseLayout>
+
+<style>
+  .not-found {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  .not-found p { color: #555; margin: 1rem 0 2rem; }
+</style>

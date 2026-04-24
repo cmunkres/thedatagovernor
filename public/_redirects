@@ -1,0 +1,9 @@
+# RSS feed — preserve subscriber links from WordPress /feed/ URL
+/feed/  /rss.xml  301
+/feed   /rss.xml  301
+
+# WordPress category archive URLs (wp uses /category/slug/, Astro uses /category/slug/)
+# Already matching — no redirect needed
+
+# Ensure www redirects to apex (Cloudflare handles this, listed for clarity)
+# https://www.thedatagovernor.com/* https://thedatagovernor.com/:splat 301
