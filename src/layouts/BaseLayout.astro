@@ -69,6 +69,15 @@ const dateString = now.toLocaleDateString('en-US', { weekday: 'long', year: 'num
 
     {schema && <script type="application/ld+json" set:html={schema} />}
 
+    <!-- Google Analytics 4 -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-H3M19HMVQE"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H3M19HMVQE');
+    </script>
+
     <!-- Set theme before paint to prevent flash -->
     <script is:inline>
       (function() {
