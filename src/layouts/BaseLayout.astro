@@ -44,11 +44,17 @@ const dateString = now.toLocaleDateString('en-US', { weekday: 'long', year: 'num
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Fonts: Roboto family (body + UI) — display uses system-ui stack -->
+    <!-- Fonts: async load to eliminate render-blocking -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Roboto+Condensed:wght@400;500;600;700&display=swap" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Roboto+Condensed:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Roboto+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    </noscript>
 
     <!-- Open Graph -->
     <meta property="og:type" content={type} />
@@ -103,7 +109,7 @@ const dateString = now.toLocaleDateString('en-US', { weekday: 'long', year: 'num
     <header class="masthead">
       <div class="masthead__inner">
         <a href="/" class="masthead__brand">
-          <img src="/logo.png" alt="" class="masthead__logo" aria-hidden="true" />
+          <img src="/logo.png" alt="" class="masthead__logo" aria-hidden="true" width="40" height="40" />
           <div class="masthead__wordmark">
             <span class="masthead__the">The</span>
             <span class="masthead__name">Data Governor</span>
