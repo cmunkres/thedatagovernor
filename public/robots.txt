@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Allow Google AI Overviews (overrides Cloudflare managed block above)
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://thedatagovernor.com/sitemap.xml
