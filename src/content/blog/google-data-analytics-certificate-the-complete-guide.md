@@ -3,7 +3,7 @@ title: "Google Data Analytics Certificate: The Complete Guide"
 description: "Data analysts are in high demand, and the Google Data Analytics Certificate can help you get started in this exciting field."
 pubDate: 2023-04-12T17:27:23.000Z
 wpSlug: "google-data-analytics-certificate-the-complete-guide"
-categories: ["Data"]
+categories: ["Career in Data"]
 tags: ["analytics job market", "career growth", "data analysis techniques", "Data analysts", "data analytics career", "data analytics course", "data analytics skills", "data analytics tools", "data analytics training", "data-driven decision-making", "exciting field", "Google certificate program", "Google Data Analytics Certificate", "high demand"]
 draft: false
 image: /2023/04/Google-data-analytics-certificate.png

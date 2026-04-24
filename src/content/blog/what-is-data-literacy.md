@@ -3,7 +3,7 @@ title: "Data Literacy and The Power of Data-Driven Decision Making"
 description: "Data Literacy and The Power of Data-Driven Decision Making"
 pubDate: 2023-03-07T16:37:46.000Z
 wpSlug: "what-is-data-literacy"
-categories: ["Data"]
+categories: ["Data Literacy"]
 tags: ["and education", "Big data and data literacy", "data literacy", "Data literacy in business", "Data literacy skills", "Data-driven decision making", "Digital citizenship", "Examples of data literacy", "healthcare", "Importance of data literacy", "Understanding and communicating data"]
 draft: false
 image: /2023/03/What-is-data-literacy-e1678398959909.png

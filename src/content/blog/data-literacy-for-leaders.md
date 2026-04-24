@@ -3,7 +3,7 @@ title: "Data Literacy for Leaders: From Data Dazed to Data Driven!"
 description: "Data literacy for leaders is no longer a \"nice-to-have\" skill but an essential competency for driving strategic decision-making."
 pubDate: 2023-04-24T14:33:26.000Z
 wpSlug: "data-literacy-for-leaders"
-categories: ["Data"]
+categories: ["Data Literacy"]
 tags: ["Advanced Analytics", "artificial intelligence", "Data Compliance", "Data Engineering", "Data Ethics", "data governance", "Data Infrastructure", "Data Leadership", "data literacy", "data privacy", "data security", "Data Visualization", "Data-driven decision making", "machine learning"]
 draft: false
 image: /2023/04/Data-literacy-for-leaders.webp

@@ -3,7 +3,7 @@ title: "What is the National Information Exchange Model (NIEM)?"
 description: "This blog post will explore what NIEM is, how it works, and why it is important."
 pubDate: 2023-03-14T14:48:20.000Z
 wpSlug: "what-is-niem"
-categories: ["Data", "Data Management"]
+categories: ["Data Management"]
 tags: ["Data Model", "NIEM", "xml"]
 draft: false
 image: /2023/03/What-is-niem-e1678900283336.jpg

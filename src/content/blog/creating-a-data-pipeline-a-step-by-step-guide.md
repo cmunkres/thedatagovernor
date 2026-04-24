@@ -3,7 +3,7 @@ title: "Creating a Data Pipeline: A Step-by-Step Guide"
 description: "A data pipeline is essential for efficiently managing and processing this data. This article will provide a step-by-step guide on creating a data pipeline."
 pubDate: 2023-04-12T17:41:28.000Z
 wpSlug: "creating-a-data-pipeline-a-step-by-step-guide"
-categories: ["Data"]
+categories: ["Data Management"]
 tags: ["automation", "data analysis", "data ingestion", "data insights", "Data Management", "data pipeline", "data processing", "Data quality", "data storage", "data transformation", "Data Visualization", "scalability"]
 draft: false
 image: /2023/04/Creating-a-data-pipeline.png

@@ -5,7 +5,7 @@ pubDate: 2026-04-16T20:49:01.000Z
 wpSlug: "claude-pricing-explained"
 categories: ["Artificial Intelligence"]
 tags: ["AI pricing", "AI tools for data teams", "Anthropic", "Claude API", "Claude Enterprise", "Claude Max", "Claude pricing", "Claude Pro", "LLM costs", "prompt caching"]
-draft: false
+draft: true
 image: /2026/04/aioseo-ai-a-man-explaining-the-cost-medium-creative-landscape-20260416-163032.avif
 imageAlt: "a man explaining the cost of clause ai do not include price"
 ogImage: /og/2026/04/aioseo-ai-a-man-explaining-the-cost-medium-creative-landscape-20260416-163032.jpg

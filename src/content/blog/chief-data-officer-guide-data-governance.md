@@ -3,7 +3,7 @@ title: "The Chief Data Officer's Guide to Data Governance in 2026"
 description: "The Chief Data Officer's Guide to Data Governance in 2026"
 pubDate: 2026-03-12T01:27:34.000Z
 wpSlug: "chief-data-officer-guide-data-governance"
-categories: ["Data Governance", "Uncategorized"]
+categories: ["Data Governance"]
 tags: ["CDO", "Chief Data Officer", "data governance"]
 draft: false
 image: /2026/03/chief-data-officers-guide-to-data-governance-2026.webp

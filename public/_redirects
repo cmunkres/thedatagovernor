@@ -2,6 +2,9 @@
 /feed/  /rss.xml  301
 /feed   /rss.xml  301
 
+# Off-topic post removed — redirect to homepage
+/claude-pricing-explained/  /  301
+
 # WordPress category archive URLs (wp uses /category/slug/, Astro uses /category/slug/)
 # Already matching — no redirect needed
 

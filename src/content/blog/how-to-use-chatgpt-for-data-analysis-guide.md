@@ -3,7 +3,7 @@ title: "ChatGPT for Data Analysis: When Your Data Finds Its AI Soulmate"
 description: "Unlock the power of ChatGPT for data analysis with this guide—save time, make better decisions, and boost collaboration using AI."
 pubDate: 2023-04-26T15:45:09.000Z
 wpSlug: "how-to-use-chatgpt-for-data-analysis-guide"
-categories: ["Data"]
+categories: ["Data Science"]
 tags: ["ai-insights", "chatgpt", "data-analysis", "data-driven-decisions", "financial-data", "natural-language-processing", "openai", "sales-data", "social-media-analysis"]
 draft: false
 image: /2023/04/Chatgpt-for-data-analysis.webp

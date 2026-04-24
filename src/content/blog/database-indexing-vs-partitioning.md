@@ -3,7 +3,7 @@ title: "Database Indexing vs Partitioning: Unleashing the Power of Data Manageme
 description: "Database Indexing vs Partitioning: Unleashing the Power of Data Management"
 pubDate: 2026-03-12T19:46:55.000Z
 wpSlug: "database-indexing-vs-partitioning"
-categories: ["Data"]
+categories: ["Data Management"]
 tags: ["Data Indexing", "data partitioning", "database"]
 draft: false
 image: /2026/03/aioseo-ai-create-a-photorealistic-d-medium-auto-landscape-20260312-154318.png

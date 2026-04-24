@@ -3,7 +3,7 @@ title: "Data Pipelines Explained: The Power of Seamless Data Processing"
 description: "Uncover the true potential of data pipeline technology and how it's transforming modern businesses. Learn about data pipelines explained in this guide."
 pubDate: 2023-04-27T17:58:04.000Z
 wpSlug: "data-pipelines-explained-guide"
-categories: ["Data"]
+categories: ["Data Management"]
 tags: ["automation", "Business Intelligence", "data analytics", "data pipelines", "data processing", "Data quality", "data security", "data storage", "data transformation", "data-driven decisions", "ETL", "machine learning", "scalability"]
 draft: false
 image: /2023/04/Data-pipelines-explained.webp

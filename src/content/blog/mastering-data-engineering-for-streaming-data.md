@@ -3,7 +3,7 @@ title: "Data Engineering for Streaming Data: Tools, Techniques, and Best Practic
 description: "Explore Data Engineering for Streaming Data, master tools & techniques to process real-time data, and boost your organization's decision-making."
 pubDate: 2023-05-03T19:51:01.000Z
 wpSlug: "mastering-data-engineering-for-streaming-data"
-categories: ["Data"]
+categories: ["Data Management"]
 tags: ["Apache Flink", "Apache Kafka", "big data", "data analytics", "Data Engineering", "data pipeline", "data processing", "data storage", "data transformation", "IoT", "Real-Time Data", "Streaming Data"]
 draft: false
 image: /2023/05/Data-engineering-for-data-streaming.webp

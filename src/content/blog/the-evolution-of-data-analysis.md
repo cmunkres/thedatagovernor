@@ -3,7 +3,7 @@ title: "Data Dissected: The Evolution of Data Analysis - A Brief History and Fut
 description: "Discover the fascinating journey of data analysis, from ancient civilizations to modern technology. Explore key milestones, technological advancements, and future trends shaping this ever-evolving fie"
 pubDate: 2023-04-12T23:02:54.000Z
 wpSlug: "the-evolution-of-data-analysis"
-categories: ["Data"]
+categories: ["Data Science"]
 tags: ["AI and Machine Learning", "Big Data Analysis", "Citizen Data Science", "Data Analysis Evolution", "data privacy and security", "Data Visualization", "Modern Statistics"]
 draft: false
 image: /2023/04/The-evolution-of-data-analysis-copy.webp
