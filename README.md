@@ -71,7 +71,7 @@ Deployed manually via Wrangler CLI to Cloudflare Pages:
 
 ```bash
 npm run build
-npx wrangler pages deploy dist --project-name thedatagovernor
+npx wrangler pages deploy dist --project-name thedatagovernor --branch main
 ```
 
 The project is not connected to Git auto-deploy — deployments are triggered manually.
