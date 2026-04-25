@@ -6,9 +6,9 @@ wpSlug: "data-governance-glossary"
 categories: ["Data Governance"]
 tags: ["data governance", "glossary", "data management", "metadata", "compliance", "definitions"]
 draft: false
-image: /og/2024/03/data-governance-trends-2024.jpg
-imageAlt: "Data Governance Glossary"
-ogImage: /og/2024/03/data-governance-trends-2024.jpg
+image: /2026/03/aioseo-ai-a-sleek-professional-dig-medium-auto-landscape-20260320-141900.png
+imageAlt: "Data Governance Glossary — 80 practitioner-grade definitions"
+ogImage: /og/2026/03/aioseo-ai-a-sleek-professional-dig-medium-auto-landscape-20260320-141900.jpg
 ---
 
 A practitioner's glossary, written for people who have to *use* these terms in policies, RFPs, and committee meetings — not just recognize them on a vendor slide. Where a term has nuance, the definition flags it. Where a term is contested between vendors and standards bodies, both interpretations are noted.

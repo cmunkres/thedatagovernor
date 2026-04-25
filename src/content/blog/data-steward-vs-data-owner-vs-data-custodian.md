@@ -6,9 +6,9 @@ wpSlug: "data-steward-vs-data-owner-vs-data-custodian"
 categories: ["Data Governance"]
 tags: ["data steward", "data owner", "data custodian", "data governance", "RACI", "roles and responsibilities"]
 draft: false
-image: /og/2024/03/data-governance-trends-2024.jpg
-imageAlt: "Data Steward vs Data Owner vs Data Custodian"
-ogImage: /og/2024/03/data-governance-trends-2024.jpg
+image: /2026/04/aioseo-ai-clean-split-panel-graphic-medium-auto-landscape-20260414-093628.avif
+imageAlt: "Data Steward vs Data Owner vs Data Custodian — three distinct roles in data governance"
+ogImage: /og/2026/04/aioseo-ai-clean-split-panel-graphic-medium-auto-landscape-20260414-093628.jpg
 ---
 
 Walk into any data governance committee meeting and you'll hear "data owner" and "data steward" used interchangeably within the same five minutes. They aren't the same role. Confusing them is the single most common reason governance programs fail to assign clear accountability. This guide draws the lines, gives you a RACI you can actually use, and shows how the three roles are evolving in 2026.
