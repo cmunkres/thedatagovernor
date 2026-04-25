@@ -8,5 +8,7 @@
 # WordPress category archive URLs (wp uses /category/slug/, Astro uses /category/slug/)
 # Already matching — no redirect needed
 
-# Ensure www redirects to apex (Cloudflare handles this, listed for clarity)
-# https://www.thedatagovernor.com/* https://thedatagovernor.com/:splat 301
+# www → apex redirect: cannot be done in _redirects (Cloudflare Pages
+# does not support host-matching here). Set up via Cloudflare dashboard:
+# Rules → Redirect Rules → "If hostname equals www.thedatagovernor.com,
+# then dynamic 301 to concat('https://thedatagovernor.com', http.request.uri.path)"
