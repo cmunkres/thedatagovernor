@@ -22,7 +22,7 @@ https://youtu.be/jXQ9TKeVJkE
 Data Governance Maturity Model YouTube Video
 
 * [The Importance of Data Governance Maturity](#the-importance-of-data-governance-maturity)
-* [The Five Stages of the Data Governance Maturity Model](#the-five-stages-of-data-governance-maturity-model)
+* [The Five Stages of the Data Governance Maturity Model](#the-five-stages-of-the-data-governance-maturity-model)
 * [Implementing a Data Governance Maturity Model](#implementing-a-data-governance-maturity-model)
   * [Step 1: Assess Your Current Data Governance Maturity](#step-1-assess-your-current-data-governance-maturity)
   * [Step 2: Set Goals and Define Success Criteria](#step-2-set-goals-and-define-success-criteria)

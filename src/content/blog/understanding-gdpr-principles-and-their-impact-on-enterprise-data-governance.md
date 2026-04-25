@@ -14,7 +14,7 @@ ogImage: /og/2023/03/Understanding-gdpr-principles-blog-image.jpg
 The General Data Protection Regulation (GDPR) is a European Union (EU) regulation that sets the standard for how companies and organizations handle personal data. This regulation was introduced on May 25th, 2018, with the aim of giving individuals greater control over their personal data while providing businesses with a clear set of rules to follow. In this blog post, we will explore the importance of GDPR principles in the context of enterprise [data governance for compliance](/what-is-data-governance-and-why-do-we-need-it/).
 
 * [What is GDPR?](#what-is-gdpr)
-* [How do GDPR Principles impact Enterprise Data Governance?](#how-does-gdpr-impact-enterprise-data-governance)
+* [How do GDPR Principles impact Enterprise Data Governance?](#how-do-gdpr-principles-impact-enterprise-data-governance)
 * [Here are some ways GDPR impacts enterprise data governance:](#here-are-some-ways-gdpr-impacts-enterprise-data-governance)
 * [Conclusion:](#conclusion)
 

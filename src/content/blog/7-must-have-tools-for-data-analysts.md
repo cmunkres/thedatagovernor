@@ -15,7 +15,7 @@ ogImage: /og/2023/04/7-must-have-tools-for-data-analysts.jpg
 
 In this data-driven world, data analysts are the lifeblood of any organization. They're the wizards who uncover valuable insights and help decision-makers navigate the murky waters of the information age. As a data analyst, it's essential to keep up with the latest and greatest tools that'll make your job a breeze. So, without further ado, let's dive into the 7 must-have tools for data analysts in 2023 that'll keep you ahead of the curve.
 
-* [1\. RapidMiner: Your One-Stop-Shop for Data Analysis](#1-rapidminercopy-your-one-stop-shop-for-data-analysis)
+* [1\. RapidMiner: Your One-Stop-Shop for Data Analysis](#1-rapidminer-your-one-stop-shop-for-data-analysis)
   * [Why RapidMiner?](#why-rapidminer)
 * [2\. Tableau: Visualize and Explore Your Data Like Never Before](#2-tableau-visualize-and-explore-your-data-like-never-before)
   * [Why Tableau?](#why-tableau)

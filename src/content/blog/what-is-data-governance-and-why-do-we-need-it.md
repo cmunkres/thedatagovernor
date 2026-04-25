@@ -88,7 +88,7 @@ If you're an IT professional, data engineer, or business leader asking "what is 
   * [Should data governance be centralized or decentralized?](#should-data-governance-be-centralized-or-decentralized)
   * [What is the role of data stewards in data governance?](#what-is-the-role-of-data-stewards-in-data-governance)
 * [About The Data Governor](#about-the-data-governor)
-  * [Related Articles](#related-articles-654)
+  * Related Articles
 
 https://youtu.be/JKgujQvQWZU 
 

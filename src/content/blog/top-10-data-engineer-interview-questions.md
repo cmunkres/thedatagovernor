@@ -17,7 +17,7 @@ Data engineering has rapidly become one of the most sought-after professions in 
 
 So, without further ado, let's dive right in!
 
-* [Top 10 Questions of a Data Engineer Interview](#top-10-interview-questions-of-a-data-engineer-interview)
+* [Top 10 Questions of a Data Engineer Interview](#top-10-questions-of-a-data-engineer-interview)
   * [1\. What is data engineering, and how does it differ from data science?](#1-what-is-data-engineering-and-how-does-it-differ-from-data-science)
   * [2\. Can you explain the Extract, Transform, Load (ETL) process?](#2-can-you-explain-the-extract-transform-load-etl-process)
   * [3\. What are the key components of a data pipeline?](#3-what-are-the-key-components-of-a-data-pipeline)
@@ -28,14 +28,14 @@ So, without further ado, let's dive right in!
   * [8\. What are some common challenges faced by data engineers, and how can they be addressed?](#8-what-are-some-common-challenges-faced-by-data-engineers-and-how-can-they-be-addressed)
   * [9\. Can you provide an example of a data engineering project you've worked on and the tools you used?](#9-can-you-provide-an-example-of-a-data-engineering-project-youve-worked-on-and-the-tools-you-used)
   * [10\. How do you stay up-to-date with the latest data engineering trends and technologies?](#10-how-do-you-stay-up-to-date-with-the-latest-data-engineering-trends-and-technologies)
-* [FAQs: Getting a Handle on the Top 10 Data Engineer Interview Questions](#faqs-getting-a-handle-on-the-top-10-interview-question-of-data-engineers-interview)
+* FAQs: Getting a Handle on the Top 10 Data Engineer Interview Questions
   * [Q1: How can I prepare for a data engineering interview?](#q1-how-can-i-prepare-for-a-data-engineering-interview)
   * [Q2: What are some key skills data engineers should possess?](#q2-what-are-some-key-skills-data-engineers-should-possess)
   * [Q3: What is the role of data engineering in big data and analytics projects?](#q3-what-is-the-role-of-data-engineering-in-big-data-and-analytics-projects)
   * [Q4: Can you recommend any resources for learning data engineering?](#q4-can-you-recommend-any-resources-for-learning-data-engineering)
   * [Q5: What are some emerging trends in data engineering?](#q5-what-are-some-emerging-trends-in-data-engineering)
   * [Q6: How can I demonstrate my data engineering skills during an interview?](#q6-how-can-i-demonstrate-my-data-engineering-skills-during-an-interview)
-* [Conclusion: Nailing the Top 10 Data Engineer Interview Questions](#conclusion-nailing-the-top-10-interview-question-of-data-engineers-interview)
+* Conclusion: Nailing the Top 10 Data Engineer Interview Questions
 
 ## **Top 10 Questions of a Data Engineer Interview**
 

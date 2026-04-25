@@ -20,10 +20,10 @@ Quantitative data: It might sound like a daunting phrase, something that belongs
 * [Qualitative vs. Quantitative Data: What's the Difference?](#qualitative-vs-quantitative-data-whats-the-difference)
 * [Conclusion](#conclusion)
 * [Frequently Asked Questions](#frequently-asked-questions)
-  * [What is an example of quantitative data?](#what-is-an-example-of-a-quantitative-data)
-  * [What is quantitative vs qualitative data?](#what-is-an-example-of-a-quantitative-data)
-  * [What are some examples of qualitative data?](#what-is-an-example-of-a-quantitative-data)
-  * [What is qualitative data?](#what-is-an-example-of-a-quantitative-data)
+  * [What is an example of quantitative data?](#what-is-an-example-of-quantitative-data)
+  * [What is quantitative vs qualitative data?](#what-is-an-example-of-quantitative-data)
+  * [What are some examples of qualitative data?](#what-is-an-example-of-quantitative-data)
+  * [What is qualitative data?](#what-is-an-example-of-quantitative-data)
 
 https://youtu.be/P9P9NubNOAY 
 
