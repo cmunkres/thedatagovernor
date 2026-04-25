@@ -6,7 +6,7 @@ wpSlug: "data-steward-vs-data-owner-vs-data-custodian"
 categories: ["Data Governance"]
 tags: ["data steward", "data owner", "data custodian", "data governance", "RACI", "roles and responsibilities"]
 draft: false
-image: /2026/04/aioseo-ai-clean-split-panel-graphic-medium-auto-landscape-20260414-093628.avif
+image: /og/2026/04/aioseo-ai-clean-split-panel-graphic-medium-auto-landscape-20260414-093628.jpg
 imageAlt: "Data Steward vs Data Owner vs Data Custodian — three distinct roles in data governance"
 ogImage: /og/2026/04/aioseo-ai-clean-split-panel-graphic-medium-auto-landscape-20260414-093628.jpg
 ---
