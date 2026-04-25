@@ -1,6 +1,6 @@
 ---
 title: "11 Point checklist for website creators to implement GDPR:"
-description: "11 Point checklist for website creators to implement GDPR:"
+description: "Use this 11-point GDPR checklist to make your website compliant: data collection practices, consent mechanisms, privacy policies, and storage controls that regulators expect."
 pubDate: 2023-01-17T06:31:00.000Z
 wpSlug: "11-point-checklist-for-website-creators-to-implement-gdpr"
 categories: ["Data Governance"]

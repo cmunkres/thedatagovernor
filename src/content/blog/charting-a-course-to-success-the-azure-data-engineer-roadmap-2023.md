@@ -1,6 +1,6 @@
 ---
 title: "Charting a Course to Success: The Azure Data Engineer Roadmap 2023"
-description: "Charting a Course to Success: The Azure Data Engineer Roadmap 2023"
+description: "Follow the Azure data engineer roadmap to build cloud data skills: essential certifications, key services, and the career progression path for data engineers on Microsoft Azure."
 pubDate: 2023-02-03T16:37:05.000Z
 wpSlug: "charting-a-course-to-success-the-azure-data-engineer-roadmap-2023"
 categories: ["Career in Data"]

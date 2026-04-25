@@ -1,6 +1,6 @@
 ---
 title: "Welcome to The Data Governor"
-description: "Data governance insights for modern organizations — now on a faster, independent platform."
+description: "The Data Governor delivers practitioner-level data governance insights: frameworks, tools, roles, and real implementation experience for modern data-driven organizations."
 pubDate: 2024-01-01
 wpSlug: "welcome"
 draft: false

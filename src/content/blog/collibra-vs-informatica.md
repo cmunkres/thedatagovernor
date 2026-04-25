@@ -1,6 +1,6 @@
 ---
 title: "Collibra vs Informatica: The Ultimate Comparison"
-description: "Who wins the tale of the tape in a Collibra vs Informatica showdown?"
+description: "Collibra vs Informatica: a head-to-head comparison of features, pricing, and use cases to help data governance teams choose the right platform for their organization's needs."
 pubDate: 2023-03-31T13:05:20.000Z
 wpSlug: "collibra-vs-informatica"
 categories: ["Data Governance Tools"]

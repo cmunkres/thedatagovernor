@@ -1,6 +1,6 @@
 ---
 title: "Data Lineage - Leveraging the Power of Insight to Revolutionize Data Governance"
-description: "Data Lineage - Leveraging the Power of Insight to Revolutionize Data Governance"
+description: "Data lineage tracks where data comes from, how it moves, and what transforms it. Learn how lineage improves data governance, audit readiness, and trust in your data assets."
 pubDate: 2023-01-22T17:24:43.000Z
 wpSlug: "data-lineage-leveraging-the-power-of-insight-to-revolutionize-data-governance"
 categories: ["Data Governance", "Data Management"]

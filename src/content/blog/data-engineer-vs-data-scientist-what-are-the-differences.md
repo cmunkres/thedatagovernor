@@ -1,6 +1,6 @@
 ---
 title: "Data Engineer vs Data Scientist: What Are the Differences?"
-description: "Data Engineer vs Data Scientist: What Are the Differences?"
+description: "Data engineer vs data scientist: understand the real differences in responsibilities, required skills, and career paths so you can choose the right role for your goals."
 pubDate: 2023-01-21T19:46:38.000Z
 wpSlug: "data-engineer-vs-data-scientist-what-are-the-differences"
 categories: ["Career in Data"]

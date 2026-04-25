@@ -1,6 +1,6 @@
 ---
 title: "What is Data Lifecycle in Master Data Management (MDM)?"
-description: "Unveil the intriguing world of Master Data Management as we delve into its core—The Data Lifecycle."
+description: "Master data management governs data from capture to purge. Learn how each MDM lifecycle stage works to keep critical business data accurate and trustworthy."
 pubDate: 2023-08-01T15:41:07.000Z
 wpSlug: "understanding-data-lifecycle-master-data-management-mdm"
 categories: ["Data Management"]

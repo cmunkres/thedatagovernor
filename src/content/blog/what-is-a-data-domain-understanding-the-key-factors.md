@@ -1,6 +1,6 @@
 ---
 title: "What is a Data Domain: Understanding the Key Factors"
-description: "What is a Data Domain: Understanding the Key Factors"
+description: "A data domain defines the subject area a dataset belongs to. Learn why data domains matter for governance, MDM, and building consistent data definitions across the enterprise."
 pubDate: 2023-01-30T15:05:17.000Z
 wpSlug: "what-is-a-data-domain-understanding-the-key-factors"
 categories: ["Data Governance", "Data Management"]

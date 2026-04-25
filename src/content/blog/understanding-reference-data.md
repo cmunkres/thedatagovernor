@@ -1,6 +1,6 @@
 ﻿---
 title: "Reference Data 101: A Deep Dive into Data Standardization"
-description: "Unearth the concept of reference data, understand its profound impact on operational efficiency."
+description: "Reference data standardizes codes, classifications, and lookup values across your organization. Learn what it is, why it breaks without governance, and how to manage it effectively."
 pubDate: 2023-06-02T15:19:47.000Z
 wpSlug: "understanding-reference-data"
 categories: ["Data Management"]

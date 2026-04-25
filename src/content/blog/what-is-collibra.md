@@ -1,6 +1,6 @@
 ---
 title: "What Is Collibra? A Practitioner's Guide to the Data Governance Platform"
-description: "What Is Collibra? A Practitioner's Guide to the Data Governance Platform"
+description: "Collibra combines data catalog, governance, lineage, and quality in one platform. This practitioner's guide covers what it does, how to implement it, and where it fits best."
 pubDate: 2026-03-25T18:03:19.000Z
 wpSlug: "what-is-collibra"
 categories: ["Data Governance Tools"]

@@ -1,6 +1,6 @@
 ---
 title: "Data Governance in Healthcare: Complete Guide for 2026"
-description: "Data Governance in Healthcare: Complete Guide for 2026"
+description: "Data governance in healthcare protects patient data and drives HIPAA compliance. This 2026 guide covers frameworks, roles, and implementation steps that work."
 pubDate: 2026-03-14T17:50:40.000Z
 wpSlug: "data-governance-in-healthcare-2"
 categories: ["Data Governance"]

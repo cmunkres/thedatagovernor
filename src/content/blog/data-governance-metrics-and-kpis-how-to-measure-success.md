@@ -1,6 +1,6 @@
 ﻿---
 title: "Data Governance Metrics and KPIs: How to Measure Success"
-description: "Data Governance Metrics and KPIs: How to Measure Success"
+description: "Track data governance metrics and KPIs that prove your program is working. Learn which measures CDOs use to demonstrate quality improvements and return on governance investment."
 pubDate: 2026-03-19T00:12:49.000Z
 wpSlug: "data-governance-metrics-and-kpis-how-to-measure-success"
 categories: ["Data Governance"]

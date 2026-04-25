@@ -1,6 +1,6 @@
 ---
 title: "How to Create Efficient Master Data Management Workflows and Approvals"
-description: "How to Create Efficient Master Data Management Workflows and Approvals"
+description: "Design master data management workflows that cut manual effort and data errors. Learn approval process design, deduplication logic, and integration with ERP and CRM systems."
 pubDate: 2023-01-24T17:08:14.000Z
 wpSlug: "how-to-create-efficient-master-data-management-workflows-and-approvals"
 categories: ["Data Management"]

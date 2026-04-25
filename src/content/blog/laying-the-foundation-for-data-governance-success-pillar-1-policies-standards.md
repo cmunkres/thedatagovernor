@@ -1,6 +1,6 @@
 ---
 title: "Laying the Foundation for Data Governance Success: Pillar #1 - Policies & Standards"
-description: "Laying the Foundation for Data Governance Success: Pillar #1 - Policies & Standards"
+description: "Data governance Pillar 1 is policies and standards. Learn what each policy covers, how to structure them, and how to earn buy-in across the enterprise."
 pubDate: 2023-02-02T21:20:22.000Z
 wpSlug: "laying-the-foundation-for-data-governance-success-pillar-1-policies-standards"
 categories: ["Data Governance"]

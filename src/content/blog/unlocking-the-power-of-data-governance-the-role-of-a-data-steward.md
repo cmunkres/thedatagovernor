@@ -1,6 +1,6 @@
 ---
 title: "Unlocking the Power of Data Governance: The Role of a Data Steward"
-description: "Unlocking the Power of Data Governance: The Role of a Data Steward"
+description: "A data steward enforces data standards, resolves quality issues, and bridges governance policy with daily data use. Learn what the role involves and how to make stewards effective."
 pubDate: 2023-01-27T00:36:02.000Z
 wpSlug: "unlocking-the-power-of-data-governance-the-role-of-a-data-steward"
 categories: ["Data Governance"]

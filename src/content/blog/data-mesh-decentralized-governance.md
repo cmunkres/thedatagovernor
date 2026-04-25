@@ -1,6 +1,6 @@
 ---
 title: "Data Mesh Explained: Decentralized Data Governance and Domain-oriented Architecture"
-description: "Explore how data mesh revolutionizes data architecture with decentralized governance and domain-oriented architecture."
+description: "Data mesh shifts governance to domain teams using decentralized ownership and self-serve infrastructure. Learn how this architecture works and when it makes sense for your organization."
 pubDate: 2023-06-12T21:55:10.000Z
 wpSlug: "data-mesh-decentralized-governance"
 categories: ["Data Literacy"]

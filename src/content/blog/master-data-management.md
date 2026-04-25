@@ -1,6 +1,6 @@
 ---
 title: "Master Data Management: A Comprehensive Overview"
-description: "Master Data Management: A Comprehensive Overview"
+description: "Master data management (MDM) creates a single source of truth for critical business data. This overview covers strategy, architecture, and implementation essentials."
 pubDate: 2023-01-15T22:45:28.000Z
 wpSlug: "master-data-management"
 categories: ["Data Management"]

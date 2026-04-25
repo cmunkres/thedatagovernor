@@ -1,6 +1,6 @@
 ---
 title: "Data Sovereignty in the Age of GDPR, the EU Data Act, and the AI Act"
-description: "Data Sovereignty in the Age of GDPR, the EU Data Act, and the AI Act"
+description: "Data sovereignty requires organizations to control where data lives and who governs it. Learn how GDPR, the EU Data Act, and the AI Act shape your data residency obligations."
 pubDate: 2026-03-20T18:40:05.000Z
 wpSlug: "data-sovereignty"
 categories: ["Compliance", "Risk"]

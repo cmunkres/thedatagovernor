@@ -1,6 +1,6 @@
 ---
 title: "What Is a Data Catalog? The Complete Guide for 2026"
-description: "What Is a Data Catalog? The Complete Guide for 2026"
+description: "A data catalog is the searchable inventory of your enterprise data assets. This 2026 guide covers what it does, how to choose one, and how to drive adoption."
 pubDate: 2026-03-12T18:20:57.000Z
 wpSlug: "what-is-a-data-catalog"
 categories: ["Data Governance"]

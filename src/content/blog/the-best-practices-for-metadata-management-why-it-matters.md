@@ -1,6 +1,6 @@
 ---
 title: "The Best Practices For Metadata Management &amp; Why It Matters"
-description: "The Best Practices For Metadata Management &amp; Why It Matters"
+description: "Metadata management best practices help organizations document, organize, and govern their data assets. Learn the techniques that improve data discovery and quality at scale."
 pubDate: 2023-01-25T18:52:41.000Z
 wpSlug: "the-best-practices-for-metadata-management-why-it-matters"
 categories: ["Data Management"]

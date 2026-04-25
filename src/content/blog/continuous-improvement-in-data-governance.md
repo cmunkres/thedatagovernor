@@ -1,6 +1,6 @@
 ---
 title: "Maximizing Efficiency with Continuous Improvement in Data Governance"
-description: "Maximizing Efficiency with Continuous Improvement in Data Governance"
+description: "Continuous improvement in data governance keeps your program from stagnating. Learn how to apply iterative methods to data quality, metadata, and policy management over time."
 pubDate: 2023-03-27T18:33:52.000Z
 wpSlug: "continuous-improvement-in-data-governance"
 categories: ["Data Governance"]

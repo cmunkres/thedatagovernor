@@ -1,6 +1,6 @@
 ---
 title: "Future of Data Governance in 2023"
-description: "Future of Data Governance in 2023"
+description: "Explore the future of data governance: key trends in data privacy, AI regulation, cloud data management, and what these shifts mean for governance programs."
 pubDate: 2023-01-18T21:47:59.000Z
 wpSlug: "future-of-data-governance-in-2023"
 categories: ["Data Governance"]

@@ -1,6 +1,6 @@
 ---
 title: "Mastering Enterprise Data Governance Roles for 2023"
-description: "Discover the key enterprise data governance roles: Data Governance Lead, Data Steward, Data Quality Analyst & more."
+description: "Map the key enterprise data governance roles: Data Governance Lead, Data Steward, Data Quality Analyst, and more. Learn what each role owns and how to staff your program correctly."
 pubDate: 2023-01-31T16:57:09.000Z
 wpSlug: "data-governance-roles"
 categories: ["Career in Data", "Data Governance"]

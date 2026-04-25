@@ -1,6 +1,6 @@
 ---
 title: "Uncovering The Evolving Challenges Of Data Governance"
-description: "Uncovering The Evolving Challenges Of Data Governance"
+description: "Explore the evolving challenges of data governance: emerging regulatory pressures, AI risks, cloud complexity, and the opportunities that come with getting ahead of them."
 pubDate: 2023-01-15T22:32:33.000Z
 wpSlug: "uncovering-the-evolving-landscape-of-data-governance-opportunities-and-challenges"
 categories: ["Data Governance"]

@@ -1,6 +1,6 @@
 ---
 title: "Using Data for Risk Management"
-description: "Using Data for Risk Management"
+description: "Learn how data risk management uses analytics to identify, assess, and mitigate business risks. Practical guidance for building a data-driven risk framework."
 pubDate: 2023-01-24T21:44:14.000Z
 wpSlug: "data-risk-management"
 categories: ["Risk"]

@@ -1,6 +1,6 @@
 ---
 title: "What is a Data Catalog? Unlocking the Mystery of Data"
-description: "What is a Data Catalog? Unlocking the Mystery of Data"
+description: "A data catalog gives your organization a central registry of data assets and their metadata. Learn how data catalogs support governance, discovery, and data quality programs."
 pubDate: 2023-02-06T00:27:11.000Z
 wpSlug: "what-is-a-data-catalog-unlocking-the-mystery-of-data"
 categories: ["Data Governance"]

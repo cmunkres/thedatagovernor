@@ -1,6 +1,6 @@
 ---
 title: "5 Steps to a Successful Data Quality Strategy for Enterprise Data Management"
-description: "5 Steps to a Successful Data Quality Strategy for Enterprise Data Management"
+description: "Build a data quality strategy in five steps: assess your current state, define standards, implement controls, measure results, and sustain improvement across enterprise data."
 pubDate: 2023-02-07T16:14:09.000Z
 wpSlug: "5-steps-to-a-successful-data-quality-strategy-for-enterprise-data-management"
 categories: ["Data Management"]

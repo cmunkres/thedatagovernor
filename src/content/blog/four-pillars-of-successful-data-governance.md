@@ -1,6 +1,6 @@
 ---
 title: "Data Governance: The Four Pillars of Successful Data Management"
-description: "n today's digital age, data has become one of the most valuable assets a company can possess."
+description: "The four pillars of data governance give programs structure: quality, security, stewardship, and continuous improvement. Learn how each pillar works and how to build all four."
 pubDate: 2023-02-01T15:08:01.000Z
 wpSlug: "four-pillars-of-successful-data-governance"
 categories: ["Data Governance"]

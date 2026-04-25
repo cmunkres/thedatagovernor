@@ -1,6 +1,6 @@
 ---
 title: "Data Architect: The Unsung Hero in Data Management and Governance"
-description: "A data architect is vital in managing an organization's data infrastructure, bridging technology and business worlds."
+description: "A data architect designs enterprise data systems and bridges technology with business needs. Learn the skills, salary range, and career path for this governance-adjacent role."
 pubDate: 2023-05-26T17:25:46.000Z
 wpSlug: "understanding-role-of-data-architect"
 categories: ["Career in Data"]

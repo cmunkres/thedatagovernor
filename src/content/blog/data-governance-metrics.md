@@ -1,6 +1,6 @@
 ---
 title: "Pillar 3 of Data Governance: Metrics and Measurements"
-description: "Pillar 3 of Data Governance: Metrics and Measurements"
+description: "Data governance metrics and measurements form Pillar 3 of any successful program. Learn which KPIs to track, how to set targets, and how to report progress upward."
 pubDate: 2023-03-07T16:14:40.000Z
 wpSlug: "data-governance-metrics"
 categories: ["Data Governance"]

@@ -1,6 +1,6 @@
 ---
 title: "What is Data Privacy & Why Does your Business Need it?"
-description: "What is Data Privacy & Why Does your Business Need it?"
+description: "Data privacy governs how personal information is collected, stored, and shared. Learn what it means for your business, which laws apply, and how to build compliant practices."
 pubDate: 2023-03-13T15:03:18.000Z
 wpSlug: "what-is-data-privacy"
 categories: ["Data Governance"]

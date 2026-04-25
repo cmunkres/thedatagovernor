@@ -1,6 +1,6 @@
 ---
 title: "How to Create Data Policies for the Enterprise"
-description: "How to Create Data Policies for the Enterprise"
+description: "Build effective enterprise data policies from scratch: key elements, real-world examples, and a step-by-step process for governing data collection, use, and retention."
 pubDate: 2023-03-06T16:45:50.000Z
 wpSlug: "how-to-create-data-policies-for-the-enterprise"
 categories: ["Data Governance", "Risk"]

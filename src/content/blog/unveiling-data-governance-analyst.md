@@ -1,6 +1,6 @@
 ---
 title: "What Does a Data Governance Analyst Do? Inside the Role in 2026"
-description: "Explore \"what does a data governance analyst do?\", their responsibilities, and the crucial impact they have in our data-driven world. Dive in now!"
+description: "Learn what a data governance analyst does in 2026: responsibilities, required skills, tools, and how the role has expanded beyond compliance into AI and MDM."
 pubDate: 2023-05-06T15:14:50.000Z
 wpSlug: "unveiling-data-governance-analyst"
 categories: ["Career in Data", "Data Governance"]

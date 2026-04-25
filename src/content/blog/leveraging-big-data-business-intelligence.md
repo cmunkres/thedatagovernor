@@ -1,6 +1,6 @@
 ---
 title: "Big Data and Business Intelligence: The Power Duo"
-description: "Discover how harnessing the power of Big Data can revolutionize your Business Intelligence framework."
+description: "Big data and business intelligence work together to surface patterns at scale. Learn how to combine the two to improve decisions, forecast trends, and optimize business performance."
 pubDate: 2023-06-22T13:47:54.000Z
 wpSlug: "leveraging-big-data-business-intelligence"
 categories: ["Business Intelligence"]

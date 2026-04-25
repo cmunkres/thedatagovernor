@@ -1,6 +1,6 @@
 ---
 title: "Data Scientist vs Data Analyst: What's the Difference?"
-description: "Have you ever wondered what the difference is between a data scientist and a data analyst?"
+description: "Data scientist vs data analyst: the real skill, tool, and responsibility differences explained so you can choose the right role or hire the right person for your team."
 pubDate: 2023-01-15T02:03:39.000Z
 wpSlug: "data-scientist-vs-data-analyst"
 categories: ["Career in Data"]

@@ -1,6 +1,6 @@
 ---
 title: "A No-Nonsense Roadmap to Become A Data Analyst in 2023"
-description: "A No-Nonsense Roadmap to Become A Data Analyst in 2023"
+description: "Follow a no-nonsense data analyst roadmap: the skills to build, tools to learn, and the career steps that move you from beginner to hireable analyst without the noise."
 pubDate: 2023-01-18T00:08:56.000Z
 wpSlug: "data-analyst-roadmap-2023"
 categories: ["Career in Data"]

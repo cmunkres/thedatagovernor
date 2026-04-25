@@ -1,6 +1,6 @@
 ---
 title: "Data Quality Rules: Ensuring the Reliability of Your Data"
-description: "Find out what are data quality rules and how they ensure accurate, relevant, and reliable data."
+description: "Data quality rules enforce accuracy, completeness, and consistency across enterprise data. Learn what they are, how to define them, and how to implement them where it matters most."
 pubDate: 2023-07-26T14:20:41.000Z
 wpSlug: "data-quality-rules-ensuring-reliability-of-data"
 categories: ["Data Governance", "Data Management"]

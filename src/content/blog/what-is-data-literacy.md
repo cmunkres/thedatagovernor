@@ -1,6 +1,6 @@
 ---
 title: "Data Literacy and The Power of Data-Driven Decision Making"
-description: "Data Literacy and The Power of Data-Driven Decision Making"
+description: "Data literacy enables organizations to understand, analyze, and act on data with confidence. Learn how to build data literacy skills that drive smarter, faster decisions."
 pubDate: 2023-03-07T16:37:46.000Z
 wpSlug: "what-is-data-literacy"
 categories: ["Data Literacy"]

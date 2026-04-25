@@ -1,6 +1,6 @@
 ---
 title: "The 80/20 Rule and Enterprise Data Governance"
-description: "The 80/20 Rule and Enterprise Data Governance"
+description: "Apply the 80/20 rule to enterprise data governance to focus resources on the 20% of data assets that drive 80% of business value and compliance requirements."
 pubDate: 2023-03-04T21:51:18.000Z
 wpSlug: "the-80-20-rule-and-enterprise-data-governance"
 categories: ["Data Governance"]

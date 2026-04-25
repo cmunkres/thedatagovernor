@@ -1,6 +1,6 @@
 ---
 title: "What is Data Governance? The Complete Guide for 2026"
-description: "What is Data Governance? The Complete Guide for 2026"
+description: "Data governance defines how organizations manage data quality, ownership, and access. This complete guide explains the framework, roles, and business case for getting it right."
 pubDate: 2023-01-25T18:12:28.000Z
 wpSlug: "what-is-data-governance-and-why-do-we-need-it"
 categories: ["Data Governance"]

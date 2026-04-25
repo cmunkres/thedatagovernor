@@ -1,6 +1,6 @@
 ---
 title: "Becoming a Data Scientist: Skills, Requirements, and Salary"
-description: "Becoming a Data Scientist: Skills, Requirements, and Salary"
+description: "Become a data scientist with a clear view of the skills you need, education requirements, salary ranges, and how to position yourself for roles in this competitive field."
 pubDate: 2023-01-20T22:36:53.000Z
 wpSlug: "becoming-a-data-scientist-skills-requirements-and-salary"
 categories: ["Career in Data"]

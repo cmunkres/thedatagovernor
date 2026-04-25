@@ -1,6 +1,6 @@
 ---
 title: "Navigating the Digital Network: What is Data Exchange?"
-description: "Delve into the fundamental mechanisms of digital communication. In this comprehensive guide, we investigate \"What is data exchange?\""
+description: "Data exchange enables information sharing between systems via JSON, XML, and CSV. Learn the mechanisms and governance controls that keep data sharing reliable."
 pubDate: 2023-05-17T14:55:31.000Z
 wpSlug: "navigating-the-digital-network-what-is-data-exchange"
 categories: ["Data Literacy"]

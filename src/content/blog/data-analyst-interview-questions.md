@@ -1,6 +1,6 @@
 ---
 title: "Ace Your Data Analyst Interview: Top 11 Questions and How to Prepare"
-description: "Ace Your Data Analyst Interview: Top 11 Questions and How to Prepare"
+description: "Prepare for your data analyst interview with the top 11 questions hiring managers ask and guidance on structuring answers that demonstrate real analytical ability."
 pubDate: 2023-01-31T20:52:47.000Z
 wpSlug: "data-analyst-interview-questions"
 categories: ["Career in Data"]

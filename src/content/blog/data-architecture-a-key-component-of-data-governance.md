@@ -1,6 +1,6 @@
 ---
 title: "Data Architecture: A Key Component of Data Governance"
-description: "Data Architecture: A Key Component of Data Governance"
+description: "Data architecture defines how data flows, is stored, and is structured across your organization. Learn how strong data architecture underpins every effective governance program."
 pubDate: 2023-02-08T20:43:45.000Z
 wpSlug: "data-architecture-a-key-component-of-data-governance"
 categories: ["Data Governance", "Data Management"]

@@ -1,6 +1,6 @@
 ---
 title: "The Role of Data Cataloging in Enterprise Data Management"
-description: "The Role of Data Cataloging in Enterprise Data Management"
+description: "Data cataloging creates a searchable inventory of enterprise data assets and metadata. Learn how it supports data governance, improves discovery, and drives data quality programs."
 pubDate: 2023-03-02T16:53:57.000Z
 wpSlug: "the-role-of-data-cataloging-in-enterprise-data-management"
 categories: ["Data Governance", "Data Management"]

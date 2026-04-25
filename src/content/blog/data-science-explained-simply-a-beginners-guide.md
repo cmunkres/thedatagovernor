@@ -1,6 +1,6 @@
 ---
 title: "Data Science Explained Simply: A Beginner's Guide for 2023"
-description: "Data Science Explained Simply: A Beginner's Guide for 2023"
+description: "Data science explained simply: what it is, how it works, and which tools practitioners use. A beginner's guide that gives you a clear foundation without the jargon overload."
 pubDate: 2023-03-03T15:34:39.000Z
 wpSlug: "data-science-explained-simply-a-beginners-guide"
 categories: ["Data Science"]

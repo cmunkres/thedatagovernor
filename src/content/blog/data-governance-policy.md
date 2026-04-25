@@ -1,6 +1,6 @@
 ---
 title: "Data Governance Policy: The Complete Implementation Guide for 2026"
-description: "Data Governance Policy: The Complete Implementation Guide for 2026"
+description: "Build a data governance policy that gets enforced, not ignored. This 2026 implementation guide covers the 10 core policies every enterprise needs and how to roll them out."
 pubDate: 2026-04-09T21:40:16.000Z
 wpSlug: "data-governance-policy"
 categories: ["Compliance", "Data Governance", "Implementation"]

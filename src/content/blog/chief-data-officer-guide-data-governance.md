@@ -1,6 +1,6 @@
 ---
 title: "The Chief Data Officer's Guide to Data Governance in 2026"
-description: "The Chief Data Officer's Guide to Data Governance in 2026"
+description: "The Chief Data Officer's practical guide to data governance in 2026: how to structure the program, set priorities, build the business case, and measure what matters."
 pubDate: 2026-03-12T01:27:34.000Z
 wpSlug: "chief-data-officer-guide-data-governance"
 categories: ["Data Governance"]

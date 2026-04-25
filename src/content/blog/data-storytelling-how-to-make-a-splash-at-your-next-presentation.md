@@ -1,6 +1,6 @@
 ---
 title: "Data Storytelling: How To Make A Splash At Your Next Presentation"
-description: "Data Storytelling: How To Make A Splash At Your Next Presentation"
+description: "Data storytelling transforms complex analysis into compelling narratives that drive decisions. Learn techniques for structuring insights so your audience understands and acts on them."
 pubDate: 2023-02-07T15:53:13.000Z
 wpSlug: "data-storytelling-how-to-make-a-splash-at-your-next-presentation"
 categories: ["Business Intelligence"]

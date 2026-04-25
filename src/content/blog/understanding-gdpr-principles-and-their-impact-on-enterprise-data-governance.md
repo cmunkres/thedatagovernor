@@ -1,6 +1,6 @@
 ---
 title: "Understanding GDPR Principles and Their Impact on Enterprise Data Governance"
-description: "Understanding GDPR Principles and Their Impact on Enterprise Data Governance"
+description: "GDPR's seven principles define enterprise data governance. Learn what each demands and how to embed GDPR compliance into your data policies and processes."
 pubDate: 2023-03-01T21:57:57.000Z
 wpSlug: "understanding-gdpr-principles-and-their-impact-on-enterprise-data-governance"
 categories: ["Data Governance", "Data Management"]

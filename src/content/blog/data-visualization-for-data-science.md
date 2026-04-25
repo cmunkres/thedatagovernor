@@ -1,6 +1,6 @@
 ---
 title: "Data Visualization for Data Science: A Guide to Effective Communication of Data"
-description: "Data Visualization for Data Science: A Guide to Effective Communication of Data"
+description: "Data visualization turns complex datasets into clear insights for any audience. This guide covers the techniques, chart types, and tools data scientists use to communicate findings."
 pubDate: 2023-01-30T18:59:30.000Z
 wpSlug: "data-visualization-for-data-science"
 categories: ["Business Intelligence"]

@@ -1,6 +1,6 @@
 ---
 title: "Data Governance Framework: A Holistic Approach to Data Management"
-description: "Data Governance Framework: A Holistic Approach to Data Management"
+description: "A data governance framework gives organizations a structured way to manage data quality, risk, and compliance. Learn the hub-and-spoke model and how to implement it effectively."
 pubDate: 2023-01-22T20:04:31.000Z
 wpSlug: "data-governance-framework-a-holistic-approach-to-data-management"
 categories: ["Data Governance"]

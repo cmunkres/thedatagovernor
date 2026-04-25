@@ -1,6 +1,6 @@
 ---
 title: "How to Become a Data Engineer in 2023"
-description: "How to Become a Data Engineer in 2023"
+description: "Follow a clear path to become a data engineer: foundational skills, hands-on experience, key technologies, and the career steps that get you hired in the field."
 pubDate: 2023-02-17T17:38:32.000Z
 wpSlug: "how-to-become-a-data-engineer-in-2023"
 categories: ["Career in Data"]

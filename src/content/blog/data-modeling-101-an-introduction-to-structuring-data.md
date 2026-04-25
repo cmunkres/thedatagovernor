@@ -1,6 +1,6 @@
 ---
 title: "Data Modeling 101: An Introduction to Structuring Data"
-description: "Data Modeling 101: An Introduction to Structuring Data"
+description: "Data modeling translates business requirements into database structure. This introduction covers conceptual, logical, and physical models so you can design data systems correctly."
 pubDate: 2023-02-08T16:16:21.000Z
 wpSlug: "data-modeling-101-an-introduction-to-structuring-data"
 categories: ["Data Management"]

@@ -1,6 +1,6 @@
 ---
 title: "What is the National Information Exchange Model (NIEM)?"
-description: "This blog post will explore what NIEM is, how it works, and why it is important."
+description: "NIEM standardizes data sharing between government agencies and systems. Learn how the National Information Exchange Model works and why it matters for interoperability."
 pubDate: 2023-03-14T14:48:20.000Z
 wpSlug: "what-is-niem"
 categories: ["Data Management"]

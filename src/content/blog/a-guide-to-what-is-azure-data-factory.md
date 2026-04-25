@@ -1,6 +1,6 @@
 ---
 title: "A Guide to What is Azure Data Factory"
-description: "What is Azure Data Factory, Microsoft's robust data integration service driving insightful, data-led decision making."
+description: "Azure Data Factory is Microsoft's cloud-based data integration service. Learn what it does, how to build pipelines, and when to use it over other ETL and data movement tools."
 pubDate: 2023-05-13T17:33:22.000Z
 wpSlug: "a-guide-to-what-is-azure-data-factory"
 categories: ["Data Literacy"]

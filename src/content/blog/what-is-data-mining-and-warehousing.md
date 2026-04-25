@@ -1,6 +1,6 @@
 ---
 title: "What is Data Mining and Warehousing?"
-description: "What is Data Mining and Warehousing?"
+description: "Understand data mining and warehousing: how centralized data storage and pattern analysis work together to generate actionable business insights from large datasets."
 pubDate: 2023-02-23T18:15:20.000Z
 wpSlug: "what-is-data-mining-and-warehousing"
 categories: ["Business Intelligence"]

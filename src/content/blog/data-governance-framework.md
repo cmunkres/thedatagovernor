@@ -1,6 +1,6 @@
 ---
 title: "What Is a Data Governance Framework? A Practitioner's Guide"
-description: "What Is a Data Governance Framework? A Practitioner's Guide"
+description: "A data governance framework defines the policies, roles, and processes that make data trustworthy. Learn what to include and how to build a program that holds."
 pubDate: 2026-03-16T14:24:51.000Z
 wpSlug: "data-governance-framework"
 categories: ["Data Governance"]

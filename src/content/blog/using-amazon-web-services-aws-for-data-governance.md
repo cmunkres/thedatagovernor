@@ -1,6 +1,6 @@
 ---
 title: "Using Amazon Web Services (AWS) for Data Governance"
-description: "Using Amazon Web Services (AWS) for Data Governance"
+description: "Implement AWS data governance using Amazon Macie, Glue, Athena, and CloudTrail. Practical steps for securing and managing data compliance on Amazon Web Services."
 pubDate: 2023-03-10T15:49:46.000Z
 wpSlug: "using-amazon-web-services-aws-for-data-governance"
 categories: ["Data Governance"]

@@ -1,6 +1,6 @@
 ---
 title: "Data Governance in Healthcare: It’s not as Boring as you Think!"
-description: "Data Governance in Healthcare: It’s not as Boring as you Think!"
+description: "Data governance in healthcare protects patient data, drives HIPAA compliance, and improves care outcomes. Here is why it matters and how healthcare teams can implement it."
 pubDate: 2023-01-26T19:09:46.000Z
 wpSlug: "data-governance-in-healthcare"
 categories: ["Data Governance"]
