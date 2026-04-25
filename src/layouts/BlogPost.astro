@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import { LinkedInShareButton, TwitterShareButton, BlueskyShareButton, EmailShareButton } from 'astro-social-share';
 
 interface FaqPair { q: string; a: string; }
 
@@ -35,6 +36,7 @@ const {
 
 const primaryCategory = categories[0];
 const catSlug = primaryCategory?.toLowerCase().replace(/\s+/g, '-');
+const canonicalUrl = `https://thedatagovernor.com/${slug}/`;
 
 const fmtLong = pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 const fmtUpdated = updatedDate?.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
@@ -160,6 +162,17 @@ const fmtUpdated = updatedDate?.toLocaleDateString('en-US', { year: 'numeric', m
   <div class="article-layout">
     <article class="article-body prose">
       <slot />
+
+      <!-- Share section -->
+      <div class="share-block">
+        <span class="share-block__label">Share</span>
+        <div class="share-block__buttons">
+          <LinkedInShareButton url={canonicalUrl} title={title} description={description} />
+          <TwitterShareButton url={canonicalUrl} title={title} />
+          <BlueskyShareButton url={canonicalUrl} title={title} />
+          <EmailShareButton url={canonicalUrl} title={title} />
+        </div>
+      </div>
     </article>
 
     <!-- Sticky sidebar -->
@@ -564,6 +577,65 @@ const fmtUpdated = updatedDate?.toLocaleDateString('en-US', { year: 'numeric', m
     transition: opacity 0.15s;
   }
   .article-sidebar__back:hover { opacity: 0.75; }
+
+  /* ── Share block ────────────────────────────────── */
+  .share-block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    margin-top: 2.5rem;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .share-block__label {
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    white-space: nowrap;
+  }
+
+  .share-block__buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Override astro-social-share default styles */
+  .share-block :global(.astro-social-share) {
+    margin: 0;
+    height: auto;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .share-block :global(.astro-social-share a) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1.5px solid var(--rule);
+    color: var(--ink-mid);
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+    margin: 0;
+  }
+
+  .share-block :global(.astro-social-share a:hover) {
+    border-color: var(--ink);
+    color: var(--ink);
+    background: rgba(25,22,18,0.04);
+  }
+
+  .share-block :global(.astro-social-share svg) {
+    height: 16px;
+    width: 16px;
+    fill: currentColor;
+  }
 
   /* ── Article footer ─────────────────────────────── */
   .article-footer {
