@@ -27,7 +27,7 @@ Understanding Data Lakes YouTube Video
 * [Data Lake Use Cases and Industry Applications](#data-lake-use-cases-and-industry-applications)
 * [Selecting a Data Lake Solution](#selecting-a-data-lake-solution)
 * [Data Lake Maintenance and Best Practices](#data-lake-maintenance-and-best-practices)
-* The Data Lake vs. Data Warehouse
+* [The Data Lake vs. Data Warehouse](#the-data-lake-vs-data-warehouse)
 * [Conclusion](#conclusion)
 
 ## **Key Components of a Data Lake**
