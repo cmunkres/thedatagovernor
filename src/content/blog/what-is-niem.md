@@ -13,10 +13,10 @@ ogImage: /og/2023/03/What-is-niem-e1678900283336.jpg
 
 The need for data exchange and sharing is becoming increasingly important as the world becomes more interconnected. Organizations and systems must collaborate and exchange information to improve their operations and make informed decisions. However, exchanging information between different organizations and systems can be challenging due to differences in data formats, standards, and structures. This is where NIEM, the [National Information Exchange Model](https://www.niem.gov/), comes in. This blog post will explore what NIEM is, how it works, and why it is important.
 
-* [What is NIEM?](#aioseo-what-is-niem)
-* [How does the NIEM Work?](#aioseo-how-does-the-niem-work)
-* [Why is the NIEM Important?](#aioseo-why-is-the-niem-important)
-* [Conclusion](#aioseo-conclusion)
+* [What is NIEM?](#what-is-niem)
+* [How does the NIEM Work?](#how-does-the-niem-work)
+* [Why is the NIEM Important?](#why-is-the-niem-important)
+* [Conclusion](#conclusion)
 
 https://youtu.be/v9DNc0cWGCk 
 

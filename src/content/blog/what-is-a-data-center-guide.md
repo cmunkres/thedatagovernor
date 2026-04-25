@@ -15,18 +15,18 @@ ogImage: /og/2023/06/what-is-a-data-center.jpg
 
 In this digital era where data is the new gold, have you ever wondered where this invaluable asset is stored, processed, and distributed? The answer lies in the heart of our digital infrastructure - Answering the question, what is a data center?
 
-* [What is a Data Center?](#aioseo-what-is-a-data-center)
-  * [A Peek into the History of Data Centers](#aioseo-a-peek-into-the-history-of-data-centers)
-  * [The Environmental Impact of Data Centers](#aioseo-the-environmental-impact-of-data-centers)
-* [Types of Data Centers](#aioseo-types-of-data-centers)
-  * [Private Data Centers](#aioseo-private-data-centers)
-  * [Colocation Data Centers](#aioseo-colocation-data-centers)
-  * [Cloud Data Centers](#aioseo-cloud-data-centers)
-  * [Edge Data Centers](#aioseo-edge-data-centers)
-* [The Role of Data Centers in Cloud Computing](#aioseo-the-role-of-data-centers-in-cloud-computing)
-* [The Future of Data Centers](#aioseo-the-future-of-data-centers)
-* [Environmental Impact of Data Centers](#aioseo-environmental-impact-of-data-centers)
-* [Conclusion](#aioseo-conclusion)
+* [What is a Data Center?](#what-is-a-data-center)
+  * [A Peek into the History of Data Centers](#a-peek-into-the-history-of-data-centers)
+  * [The Environmental Impact of Data Centers](#the-environmental-impact-of-data-centers)
+* [Types of Data Centers](#types-of-data-centers)
+  * [Private Data Centers](#private-data-centers)
+  * [Colocation Data Centers](#colocation-data-centers)
+  * [Cloud Data Centers](#cloud-data-centers)
+  * [Edge Data Centers](#edge-data-centers)
+* [The Role of Data Centers in Cloud Computing](#the-role-of-data-centers-in-cloud-computing)
+* [The Future of Data Centers](#the-future-of-data-centers)
+* [Environmental Impact of Data Centers](#environmental-impact-of-data-centers)
+* [Conclusion](#conclusion)
 
 ## What is a Data Center?
 

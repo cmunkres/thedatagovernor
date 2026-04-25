@@ -15,12 +15,12 @@ Metadata is information about data that helps to identify, locate, and manage it
 
 In order to ensure that metadata remains organized and up-to-date, organizations must implement effective metadata management practices and tools.
 
-* [Key Considerations](#aioseo-key-considerations)
-* [Implementation](#aioseo-implementation)
-* [Maintenance](#aioseo-maintenance)
-* [Optimization](#aioseo-optimization)
-* [Monitoring](#aioseo-monitoring)
-* [Conclusion](#aioseo-conclusion)
+* [Key Considerations](#key-considerations)
+* [Implementation](#implementation)
+* [Maintenance](#maintenance)
+* [Optimization](#optimization)
+* [Monitoring](#monitoring)
+* [Conclusion](#conclusion)
 
 ## Key Considerations
 

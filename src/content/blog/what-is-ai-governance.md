@@ -15,12 +15,12 @@ AI Governance has the potential to reshape many aspects of our lives, from trans
 
 To address these risks, a growing number of organizations and governing bodies are working to establish guidelines and regulations for AI development and use in a field known as AI governance.
 
-* [What is AI Governance?](#aioseo-what-is-ai-governance)
-* [The Need for AI Governance](#aioseo-the-need-for-ai-governance)
-* [Regulating Bodies in AI Governance](#aioseo-regulating-bodies-in-ai-governance)
-* [Principles of AI Governance](#aioseo-principles-of-ai-governance)
-* [Challenges in AI Governance](#aioseo-challenges-in-ai-governance)
-* [Conclusion](#aioseo-conclusion)
+* [What is AI Governance?](#what-is-ai-governance)
+* [The Need for AI Governance](#the-need-for-ai-governance)
+* [Regulating Bodies in AI Governance](#regulating-bodies-in-ai-governance)
+* [Principles of AI Governance](#principles-of-ai-governance)
+* [Challenges in AI Governance](#challenges-in-ai-governance)
+* [Conclusion](#conclusion)
 
 ## What is AI Governance?
 

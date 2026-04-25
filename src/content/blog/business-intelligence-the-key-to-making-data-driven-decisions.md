@@ -15,10 +15,10 @@ Business intelligence, or BI for short, is a rapidly growing field that is trans
 
 In today's digital age, BI has become more important than ever, as businesses are generating more data than ever before, and need the tools and resources to make sense of it.
 
-* [Data Warehousing](#aioseo-data-warehousing)
-* [Data Analysis](#aioseo-data-analysis)
-* [BI Challenges](#aioseo-bi-challenges)
-* [Conclusion](#aioseo-conclusion)
+* [Data Warehousing](#data-warehousing)
+* [Data Analysis](#data-analysis)
+* [BI Challenges](#bi-challenges)
+* [Conclusion](#conclusion)
 
 ## Data Warehousing
 

@@ -13,11 +13,11 @@ ogImage: /og/2023/01/pexels-photo-577585-e1678901835250.jpg
 
 A data scientist is a professional who uses their expertise in statistics, computer science, and domain knowledge to extract insights from data. They work to understand complex and large data sets and use this understanding to inform business decisions. The field of data science has grown rapidly in recent years, as organizations of all types and sizes are recognizing the value of data-driven decision-making.
 
-* [What does a data scientist do day to day?](#aioseo-what-does-a-data-scientist-do-day-to-day)
-* [What skills are needed to be a data scientist?](#aioseo-what-skills-are-needed-to-be-a-data-scientist)
-* [Is it hard to become a data scientist?](#aioseo-is-it-hard-to-become-a-data-scientist)
-* [Do data scientists get paid a lot?](#aioseo-do-data-scientists-get-paid-a-lot)
-* [Conclusion](#aioseo-conclusion)
+* [What does a data scientist do day to day?](#what-does-a-data-scientist-do-day-to-day)
+* [What skills are needed to be a data scientist?](#what-skills-are-needed-to-be-a-data-scientist)
+* [Is it hard to become a data scientist?](#is-it-hard-to-become-a-data-scientist)
+* [Do data scientists get paid a lot?](#do-data-scientists-get-paid-a-lot)
+* [Conclusion](#conclusion)
 
 https://youtu.be/0Mem-HXaQUU 
 

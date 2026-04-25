@@ -13,20 +13,20 @@ ogImage: /og/2023/03/Data-governance-roles-and-responsibilities.jpg
 
 Data governance is a crucial aspect of any organization that deals with data. It involves managing the availability, usability, integrity, and security of data used by the organization. Assigning roles and responsibilities in [data governance roles](/what-is-data-governance-and-why-do-we-need-it/) is essential to ensuring that the organization's data is properly managed and utilized. This article will discuss how to assign roles and responsibilities in data governance, including key considerations and best practices.
 
-* [Understanding the Importance of Data Governance](#aioseo-understanding-the-importance-of-data-governance)
-* [Key Considerations for Assigning Roles and Responsibilities in Data Governance](#aioseo-key-considerations-for-assigning-roles-and-responsibilities-in-data-governance)
-  * [Define the scope and objectives of data governance](#aioseo-define-the-scope-and-objectives-of-data-governance)
-  * [Identify the stakeholders](#aioseo-identify-the-stakeholders)
-  * [Assign roles and responsibilities.](#aioseo-assign-roles-and-responsibilities)
-  * [Ensure accountability](#aioseo-ensure-accountability)
-  * [Provide training and support.](#aioseo-provide-training-and-support)
-* [Best Practices for Assigning Roles and Responsibilities in Data Governance](#aioseo-best-practices-for-assigning-roles-and-responsibilities-in-data-governance)
-  * [Establish a data governance committee](#aioseo-establish-a-data-governance-committee)
-  * [Define clear roles and responsibilities.](#aioseo-define-clear-roles-and-responsibilities)
-  * [Ensure cross-functional collaboration](#aioseo-ensure-cross-functional-collaboration)
-  * [Establish performance metrics](#aioseo-establish-performance-metrics)
-  * [Provide ongoing training and support.](#aioseo-provide-ongoing-training-and-support)
-* [Conclusion](#aioseo-conclusion)
+* [Understanding the Importance of Data Governance](#understanding-the-importance-of-data-governance)
+* [Key Considerations for Assigning Roles and Responsibilities in Data Governance](#key-considerations-for-assigning-roles-and-responsibilities-in-data-governance)
+  * [Define the scope and objectives of data governance](#define-the-scope-and-objectives-of-data-governance)
+  * [Identify the stakeholders](#identify-the-stakeholders)
+  * [Assign roles and responsibilities.](#assign-roles-and-responsibilities)
+  * [Ensure accountability](#ensure-accountability)
+  * [Provide training and support.](#provide-training-and-support)
+* [Best Practices for Assigning Roles and Responsibilities in Data Governance](#best-practices-for-assigning-roles-and-responsibilities-in-data-governance)
+  * [Establish a data governance committee](#establish-a-data-governance-committee)
+  * [Define clear roles and responsibilities.](#define-clear-roles-and-responsibilities)
+  * [Ensure cross-functional collaboration](#ensure-cross-functional-collaboration)
+  * [Establish performance metrics](#establish-performance-metrics)
+  * [Provide ongoing training and support.](#provide-ongoing-training-and-support)
+* [Conclusion](#conclusion)
 
 ## Understanding the Importance of Data Governance
 

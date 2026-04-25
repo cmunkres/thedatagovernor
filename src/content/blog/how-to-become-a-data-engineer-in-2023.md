@@ -13,15 +13,15 @@ ogImage: /og/2023/02/Pexels-photo-3913021-jpeg.jpg
 
 As we move further into the digital age, the importance of data has only continued to grow. Companies are gathering data at an unprecedented rate, and it’s up to skilled data engineers to store, organize, and analyze that data. As such, becoming a data engineer is a smart career move in 2023\. In this post, we’ll take a closer look at the steps you can take on how to become a data engineer in 2023.
 
-* [What is a Data Engineer?](#aioseo-what-is-a-data-engineer)
-* [Step 1: Build a Strong Foundation in Computer Science](#aioseo-step-1-build-a-strong-foundation-in-computer-science)
-* [Step 2: Gain Hands-On Experience](#aioseo-step-2-gain-hands-on-experience)
-* [Step 3: Master Key Technologies](#aioseo-step-3-master-key-technologies)
-* [Step 4: Keep Up with Industry Trends](#aioseo-step-4-keep-up-with-industry-trends)
-* [Step 5: Develop Soft Skills](#aioseo-step-5-develop-soft-skills)
-* [Step 6: Network and Build Relationships](#aioseo-step-6-network-and-build-relationships)
-* [Step 7: Pursue Additional Education and Certifications](#aioseo-step-7-pursue-additional-education-and-certifications)
-* [Conclusion](#aioseo-conclusion)
+* [What is a Data Engineer?](#what-is-a-data-engineer)
+* [Step 1: Build a Strong Foundation in Computer Science](#step-1-build-a-strong-foundation-in-computer-science)
+* [Step 2: Gain Hands-On Experience](#step-2-gain-hands-on-experience)
+* [Step 3: Master Key Technologies](#step-3-master-key-technologies)
+* [Step 4: Keep Up with Industry Trends](#step-4-keep-up-with-industry-trends)
+* [Step 5: Develop Soft Skills](#step-5-develop-soft-skills)
+* [Step 6: Network and Build Relationships](#step-6-network-and-build-relationships)
+* [Step 7: Pursue Additional Education and Certifications](#step-7-pursue-additional-education-and-certifications)
+* [Conclusion](#conclusion)
 
 https://youtu.be/ml\_U7n\_0r3Q 
 

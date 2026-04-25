@@ -15,18 +15,18 @@ Are you passionate about data and cloud technologies? Are you looking to kick-st
 
 Amazon Web Services (AWS) is a leading cloud services platform, and [data engineers](/how-to-become-a-data-engineer-in-2023/) proficient in AWS are in high demand. This comprehensive guide will explore the essential steps and resources to become an AWS Data Engineer in 2023.
 
-* [Step 1: Understand the AWS Data Engineer Role](#aioseo-step-1-understand-the-aws-data-engineer-role)
-* [Step 2: Develop a Strong Foundation in Data Engineering](#aioseo-step-2-develop-a-strong-foundation-in-data-engineering)
-* [Step 3: Master AWS Fundamentals](#aioseo-step-3-master-aws-fundamentals)
-* [Step 4: Gain Hands-on Experience](#aioseo-step-4-gain-hands-on-experience)
-* [Step 5: Earn Relevantaws Certification for Data Engineers](#aioseo-step-5-earn-relevantaws-certification-for-data-engineers)
-* [Step 6: Network and Learn from Others](#aioseo-step-6-network-and-learn-from-others)
-* [Step 7: Tailor Your Resume and Prepare for Interviews](#aioseo-step-7-tailor-your-resume-and-prepare-for-interviews)
-* [Step 8: Expand Your Skill Set](#aioseo-step-8-expand-your-skill-set)
-* [Step 9: Develop Your Soft Skills](#aioseo-step-9-develop-your-soft-skills)
-* [Step 10: Gain Experience and Advance Your Career](#aioseo-step-10-gain-experience-and-advance-your-career)
-* [AWS Data Engineer Salary in 2023](#aioseo-aws-data-engineer-salary-in-2023)
-* [Conclusion](#aioseo-conclusion)
+* [Step 1: Understand the AWS Data Engineer Role](#step-1-understand-the-aws-data-engineer-role)
+* [Step 2: Develop a Strong Foundation in Data Engineering](#step-2-develop-a-strong-foundation-in-data-engineering)
+* [Step 3: Master AWS Fundamentals](#step-3-master-aws-fundamentals)
+* [Step 4: Gain Hands-on Experience](#step-4-gain-hands-on-experience)
+* [Step 5: Earn Relevantaws Certification for Data Engineers](#step-5-earn-relevantaws-certification-for-data-engineers)
+* [Step 6: Network and Learn from Others](#step-6-network-and-learn-from-others)
+* [Step 7: Tailor Your Resume and Prepare for Interviews](#step-7-tailor-your-resume-and-prepare-for-interviews)
+* [Step 8: Expand Your Skill Set](#step-8-expand-your-skill-set)
+* [Step 9: Develop Your Soft Skills](#step-9-develop-your-soft-skills)
+* [Step 10: Gain Experience and Advance Your Career](#step-10-gain-experience-and-advance-your-career)
+* [AWS Data Engineer Salary in 2023](#aws-data-engineer-salary-in-2023)
+* [Conclusion](#conclusion)
 
 https://youtu.be/3nXPbicyAPY 
 

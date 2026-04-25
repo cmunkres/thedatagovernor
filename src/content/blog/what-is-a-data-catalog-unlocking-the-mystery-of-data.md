@@ -13,11 +13,11 @@ ogImage: /og/2023/02/Pexels-photo-6476589-jpeg.jpg
 
 Why might you ask, "what is a data catalog"? In short, it is a critical component of effective enterprise [what is data governance](/what-is-data-governance-and-why-do-we-need-it/), providing organizations with a central repository of information about their data assets. In this blog post, we will explore the role of a data catalog in data governance and how it can support organizations in managing their data assets more effectively.
 
-* [What is a data catalog?](#aioseo-what-is-a-data-catalog)
-* [Why is a data catalog important in data governance?](#aioseo-why-is-a-data-catalog-important-in-data-governance)
-* [The role of a data catalog in data governance](#aioseo-the-role-of-a-data-catalog-in-data-governance)
-* [How to implement a data catalog](#aioseo-how-to-implement-a-data-catalog)
-* [Conclusion](#aioseo-conclusion)
+* [What is a data catalog?](#what-is-a-data-catalog)
+* [Why is a data catalog important in data governance?](#why-is-a-data-catalog-important-in-data-governance)
+* [The role of a data catalog in data governance](#the-role-of-a-data-catalog-in-data-governance)
+* [How to implement a data catalog](#how-to-implement-a-data-catalog)
+* [Conclusion](#conclusion)
 
 https://youtu.be/u\_WFV7pVrhg 
 

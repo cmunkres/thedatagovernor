@@ -19,17 +19,17 @@ https://youtu.be/6xHqR9y4UAk
 
 E2E Data Mapping YouTube Video
 
-* [Demystifying End-to-End Data Mapping](#aioseo-demystifying-end-to-end-data-mapping)
-  * [What is End-to-End Data Mapping?](#aioseo-what-is-end-to-end-data-mapping)
-  * [Why is it Important?](#aioseo-why-is-it-important)
-* [Mapping Your Way to Success: Best Practices for End-to-End Data Mapping](#aioseo-mapping-your-way-to-success-best-practices-for-end-to-end-data-mapping)
-  * [Get a Lay of the Land: Understand Your Data Landscape](#aioseo-get-a-lay-of-the-land-understand-your-data-landscape)
-  * [Teamwork Makes the Dream Work: Assemble a Cross-Functional Team](#aioseo-teamwork-makes-the-dream-work-assemble-a-cross-functional-team)
-  * [There's Method to the Madness: Establish a Standardized Mapping Process](#aioseo-theres-method-to-the-madness-establish-a-standardized-mapping-process)
-  * [Tools of the Trade: Leverage Data Mapping Software](#aioseo-tools-of-the-trade-leverage-data-mapping-software)
-  * [Rinse and Repeat: Continuously Review and Update Your Data Mapping](#aioseo-rinse-and-repeat-continuously-review-and-update-your-data-mapping)
-* [Frequently Asked Questions](#aioseo-frequently-asked-questions)
-* [Conclusion](#aioseo-conclusion)
+* [Demystifying End-to-End Data Mapping](#demystifying-end-to-end-data-mapping)
+  * [What is End-to-End Data Mapping?](#what-is-end-to-end-data-mapping)
+  * [Why is it Important?](#why-is-it-important)
+* [Mapping Your Way to Success: Best Practices for End-to-End Data Mapping](#mapping-your-way-to-success-best-practices-for-end-to-end-data-mapping)
+  * [Get a Lay of the Land: Understand Your Data Landscape](#get-a-lay-of-the-land-understand-your-data-landscape)
+  * [Teamwork Makes the Dream Work: Assemble a Cross-Functional Team](#teamwork-makes-the-dream-work-assemble-a-cross-functional-team)
+  * [There's Method to the Madness: Establish a Standardized Mapping Process](#theres-method-to-the-madness-establish-a-standardized-mapping-process)
+  * [Tools of the Trade: Leverage Data Mapping Software](#tools-of-the-trade-leverage-data-mapping-software)
+  * [Rinse and Repeat: Continuously Review and Update Your Data Mapping](#rinse-and-repeat-continuously-review-and-update-your-data-mapping)
+* [Frequently Asked Questions](#frequently-asked-questions)
+* [Conclusion](#conclusion)
 
 ## Demystifying End-to-End Data Mapping
 

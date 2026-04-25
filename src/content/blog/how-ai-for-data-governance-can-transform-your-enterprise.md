@@ -15,12 +15,12 @@ As we move towards a data-driven future, the importance of AI for Data Governanc
 
 Enter artificial intelligence (AI), a technology that can potentially transform how we approach data governance. In the future, we expect AI to play an increasingly important role in [managing and securing enterprise](/5-steps-to-a-successful-data-quality-strategy-for-enterprise-data-management/) data.
 
-* [Automated Data Classification](#aioseo-automated-data-classification)
-* [Intelligent Data Access Control](#aioseo-intelligent-data-access-control)
-* [Automated Data Quality Checks](#aioseo-automated-data-quality-checks)
-* [Predictive Analytics](#aioseo-predictive-analytics)
-* [Natural Language Processing](#aioseo-natural-language-processing)
-* [Conclusion](#aioseo-conclusion)
+* [Automated Data Classification](#automated-data-classification)
+* [Intelligent Data Access Control](#intelligent-data-access-control)
+* [Automated Data Quality Checks](#automated-data-quality-checks)
+* [Predictive Analytics](#predictive-analytics)
+* [Natural Language Processing](#natural-language-processing)
+* [Conclusion](#conclusion)
 
 https://youtu.be/LUB8fsMRYd0 
 

@@ -13,17 +13,17 @@ ogImage: /og/2023/05/quantitative-data-1.jpg
 
 Quantitative data: It might sound like a daunting phrase, something that belongs in the realm of statisticians, economists, or scientists. But as we delve deeper into this fascinating world, it's clear that it's not just for the experts. It's the heart of sound decision-making in our daily lives, businesses, healthcare, and beyond. Whether you're counting calories, assessing business performance, or examining public health concerns, you're navigating the world of quantitative data.
 
-* [Diving into Quantitative Data Analysis Techniques](#aioseo-diving-into-quantitative-data-analysis-techniques)
-* [Collecting Quantitative Data: How Do We Do It?](#aioseo-collecting-quantitative-data-how-do-we-do-it)
-* [Quantitative Data in Action: Real-World Examples](#aioseo-quantitative-data-in-action-real-world-examples)
-* [Software to the Rescue: Tools for Quantitative Data Analysis](#aioseo-software-to-the-rescue-tools-for-quantitative-data-analysis)
-* [Qualitative vs. Quantitative Data: What's the Difference?](#aioseo-qualitative-vs-quantitative-data-whats-the-difference)
-* [Conclusion](#aioseo-conclusion)
-* [Frequently Asked Questions](#aioseo-frequently-asked-questions)
-  * [What is an example of quantitative data?](#aioseo-what-is-an-example-of-a-quantitative-data)
-  * [What is quantitative vs qualitative data?](#aioseo-what-is-an-example-of-a-quantitative-data)
-  * [What are some examples of qualitative data?](#aioseo-what-is-an-example-of-a-quantitative-data)
-  * [What is qualitative data?](#aioseo-what-is-an-example-of-a-quantitative-data)
+* [Diving into Quantitative Data Analysis Techniques](#diving-into-quantitative-data-analysis-techniques)
+* [Collecting Quantitative Data: How Do We Do It?](#collecting-quantitative-data-how-do-we-do-it)
+* [Quantitative Data in Action: Real-World Examples](#quantitative-data-in-action-real-world-examples)
+* [Software to the Rescue: Tools for Quantitative Data Analysis](#software-to-the-rescue-tools-for-quantitative-data-analysis)
+* [Qualitative vs. Quantitative Data: What's the Difference?](#qualitative-vs-quantitative-data-whats-the-difference)
+* [Conclusion](#conclusion)
+* [Frequently Asked Questions](#frequently-asked-questions)
+  * [What is an example of quantitative data?](#what-is-an-example-of-a-quantitative-data)
+  * [What is quantitative vs qualitative data?](#what-is-an-example-of-a-quantitative-data)
+  * [What are some examples of qualitative data?](#what-is-an-example-of-a-quantitative-data)
+  * [What is qualitative data?](#what-is-an-example-of-a-quantitative-data)
 
 https://youtu.be/P9P9NubNOAY 
 

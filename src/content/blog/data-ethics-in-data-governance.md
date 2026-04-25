@@ -13,21 +13,21 @@ ogImage: /og/2023/04/Data-governance-ethics-1.jpg
 
 As we continue integrating data-driven decision-making into our lives, businesses, and organizations, we must confront the ethical challenges arising from this evolution. In this article, we delve into the significance of data ethics, explore the key principles that guide ethical data usage, and discuss best practices for implementing data ethics within an organization's [what is data governance](/what-is-data-governance-and-why-do-we-need-it/) framework.
 
-* [The Growing Importance of Data Ethics](#aioseo-the-growing-importance-of-data-ethics)
-  * [The Rise of Privacy Concerns](#aioseo-the-rise-of-privacy-concerns)
-  * [Addressing Bias and Discrimination](#aioseo-addressing-bias-and-discrimination)
-* [Key Principles of Data Ethics](#aioseo-key-principles-of-data-ethics)
-* [Implementing Data Ethics in Your Data Governance Framework](#aioseo-implementing-data-ethics-in-your-data-governance-framework)
-  * [Develop a Data Ethics Policy](#aioseo-develop-a-data-ethics-policy)
-  * [Educate and Train Employees](#aioseo-educate-and-train-employees)
-  * [Conduct Data Ethics Audits](#aioseo-conduct-data-ethics-audits)
-  * [Establish Ethical Oversight](#aioseo-establish-ethical-oversight)
-  * [Foster an Ethical Culture](#aioseo-foster-an-ethical-culture)
-* [Leveraging Technology to Support Data Ethics](#aioseo-leveraging-technology-to-support-data-ethics)
-  * [Privacy-Preserving Technologies](#aioseo-privacy-preserving-technologies)
-  * [Fairness-Aware Machine Learning](#aioseo-fairness-aware-machine-learning)
-  * [Data Lineage Tracking](#aioseo-data-lineage-tracking)
-* [Conclusion](#aioseo-conclusion)
+* [The Growing Importance of Data Ethics](#the-growing-importance-of-data-ethics)
+  * [The Rise of Privacy Concerns](#the-rise-of-privacy-concerns)
+  * [Addressing Bias and Discrimination](#addressing-bias-and-discrimination)
+* [Key Principles of Data Ethics](#key-principles-of-data-ethics)
+* [Implementing Data Ethics in Your Data Governance Framework](#implementing-data-ethics-in-your-data-governance-framework)
+  * [Develop a Data Ethics Policy](#develop-a-data-ethics-policy)
+  * [Educate and Train Employees](#educate-and-train-employees)
+  * [Conduct Data Ethics Audits](#conduct-data-ethics-audits)
+  * [Establish Ethical Oversight](#establish-ethical-oversight)
+  * [Foster an Ethical Culture](#foster-an-ethical-culture)
+* [Leveraging Technology to Support Data Ethics](#leveraging-technology-to-support-data-ethics)
+  * [Privacy-Preserving Technologies](#privacy-preserving-technologies)
+  * [Fairness-Aware Machine Learning](#fairness-aware-machine-learning)
+  * [Data Lineage Tracking](#data-lineage-tracking)
+* [Conclusion](#conclusion)
 
 https://youtu.be/ICNCrfDGvC8 
 

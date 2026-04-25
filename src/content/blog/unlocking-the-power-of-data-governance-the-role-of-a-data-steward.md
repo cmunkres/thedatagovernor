@@ -13,11 +13,11 @@ ogImage: /og/2023/01/Pexels-photo-3260626.jpg
 
 Data governance is the process of managing and protecting the integrity, availability, and security of an organization's data assets. A key role in this process is the data steward, who is responsible for ensuring that the organization's data is accurate, complete, and accessible to those who need it.
 
-* [Data Steward Role](#aioseo-data-steward-role)
-* [Data Steward Responsibilities](#aioseo-data-steward-responsibilities)
-* [Data Monitoring](#aioseo-data-monitoring)
-* [Collaboration](#aioseo-collaboration)
-* [Conclusion](#aioseo-conclusion)
+* [Data Steward Role](#data-steward-role)
+* [Data Steward Responsibilities](#data-steward-responsibilities)
+* [Data Monitoring](#data-monitoring)
+* [Collaboration](#collaboration)
+* [Conclusion](#conclusion)
 
 ## Data Steward Role
 

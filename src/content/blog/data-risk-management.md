@@ -15,10 +15,10 @@ Risk management is the practice of identifying and assessing potential risks tha
 
 This is where data analytics comes into play. By harnessing the [power of data](/data-lineage-leveraging-the-power-of-insight-to-revolutionize-data-governance/), businesses can better understand their risks and take measures to mitigate them.
 
-* [Identifying Risks Through Data Analysis](#aioseo-identifying-risks-through-data-analysis)
-* [Analyzing Trends with Data](#aioseo-analyzing-trends-with-data)
-* [Making Informed Decisions With Data](#aioseo-making-informed-decisions-with-data)
-* [Conclusion](#aioseo-conclusion)
+* [Identifying Risks Through Data Analysis](#identifying-risks-through-data-analysis)
+* [Analyzing Trends with Data](#analyzing-trends-with-data)
+* [Making Informed Decisions With Data](#making-informed-decisions-with-data)
+* [Conclusion](#conclusion)
 
 ##   
 Identifying Risks Through Data Analysis

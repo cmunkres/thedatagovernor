@@ -13,10 +13,10 @@ ogImage: /og/2023/02/Pexels-photo-1181335-e1678901442192.jpg
 
 Data stewardship is the second pillar of [what is data governance](/what-is-data-governance-and-why-do-we-need-it/) and plays a critical role in effectively managing data. In this deep dive, we'll explore data stewardship, why it's essential, and how organizations can incorporate this pillar into their data governance framework. 
 
-* [Understanding the Stewardship Pillar](#aioseo-understanding-the-stewardship-pillar)
-* [Why Stewardship is Essential](#aioseo-why-stewardship-is-essential)
-* [Incorporating Stewardship into Data Governance](#aioseo-incorporating-stewardship-into-data-governance)
-* [Conclusion](#aioseo-conclusion)
+* [Understanding the Stewardship Pillar](#understanding-the-stewardship-pillar)
+* [Why Stewardship is Essential](#why-stewardship-is-essential)
+* [Incorporating Stewardship into Data Governance](#incorporating-stewardship-into-data-governance)
+* [Conclusion](#conclusion)
 
 ## Understanding the Stewardship Pillar
 

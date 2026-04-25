@@ -15,11 +15,11 @@ In today's data-driven world, businesses are grappling with vast information. Or
 
 But what's the difference between these essential tools? In this article, we'll delve into the unique features, applications, and benefits of business glossaries and data dictionaries to help you decide which one is right for your organization.
 
-* [Introduction](#aioseo-introduction)
-* [The Business Glossary: A Common Language for Your Organization](#aioseo-the-business-glossary-a-common-language-for-your-organization)
-* [The Data Dictionary: A Roadmap to Your Data Landscape](#aioseo-the-data-dictionary-a-roadmap-to-your-data-landscape)
-* [Business Glossary vs Data Dictionary: What the Difference? FAQs](#aioseo-business-glossary-vs-data-dictionary-what-the-difference-faqs)
-* [Conclusion](#aioseo-conclusion)
+* [Introduction](#introduction)
+* [The Business Glossary: A Common Language for Your Organization](#the-business-glossary-a-common-language-for-your-organization)
+* [The Data Dictionary: A Roadmap to Your Data Landscape](#the-data-dictionary-a-roadmap-to-your-data-landscape)
+* [Business Glossary vs Data Dictionary: What the Difference? FAQs](#business-glossary-vs-data-dictionary-what-the-difference-faqs)
+* [Conclusion](#conclusion)
 
 ## Introduction
 

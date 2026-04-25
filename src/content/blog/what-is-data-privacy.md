@@ -13,18 +13,18 @@ ogImage: /og/2023/03/Pexels-photo-5475786-e1678901422962.jpg
 
 So, what is data privacy? Well, it has become an increasingly important topic in recent years. With the proliferation of technology and the amount of personal information being collected and shared online, it's more important than ever to understand what data privacy is, why it matters, and how to protect your personal information.
 
-* [What is Data Privacy?](#aioseo-what-is-data-privacy)
-* [Data Privacy Laws and Regulations](#aioseo-data-privacy-laws-and-regulations)
-* [What is Data Privacy Day?](#aioseo-what-is-data-privacy-day)
-* [Data Privacy and Security](#aioseo-data-privacy-and-security)
-* [Data Privacy vs. Data Security](#aioseo-data-privacy-vs-data-security)
-* [Data Privacy Certification](#aioseo-data-privacy-certification)
-* [Data Privacy Policy](#aioseo-data-privacy-policy)
-* [Why Data Privacy is Important](#aioseo-why-data-privacy-is-important)
-* [Data Privacy Act](#aioseo-data-privacy-act)
-* [Data Privacy Protection](#aioseo-data-privacy-protection)
-* [Data Privacy Definition](#aioseo-data-privacy-definition)
-* [Conclusion](#aioseo-conclusion)
+* [What is Data Privacy?](#what-is-data-privacy)
+* [Data Privacy Laws and Regulations](#data-privacy-laws-and-regulations)
+* [What is Data Privacy Day?](#what-is-data-privacy-day)
+* [Data Privacy and Security](#data-privacy-and-security)
+* [Data Privacy vs. Data Security](#data-privacy-vs-data-security)
+* [Data Privacy Certification](#data-privacy-certification)
+* [Data Privacy Policy](#data-privacy-policy)
+* [Why Data Privacy is Important](#why-data-privacy-is-important)
+* [Data Privacy Act](#data-privacy-act)
+* [Data Privacy Protection](#data-privacy-protection)
+* [Data Privacy Definition](#data-privacy-definition)
+* [Conclusion](#conclusion)
 
 https://youtu.be/g9gbvCrE44k 
 

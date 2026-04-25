@@ -17,16 +17,16 @@ That's where the 80/20 rule, also known as the Pareto principle, can be a valuab
 
 In this blog post, we'll explore how the 80/20 rule can be applied to enterprise data governance and provide some practical steps for organizations looking to implement this approach.
 
-* [What is the 80/20 rule?](#aioseo-what-is-the-80-20-rule)
-* [How can the 80/20 rule be applied to enterprise data governance?](#aioseo-how-can-the-80-20-rule-be-applied-to-enterprise-data-governance)
-  * [Here are some steps for applying the 80/20 rule to enterprise data governance:](#aioseo-here-are-some-steps-for-applying-the-80-20-rule-to-enterprise-data-governance)
-    * [Step 1: Identify the 20% of critical data assets](#aioseo-step-1-identify-the-20-of-critical-data-assets)
-    * [Step 2: Assess the quality and completeness of critical data assets](#aioseo-step-2-assess-the-quality-and-completeness-of-critical-data-assets)
-    * [Step 3: Prioritize critical data assets for governance activities](#aioseo-step-3-prioritize-critical-data-assets-for-governance-activities)
-    * [Step 4: Allocate resources and budget to address critical data assets](#aioseo-step-4-allocate-resources-and-budget-to-address-critical-data-assets)
-    * [Step 5: Monitor and measure the effectiveness of data governance activities](#aioseo-step-5-monitor-and-measure-the-effectiveness-of-data-governance-activities)
-* [Benefits of applying the 80/20 rule to enterprise data governance](#aioseo-benefits-of-applying-the-80-20-rule-to-enterprise-data-governance)
-* [Conclusion](#aioseo-conclusion)
+* [What is the 80/20 rule?](#what-is-the-8020-rule)
+* [How can the 80/20 rule be applied to enterprise data governance?](#how-can-the-8020-rule-be-applied-to-enterprise-data-governance)
+  * [Here are some steps for applying the 80/20 rule to enterprise data governance:](#here-are-some-steps-for-applying-the-8020-rule-to-enterprise-data-governance)
+    * [Step 1: Identify the 20% of critical data assets](#step-1-identify-the-20-of-critical-data-assets)
+    * [Step 2: Assess the quality and completeness of critical data assets](#step-2-assess-the-quality-and-completeness-of-critical-data-assets)
+    * [Step 3: Prioritize critical data assets for governance activities](#step-3-prioritize-critical-data-assets-for-governance-activities)
+    * [Step 4: Allocate resources and budget to address critical data assets](#step-4-allocate-resources-and-budget-to-address-critical-data-assets)
+    * [Step 5: Monitor and measure the effectiveness of data governance activities](#step-5-monitor-and-measure-the-effectiveness-of-data-governance-activities)
+* [Benefits of applying the 80/20 rule to enterprise data governance](#benefits-of-applying-the-8020-rule-to-enterprise-data-governance)
+* [Conclusion](#conclusion)
 
 ## What is the 80/20 rule?
 

@@ -13,10 +13,10 @@ ogImage: /og/2023/01/Hippa-1.jpg
 
 Are you a healthcare professional looking for an efficient way to manage all the data that comes with providing medical care? Then you should consider the benefits of data governance. Sure, it may sound boring and complicated, but data governance is actually a powerful tool that can help your organization streamline its processes and make more informed decisions.
 
-* [What Is Data Governance?](#aioseo-what-is-data-governance)
-* [How Data Governance is used in Healthcare](#aioseo-the-benefits-of-data-governance-in-healthcare)
-* [HIPPA Role in Data Governance](#aioseo-hippa-role-in-data-governance)
-* [Conclusion](#aioseo-conclusion)
+* [What Is Data Governance?](#what-is-data-governance)
+* [How Data Governance is used in Healthcare](#the-benefits-of-data-governance-in-healthcare)
+* [HIPPA Role in Data Governance](#hippa-role-in-data-governance)
+* [Conclusion](#conclusion)
 
 ## What Is Data Governance?
 

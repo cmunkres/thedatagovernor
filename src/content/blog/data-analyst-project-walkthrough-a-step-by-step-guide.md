@@ -13,13 +13,13 @@ ogImage: /og/2023/02/Pexels-photo-577210-jpeg.jpg
 
 As a data analyst, you're often tasked with solving complex problems and making data-driven decisions. To do this, you need a structured approach that takes you from data collection to actionable insights. In this blog post, we'll take you through a data analyst project walkthrough to help you understand a typical project's key steps and deliverables.
 
-* [Step 1: Define the Problem and Objective](#aioseo-step-1-define-the-problem-and-objective)
-* [Step 2: Collect and Clean the Data](#aioseo-step-2-collect-and-clean-the-data)
-* [Step 3: Explore the Data](#aioseo-step-3-explore-the-data)
-* [Step 4: Analyze the Data](#aioseo-step-4-analyze-the-data)
-* [Step 5: Communicate the Results](#aioseo-step-5-communicate-the-results)
-* [Step 6: Implement and Monitor the Solution](#aioseo-step-6-implement-and-monitor-the-solution)
-* [Conclusion](#aioseo-conclusion)
+* [Step 1: Define the Problem and Objective](#step-1-define-the-problem-and-objective)
+* [Step 2: Collect and Clean the Data](#step-2-collect-and-clean-the-data)
+* [Step 3: Explore the Data](#step-3-explore-the-data)
+* [Step 4: Analyze the Data](#step-4-analyze-the-data)
+* [Step 5: Communicate the Results](#step-5-communicate-the-results)
+* [Step 6: Implement and Monitor the Solution](#step-6-implement-and-monitor-the-solution)
+* [Conclusion](#conclusion)
 
 https://youtu.be/Xx3\_jYnheJ8 
 

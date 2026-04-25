@@ -15,11 +15,11 @@ Data modeling is a crucial step in the process of designing and implementing a d
 
 In this blog post, we will explore the basics of data modeling, including the different types of models, the steps involved in creating a model, and the benefits of using data models.
 
-* [What is Data Modeling?](#aioseo-what-is-data-modeling)
-  * [Types of Data Models:](#aioseo-types-of-data-models)
-  * [Steps in Creating a Data Model:](#aioseo-steps-in-creating-a-data-model)
-  * [Benefits of Data Modeling:](#aioseo-benefits-of-data-modeling)
-  * [Conclusion:](#aioseo-conclusion)
+* [What is Data Modeling?](#what-is-data-modeling)
+  * [Types of Data Models:](#types-of-data-models)
+  * [Steps in Creating a Data Model:](#steps-in-creating-a-data-model)
+  * [Benefits of Data Modeling:](#benefits-of-data-modeling)
+  * [Conclusion:](#conclusion)
 
 https://youtu.be/M\_MkJtHG6KQ 
 

@@ -21,18 +21,18 @@ https://youtu.be/jXQ9TKeVJkE
 
 Data Governance Maturity Model YouTube Video
 
-* [The Importance of Data Governance Maturity](#aioseo-the-importance-of-data-governance-maturity)
-* [The Five Stages of the Data Governance Maturity Model](#aioseo-the-five-stages-of-data-governance-maturity-model)
-* [Implementing a Data Governance Maturity Model](#aioseo-implementing-a-data-governance-maturity-model)
-  * [Step 1: Assess Your Current Data Governance Maturity](#aioseo-step-1-assess-your-current-data-governance-maturity)
-  * [Step 2: Set Goals and Define Success Criteria](#aioseo-step-2-set-goals-and-define-success-criteria)
-  * [Step 3: Develop a Data Governance Roadmap](#aioseo-step-3-develop-a-data-governance-roadmap)
-  * [Step 4: Establish Data Governance Roles and Responsibilities](#aioseo-step-4-establish-data-governance-roles-and-responsibilities)
-  * [Step 5: Implement Data Governance Processes and Policies](#aioseo-step-5-implement-data-governance-processes-and-policies)
-  * [Step 6: Monitor and Measure Progress](#aioseo-step-6-monitor-and-measure-progress)
-  * [Step 7: Continuously Improve and Adapt](#aioseo-step-7-continuously-improve-and-adapt)
-* [Conclusion](#aioseo-conclusion)
-  * [Further Reading](#aioseo-further-reading-41)
+* [The Importance of Data Governance Maturity](#the-importance-of-data-governance-maturity)
+* [The Five Stages of the Data Governance Maturity Model](#the-five-stages-of-data-governance-maturity-model)
+* [Implementing a Data Governance Maturity Model](#implementing-a-data-governance-maturity-model)
+  * [Step 1: Assess Your Current Data Governance Maturity](#step-1-assess-your-current-data-governance-maturity)
+  * [Step 2: Set Goals and Define Success Criteria](#step-2-set-goals-and-define-success-criteria)
+  * [Step 3: Develop a Data Governance Roadmap](#step-3-develop-a-data-governance-roadmap)
+  * [Step 4: Establish Data Governance Roles and Responsibilities](#step-4-establish-data-governance-roles-and-responsibilities)
+  * [Step 5: Implement Data Governance Processes and Policies](#step-5-implement-data-governance-processes-and-policies)
+  * [Step 6: Monitor and Measure Progress](#step-6-monitor-and-measure-progress)
+  * [Step 7: Continuously Improve and Adapt](#step-7-continuously-improve-and-adapt)
+* [Conclusion](#conclusion)
+  * [Further Reading](#further-reading-41)
 
 ## The Importance of Data Governance Maturity
 

@@ -15,11 +15,11 @@ Data cataloging is the process of creating an inventory of data assets in an org
 
 The catalog helps businesses manage data assets efficiently and effectively and plays a critical role in enterprise [what is data governance](/what-is-data-governance-and-why-do-we-need-it/). This blog post will explore the importance of data cataloging in enterprise data management.
 
-* [Centralized repository of data assets](#aioseo-centralized-repository-of-data-assets)
-* [Improved data quality](#aioseo-improved-data-quality)
-* [Increased collaboration](#aioseo-increased-collaboration)
-* [Effective data management](#aioseo-effective-data-management)
-* [Conclusion](#aioseo-conclusion)
+* [Centralized repository of data assets](#centralized-repository-of-data-assets)
+* [Improved data quality](#improved-data-quality)
+* [Increased collaboration](#increased-collaboration)
+* [Effective data management](#effective-data-management)
+* [Conclusion](#conclusion)
 
 https://youtu.be/NW2CAf7QSQ8 
 

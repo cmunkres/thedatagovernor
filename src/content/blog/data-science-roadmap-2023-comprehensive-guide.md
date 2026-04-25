@@ -21,21 +21,21 @@ Data Science Roadmap for 2023 YouTube Video
 
 By following this roadmap, individuals will be well-equipped to navigate the challenges and opportunities in the data science domain.
 
-* [1\. Establishing a Solid Foundation](#aioseo-1-establishing-a-solid-foundation)
-  * [1.1\. Mathematical Proficiency](#aioseo-1-1-mathematical-proficiency)
-  * [1.2\. Programming Skills](#aioseo-1-2-programming-skills)
-* [2\. Acquiring Core Data Science Skills](#aioseo-2-acquiring-core-data-science-skills)
-  * [2.1\. Data Analysis and Visualization](#aioseo-2-1-data-analysis-and-visualization)
-  * [2.2\. Machine Learning](#aioseo-2-2-machine-learning)
-  * [2.3\. Big Data Technologies](#aioseo-2-3-big-data-technologies)
-* [3\. Developing Domain Expertise](#aioseo-3-developing-domain-expertise)
-  * [3.1\. Industry-Specific Knowledge](#aioseo-3-1-industry-specific-knowledge)
-  * [3.2\. Soft Skills](#aioseo-3-2-soft-skills)
-* [4\. Advanced Specialization](#aioseo-4-advanced-specialization)
-* [5\. Staying Current and Continuous Learning](#aioseo-5-staying-current-and-continuous-learning)
-* [6\. Building a Professional Network](#aioseo-6-building-a-professional-network)
-* [Conclusion](#aioseo-conclusion)
-* [Frequently Asked Questions](#aioseo-frequently-asked-questions)
+* [1\. Establishing a Solid Foundation](#1-establishing-a-solid-foundation)
+  * [1.1\. Mathematical Proficiency](#11-mathematical-proficiency)
+  * [1.2\. Programming Skills](#12-programming-skills)
+* [2\. Acquiring Core Data Science Skills](#2-acquiring-core-data-science-skills)
+  * [2.1\. Data Analysis and Visualization](#21-data-analysis-and-visualization)
+  * [2.2\. Machine Learning](#22-machine-learning)
+  * [2.3\. Big Data Technologies](#23-big-data-technologies)
+* [3\. Developing Domain Expertise](#3-developing-domain-expertise)
+  * [3.1\. Industry-Specific Knowledge](#31-industry-specific-knowledge)
+  * [3.2\. Soft Skills](#32-soft-skills)
+* [4\. Advanced Specialization](#4-advanced-specialization)
+* [5\. Staying Current and Continuous Learning](#5-staying-current-and-continuous-learning)
+* [6\. Building a Professional Network](#6-building-a-professional-network)
+* [Conclusion](#conclusion)
+* [Frequently Asked Questions](#frequently-asked-questions)
 
 # 1\. Establishing a Solid Foundation
 

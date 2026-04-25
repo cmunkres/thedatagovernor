@@ -19,13 +19,13 @@ There are several different data governance tools available, including Collibra 
 
 In this blog post, we will compare and contrast Collibra and Informatica. We will discuss the strengths and weaknesses of each tool, and we will provide recommendations on which tool is the best fit for your organization.
 
-* [Collibra](#aioseo-collibra)
-* [Informatica](#aioseo-informatica)
-* [Collibra vs Informatica Features](#aioseo-features)
-* [Pricing](#aioseo-pricing)
-* [Integration](#aioseo-integration)
-* [Support](#aioseo-support)
-* [Recommendations](#aioseo-recommendations)
+* [Collibra](#collibra)
+* [Informatica](#informatica)
+* [Collibra vs Informatica Features](#features)
+* [Pricing](#pricing)
+* [Integration](#integration)
+* [Support](#support)
+* [Recommendations](#recommendations)
 
 ## **Collibra**
 

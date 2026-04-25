@@ -15,12 +15,12 @@ It is no mystery that data is king. Businesses are collecting more data than eve
 
 In this blog post, we'll take a look at what the Google Data Analytics Certificate is, who it's for, and how it can help you land a job in data analytics. We'll also discuss the pros and cons of the certificate and provide some tips on how to get the most out of it.
 
-* [What is the Google Data Analytics Certificate?](#aioseo-what-is-the-google-data-analytics-certificate)
-* [Who is the Google Data Analytics Certificate for?](#aioseo-who-is-the-google-data-analytics-certificate-for)
-* [How can the Google Data Analytics Certificate help you get a job in data analytics?](#aioseo-how-can-the-google-data-analytics-certificate-help-you-get-a-job-in-data-analytics)
-* [What are the pros and cons of the Google Data Analytics Certificate?](#aioseo-what-are-the-pros-and-cons-of-the-google-data-analytics-certificate)
-* [How to get the most out of the Google Data Analytics Certificate](#aioseo-how-to-get-the-most-out-of-the-google-data-analytics-certificate)
-* [Conclusion](#aioseo-conclusion)
+* [What is the Google Data Analytics Certificate?](#what-is-the-google-data-analytics-certificate)
+* [Who is the Google Data Analytics Certificate for?](#who-is-the-google-data-analytics-certificate-for)
+* [How can the Google Data Analytics Certificate help you get a job in data analytics?](#how-can-the-google-data-analytics-certificate-help-you-get-a-job-in-data-analytics)
+* [What are the pros and cons of the Google Data Analytics Certificate?](#what-are-the-pros-and-cons-of-the-google-data-analytics-certificate)
+* [How to get the most out of the Google Data Analytics Certificate](#how-to-get-the-most-out-of-the-google-data-analytics-certificate)
+* [Conclusion](#conclusion)
 
 ## What is the Google Data Analytics Certificate?
 

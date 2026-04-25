@@ -19,13 +19,13 @@ We'll cover the different types of certifications, the benefits of getting certi
 
 So whether you're just starting out in data governance or you're looking to take your career to the next level, this guide is for you.
 
-* [What is Data Governance?](#aioseo-what-is-data-governance)
-* [Types of Data Governance Certifications](#aioseo-types-of-data-governance-certifications)
-* [Benefits of Getting Certified](#aioseo-benefits-of-getting-certified)
-* [How to Choose the Right Certification](#aioseo-how-to-choose-the-right-certification)
-* [How to Prepare for Your Certification Exam](#aioseo-how-to-prepare-for-your-certification-exam)
-* [Examples of Data Governance by Industry](#aioseo-examples-of-data-governance-by-industry)
-* [Conclusion](#aioseo-conclusion)
+* [What is Data Governance?](#what-is-data-governance)
+* [Types of Data Governance Certifications](#types-of-data-governance-certifications)
+* [Benefits of Getting Certified](#benefits-of-getting-certified)
+* [How to Choose the Right Certification](#how-to-choose-the-right-certification)
+* [How to Prepare for Your Certification Exam](#how-to-prepare-for-your-certification-exam)
+* [Examples of Data Governance by Industry](#examples-of-data-governance-by-industry)
+* [Conclusion](#conclusion)
 
 ## **What is Data Governance?**
 

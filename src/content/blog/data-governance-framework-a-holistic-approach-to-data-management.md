@@ -13,15 +13,15 @@ ogImage: /og/2023/01/pexels-photo-2911364.jpg
 
 As data becomes more integral to the success of business operations, data governance frameworks can help organizations manage data effectively while mitigating risk, improving data quality, and reducing data complexity. By understanding data management challenges and applying the hub-and-spoke data governance framework, organizations can achieve their data objectives quickly and efficiently.
 
-* [Data Governance Framework Definition](#aioseo-data-governance-framework-definition)
-* [Types of Data Governance Frameworks](#aioseo-types-of-data-governance-frameworks)
-  * [Hub-and-Spoke Model:](#aioseo-hub-and-spoke-model)
-  * [Data Asset Management (DAM) Model:](#aioseo-data-asset-management-dam-model)
-  * [Quality & Compliance Model:](#aioseo-quality-compliance-model)
-  * [Enterprise Data Warehouse Model:](#aioseo-enterprise-data-warehouse-model)
-* [Benefits of Implementing a Data Governance Framework](#aioseo-benefits-of-implementing-a-data-governance-framework)
-* [Tools & Resources Available For a Successful Implementation – Industry Best Practices To Follow](#aioseo-tools-resources-available-for-a-successful-implementation-industry-best-practices-to-follow)
-* [Conclusion](#aioseo-conclusion)
+* [Data Governance Framework Definition](#data-governance-framework-definition)
+* [Types of Data Governance Frameworks](#types-of-data-governance-frameworks)
+  * [Hub-and-Spoke Model:](#hub-and-spoke-model)
+  * [Data Asset Management (DAM) Model:](#data-asset-management-dam-model)
+  * [Quality & Compliance Model:](#quality--compliance-model)
+  * [Enterprise Data Warehouse Model:](#enterprise-data-warehouse-model)
+* [Benefits of Implementing a Data Governance Framework](#benefits-of-implementing-a-data-governance-framework)
+* [Tools & Resources Available For a Successful Implementation – Industry Best Practices To Follow](#tools--resources-available-for-a-successful-implementation--industry-best-practices-to-follow)
+* [Conclusion](#conclusion)
 
 ## Data Governance Framework Definition
 

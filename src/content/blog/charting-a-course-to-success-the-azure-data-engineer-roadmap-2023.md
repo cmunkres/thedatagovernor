@@ -15,13 +15,13 @@ The Azure Data Engineer role is a rapidly growing field that is becoming increas
 
 This article will provide an overview of what it takes to become an Azure Data Engineer in 2023, including which skills are expected to be in demand, which tools and technologies are necessary for success, and best practices for working with big data. Additionally, this article will explore how staying up-to-date with new trends can keep you ahead of the curve as a data engineer.
 
-* [The Azure Data Engineer Roadmap Overview](#aioseo-the-azure-data-engineer-roadmap-overview)
-* [What skills are expected to be in demand in the near future](#aioseo-what-skills-are-expected-to-be-in-demand-in-the-near-future)
-* [Necessary tools and technologies for success as an Azure Data Engineer](#aioseo-necessary-tools-and-technologies-for-success-as-an-azure-data-engineer)
-* [Best practices for working with big data](#aioseo-best-practices-for-working-with-big-data)
-* [How to stay up-to-date with new trends and technology related to data engineering](#aioseo-how-to-stay-up-to-date-with-new-trends-and-technology-related-to-data-engineering)
-* [How to get started on your path to becoming an Azure Data Engineer](#aioseo-how-to-get-started-on-your-path-to-becoming-an-azure-data-engineer)
-* [Conclusion](#aioseo-conclusion)
+* [The Azure Data Engineer Roadmap Overview](#the-azure-data-engineer-roadmap-overview)
+* [What skills are expected to be in demand in the near future](#what-skills-are-expected-to-be-in-demand-in-the-near-future)
+* [Necessary tools and technologies for success as an Azure Data Engineer](#necessary-tools-and-technologies-for-success-as-an-azure-data-engineer)
+* [Best practices for working with big data](#best-practices-for-working-with-big-data)
+* [How to stay up-to-date with new trends and technology related to data engineering](#how-to-stay-up-to-date-with-new-trends-and-technology-related-to-data-engineering)
+* [How to get started on your path to becoming an Azure Data Engineer](#how-to-get-started-on-your-path-to-becoming-an-azure-data-engineer)
+* [Conclusion](#conclusion)
 
 https://youtu.be/hXsGrqOFhTU 
 

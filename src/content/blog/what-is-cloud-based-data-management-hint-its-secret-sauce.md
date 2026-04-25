@@ -19,19 +19,19 @@ https://youtu.be/kZx9nBuvJOM
 
 What is Cloud-Based Data Management Youtube Video
 
-* [What is Cloud-Based Data Management?](#aioseo-what-is-cloud-based-data-management)
-* [Benefits of Cloud-Based Data Management Solutions for Enterprises](#aioseo-benefits-of-cloud-based-data-management-solutions-for-enterprises)
-  * [Scalability](#aioseo-scalability)
-  * [Cost Savings](#aioseo-cost-savings)
-  * [Improved Data Security](#aioseo-improved-data-security)
-  * [Easy Accessibility](#aioseo-easy-accessibility)
-  * [Collaboration](#aioseo-collaboration)
-  * [Automation](#aioseo-automation)
-  * [Flexibility](#aioseo-flexibility)
-  * [Easy Integration](#aioseo-easy-integration)
-  * [Compliance](#aioseo-compliance)
-  * [Innovation](#aioseo-innovation)
-* [Conclusion](#aioseo-conclusion)
+* [What is Cloud-Based Data Management?](#what-is-cloud-based-data-management)
+* [Benefits of Cloud-Based Data Management Solutions for Enterprises](#benefits-of-cloud-based-data-management-solutions-for-enterprises)
+  * [Scalability](#scalability)
+  * [Cost Savings](#cost-savings)
+  * [Improved Data Security](#improved-data-security)
+  * [Easy Accessibility](#easy-accessibility)
+  * [Collaboration](#collaboration)
+  * [Automation](#automation)
+  * [Flexibility](#flexibility)
+  * [Easy Integration](#easy-integration)
+  * [Compliance](#compliance)
+  * [Innovation](#innovation)
+* [Conclusion](#conclusion)
 
 ## What is Cloud-Based Data Management?
 

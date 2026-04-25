@@ -13,10 +13,10 @@ ogImage: /og/2023/01/pexels-photo-1181354.jpg
 
 In today's data-driven world, having an effective master [what is data governance](/what-is-data-governance-and-why-do-we-need-it/) (MDM) strategy is essential for companies of all sizes. MDM helps organizations ensure that all their vital business information is organized, accurate, and up-to-date. But what exactly is MDM? Let’s take a closer look at this important concept.
 
-* [What is Master Data Management?](#aioseo-what-is-master-data-management)
-* [The Benefits of Master Data Management](#aioseo-the-benefits-of-master-data-management)
-* [MDM Implementation Strategies](#aioseo-mdm-implementation-strategies)
-* [Conclusion:](#aioseo-conclusion)
+* [What is Master Data Management?](#what-is-master-data-management)
+* [The Benefits of Master Data Management](#the-benefits-of-master-data-management)
+* [MDM Implementation Strategies](#mdm-implementation-strategies)
+* [Conclusion:](#conclusion)
 
 ##   
 What is Master Data Management?

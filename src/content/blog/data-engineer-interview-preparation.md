@@ -15,12 +15,12 @@ ogImage: /og/2023/06/data-engineer-interview-preparation.jpg
 
 The prospect of securing a data engineer position is undoubtedly exhilarating. However, the path to this achievement requires meticulous preparation for the interview process. This comprehensive guide serves as an invaluable resource, providing insights into essential topics and techniques that candidates should be conversant with. Let us commence this educational expedition.
 
-* [Section 1: Foundation](#aioseo-section-1-foundation)
-* [Section 2: Core Aspects of Data Engineer Interview Preparation](#aioseo-section-2-core-aspects-of-data-engineer-interview-preparation)
-* [Section 3: Advanced Topics in Data Engineer Interview Preparation](#aioseo-section-3-advanced-topics-in-data-engineer-interview-preparation)
-* [Section 4: Interview Presentation](#aioseo-section-4-interview-presentation)
-* [FAQs](#aioseo-faqs)
-* [Conclusion](#aioseo-conclusion)
+* [Section 1: Foundation](#section-1-foundation)
+* [Section 2: Core Aspects of Data Engineer Interview Preparation](#section-2-core-aspects-of-data-engineer-interview-preparation)
+* [Section 3: Advanced Topics in Data Engineer Interview Preparation](#section-3-advanced-topics-in-data-engineer-interview-preparation)
+* [Section 4: Interview Presentation](#section-4-interview-presentation)
+* [FAQs](#faqs)
+* [Conclusion](#conclusion)
 
 ## **Section 1: Foundation**
 

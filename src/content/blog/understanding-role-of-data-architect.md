@@ -13,14 +13,14 @@ ogImage: /og/2023/05/data-architect.jpg
 
 A data architect wears many hats. They're a visionary, a strategist, a communicator, a builder, and an innovator. They operate at the intersection of information technology, business analysis, and data governance. But what exactly does a data architect do? What are the skills needed? Is there a coding requirement? How much can a data architect earn? This article aims to explore all these areas and more.
 
-* [What is a Data Architect?](#aioseo-what-is-a-data-architect)
-* [The Main Roles of a Data Architect](#aioseo-the-main-roles-of-a-data-architect)
-* [The Skills Needed to be a Data Architect](#aioseo-the-skills-needed-to-be-a-data-architect)
-  * [Coding as a Data Architect](#aioseo-coding-as-a-data-architect)
-* [The Earnings and Demand for Data Architects](#aioseo-the-earnings-and-demand-for-data-architects)
-* [Data Architect vs. Data Engineer vs. Data Analyst](#aioseo-data-architect-vs-data-engineer-vs-data-analyst)
-* [The Seniority of a Data Architect](#aioseo-the-seniority-of-a-data-architect)
-* [Conclusion](#aioseo-conclusion)
+* [What is a Data Architect?](#what-is-a-data-architect)
+* [The Main Roles of a Data Architect](#the-main-roles-of-a-data-architect)
+* [The Skills Needed to be a Data Architect](#the-skills-needed-to-be-a-data-architect)
+  * [Coding as a Data Architect](#coding-as-a-data-architect)
+* [The Earnings and Demand for Data Architects](#the-earnings-and-demand-for-data-architects)
+* [Data Architect vs. Data Engineer vs. Data Analyst](#data-architect-vs-data-engineer-vs-data-analyst)
+* [The Seniority of a Data Architect](#the-seniority-of-a-data-architect)
+* [Conclusion](#conclusion)
 
 ## What is a Data Architect?
 

@@ -15,10 +15,10 @@ ogImage: /og/2023/01/pexels-photo-3861972.jpg
 
 This article will explore the role of data lineage in enterprise [data governance and data lineage](/what-is-data-governance-and-why-do-we-need-it/), as well as outline its many benefits.
 
-* [Introduction: What is Data Lineage?](#aioseo-introduction-what-is-data-lineage)
-* [Role of Data Lineage in Data Governance and the Enterprise](#aioseo-role-of-data-lineage-in-data-governance-and-the-enterprise)
-* [Benefits of Leveraging Data Lineage for an Organization](#aioseo-benefits-of-leveraging-data-lineage-for-an-organization)
-* [Conclusion](#aioseo-conclusion)
+* [Introduction: What is Data Lineage?](#introduction-what-is-data-lineage)
+* [Role of Data Lineage in Data Governance and the Enterprise](#role-of-data-lineage-in-data-governance-and-the-enterprise)
+* [Benefits of Leveraging Data Lineage for an Organization](#benefits-of-leveraging-data-lineage-for-an-organization)
+* [Conclusion](#conclusion)
 
 https://youtu.be/JLFwbGLfY4A 
 

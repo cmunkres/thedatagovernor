@@ -15,14 +15,14 @@ ogImage: /og/2023/07/pexels-photo-226232-jpeg.jpg
 
 Have you ever lost track of your modifications while working on a complex data science project? Or struggled to align your project with other collaborators? If yes, it's time you understand the significance of version control in data science. It is not just a software engineering tool anymore, but a fundamental pillar for managing data science projects with efficiency and effectiveness. Let's delve into the world of version control for data science.
 
-* [Understanding Version Control for Data Science](#aioseo-understanding-version-control-for-data-science)
-* [Why Data Science Needs Version Control](#aioseo-why-data-science-needs-version-control)
-* [Core Concepts of Version Control for Data Science](#aioseo-core-concepts-of-version-control-for-data-science)
-* [Popular Tools for Version Control in Data Science](#aioseo-popular-tools-for-version-control-in-data-science)
-* [Version Control Workflow in Data Science](#aioseo-version-control-workflow-in-data-science)
-* [Best Practices for Version Control in Data Science](#aioseo-best-practices-for-version-control-in-data-science)
-* [Conclusion](#aioseo-conclusion)
-* [FAQs](#aioseo-faqs)
+* [Understanding Version Control for Data Science](#understanding-version-control-for-data-science)
+* [Why Data Science Needs Version Control](#why-data-science-needs-version-control)
+* [Core Concepts of Version Control for Data Science](#core-concepts-of-version-control-for-data-science)
+* [Popular Tools for Version Control in Data Science](#popular-tools-for-version-control-in-data-science)
+* [Version Control Workflow in Data Science](#version-control-workflow-in-data-science)
+* [Best Practices for Version Control in Data Science](#best-practices-for-version-control-in-data-science)
+* [Conclusion](#conclusion)
+* [FAQs](#faqs)
 
 ## **Understanding Version Control for Data Science**
 

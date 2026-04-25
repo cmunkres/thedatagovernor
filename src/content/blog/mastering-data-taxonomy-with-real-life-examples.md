@@ -15,14 +15,14 @@ ogImage: /og/2023/04/Data-taxonomy.jpg
 
 Ah, data taxonomy! It's a phrase that can either make you jump for joy or send shivers down your spine. But fret not, dear reader! We're here to help you make sense of this often misunderstood concept and provide you with some practical examples that will empower you to create your own data taxonomies. So, buckle up, and let's take a ride through the wild world of data taxonomy with examples! For a complete overview, see our guide on [what is data governance](/what-is-data-governance-and-why-do-we-need-it/).
 
-* [What the Heck is Data Taxonomy, Anyway?](#aioseo-what-the-heck-is-data-taxonomy-anyway)
-  * [Breaking it Down](#aioseo-breaking-it-down)
-  * [The Nuts and Bolts of Data Taxonomy](#aioseo-the-nuts-and-bolts-of-data-taxonomy)
-* [Data Taxonomy with Examples: From Theory to Practice](#aioseo-data-taxonomy-with-examples-from-theory-to-practice)
-  * [Example 1: An Online Retailer's Product Catalog](#aioseo-example-1-an-online-retailers-product-catalog)
-  * [Example 2: A Library's Book Collection](#aioseo-example-2-a-librarys-book-collection)
-* [Frequently Asked Questions (FAQs)](#aioseo-frequently-asked-questions-faqs)
-* [Conclusion](#aioseo-conclusion)
+* [What the Heck is Data Taxonomy, Anyway?](#what-the-heck-is-data-taxonomy-anyway)
+  * [Breaking it Down](#breaking-it-down)
+  * [The Nuts and Bolts of Data Taxonomy](#the-nuts-and-bolts-of-data-taxonomy)
+* [Data Taxonomy with Examples: From Theory to Practice](#data-taxonomy-with-examples-from-theory-to-practice)
+  * [Example 1: An Online Retailer's Product Catalog](#example-1-an-online-retailers-product-catalog)
+  * [Example 2: A Library's Book Collection](#example-2-a-librarys-book-collection)
+* [Frequently Asked Questions (FAQs)](#frequently-asked-questions-faqs)
+* [Conclusion](#conclusion)
 
 ## What the Heck is Data Taxonomy, Anyway?
 

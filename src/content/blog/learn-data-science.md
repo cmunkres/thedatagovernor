@@ -19,15 +19,15 @@ https://youtu.be/WdzXoqPVzk8
 
 How I Would Learn Data Science in 2023 if I had to start over
 
-* [Understanding the Foundations of Data Science](#aioseo-understanding-the-foundations-of-data-science)
-* [Mastering Programming Languages for Data Science](#aioseo-mastering-programming-languages-for-data-science)
-* [Exploring Data Manipulation and Analysis Techniques](#aioseo-exploring-data-manipulation-and-analysis-techniques)
-* [Embracing Machine Learning Algorithms and Techniques](#aioseo-embracing-machine-learning-algorithms-and-techniques)
-* [Harnessing the Power of Deep Learning](#aioseo-harnessing-the-power-of-deep-learning)
-* [Acquiring Big Data Skills](#aioseo-acquiring-big-data-skills)
-* [Applying Data Science in Real-World Projects](#aioseo-applying-data-science-in-real-world-projects)
-* [Continuous Learning and Keeping Abreast of Industry Trends](#aioseo-continuous-learning-and-keeping-abreast-of-industry-trends)
-* [Conclusion:](#aioseo-conclusion)
+* [Understanding the Foundations of Data Science](#understanding-the-foundations-of-data-science)
+* [Mastering Programming Languages for Data Science](#mastering-programming-languages-for-data-science)
+* [Exploring Data Manipulation and Analysis Techniques](#exploring-data-manipulation-and-analysis-techniques)
+* [Embracing Machine Learning Algorithms and Techniques](#embracing-machine-learning-algorithms-and-techniques)
+* [Harnessing the Power of Deep Learning](#harnessing-the-power-of-deep-learning)
+* [Acquiring Big Data Skills](#acquiring-big-data-skills)
+* [Applying Data Science in Real-World Projects](#applying-data-science-in-real-world-projects)
+* [Continuous Learning and Keeping Abreast of Industry Trends](#continuous-learning-and-keeping-abreast-of-industry-trends)
+* [Conclusion:](#conclusion)
 
 ## Understanding the Foundations of Data Science
 

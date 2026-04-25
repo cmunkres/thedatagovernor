@@ -13,12 +13,12 @@ ogImage: /og/2023/01/pexels-photo-7606074-1.jpg
 
 As technology continues to evolve, data engineers must stay ahead of the curve in order to remain competitive in their field. The year 2023 is quickly approaching and with it comes new challenges for data engineers. To help data engineers prepare for the future, this blog post will outline the Data Engineer Roadmap 2023, focusing on important skills and trends that are likely to shape the industry over the coming years. From understanding emerging technologies like artificial intelligence and machine learning to leverage cloud computing solutions, this roadmap provides an overview of key areas where data engineers need to stay up-to-date if they want to be successful in 2023 and beyond.
 
-* [Development](#aioseo-development)
-* [Cloud Computing](#aioseo-cloud-computing)
-* [Artificial Intelligence](#aioseo-artificial-intelligence)
-* [Data Security](#aioseo-data-security)
-* [Ethical Data Management](#aioseo-ethical-data-management)
-* [The Future of Data Engineers - 2023 and Beyond](#aioseo-the-future-of-data-engineers-2023-and-beyond)
+* [Development](#development)
+* [Cloud Computing](#cloud-computing)
+* [Artificial Intelligence](#artificial-intelligence)
+* [Data Security](#data-security)
+* [Ethical Data Management](#ethical-data-management)
+* [The Future of Data Engineers - 2023 and Beyond](#the-future-of-data-engineers---2023-and-beyond)
 
 ## Development
 

@@ -17,11 +17,11 @@ Data architecture encompasses various activities and technologies, including dat
 
 These activities and technologies are [essential for ensuring data](/mastering-enterprise-data-governance-essential-roles/) quality, accuracy, and reliability and making it usable for decision-making and analysis.
 
-* [Data Modeling:](#aioseo-data-modeling)
-* [Data Dictionaries:](#aioseo-data-dictionaries)
-* [Metadata Management:](#aioseo-metadata-management)
-* [Data Warehousing:](#aioseo-data-warehousing)
-* [Conclusion](#aioseo-conclusion)
+* [Data Modeling:](#data-modeling)
+* [Data Dictionaries:](#data-dictionaries)
+* [Metadata Management:](#metadata-management)
+* [Data Warehousing:](#data-warehousing)
+* [Conclusion](#conclusion)
 
 ## Data Modeling:
 

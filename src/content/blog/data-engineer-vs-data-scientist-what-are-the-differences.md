@@ -17,13 +17,13 @@ In this blog post, we will explore the key differences between data engineers an
 
 Additionally, we will address some frequently asked questions about these roles, such as Which is better, a data scientist or a data engineer? Who earns more, a data engineer or a data scientist? Is data science easier than data engineering? Can a data scientist be a data engineer?
 
-* [Is data science easier than data engineering?](#aioseo-is-data-science-easier-than-data-engineering)
-* [Responsibilities of Data Engineers and Data Scientists](#aioseo-responsibilities-of-data-engineers-and-data-scientists)
-* [Can a data scientist be a data engineer?](#aioseo-can-a-data-scientist-be-a-data-engineer)
-* [Importance of Collaboration](#aioseo-importance-of-collaboration)
-* [Skills and Qualifications](#aioseo-skills-and-qualifications)
-* [Career Path and Growth Opportunities](#aioseo-career-path-and-growth-opportunities)
-* [Conclusion](#aioseo-conclusion)
+* [Is data science easier than data engineering?](#is-data-science-easier-than-data-engineering)
+* [Responsibilities of Data Engineers and Data Scientists](#responsibilities-of-data-engineers-and-data-scientists)
+* [Can a data scientist be a data engineer?](#can-a-data-scientist-be-a-data-engineer)
+* [Importance of Collaboration](#importance-of-collaboration)
+* [Skills and Qualifications](#skills-and-qualifications)
+* [Career Path and Growth Opportunities](#career-path-and-growth-opportunities)
+* [Conclusion](#conclusion)
 
 https://youtu.be/nf5YzAxSoPY 
 

@@ -13,21 +13,21 @@ ogImage: /og/2023/04/Chatgpt-for-data-analysis.jpg
 
 In today's data-driven world, businesses and individuals are constantly looking for ways to harness the power of data to make better decisions. One tool that has proven to be invaluable for this purpose is ChatGPT, a natural language processing model developed by OpenAI. In this article, we'll explore how you can use ChatGPT for data analysis, discuss its benefits, and provide practical tips for getting started.
 
-* [What is ChatGPT?](#aioseo-what-is-chatgpt)
-  * [Brief Overview of ChatGPT](#aioseo-brief-overview-of-chatgpt)
-  * [How ChatGPT Works](#aioseo-how-chatgpt-works)
-* [Benefits of Using ChatGPT for Data Analysis](#aioseo-benefits-of-using-chatgpt-for-data-analysis)
-  * [Time Savings](#aioseo-time-savings)
-  * [Improved Decision-Making](#aioseo-improved-decision-making)
-  * [Enhanced Collaboration](#aioseo-enhanced-collaboration)
-* [Getting Started with ChatGPT for Data Analysis](#aioseo-getting-started-with-chatgpt-for-data-analysis)
-  * [Setting up ChatGPT](#aioseo-setting-up-chatgpt)
-  * [Inputting Data](#aioseo-inputting-data)
-  * [Generating Insights](#aioseo-generating-insights)
-* [Examples of ChatGPT in Data Analysis](#aioseo-examples-of-chatgpt-in-data-analysis)
-* [Tips for Using ChatGPT Effectively](#aioseo-tips-for-using-chatgpt-effectively)
-* [Conclusion](#aioseo-conclusion)
-* [FAQs](#aioseo-faqs)
+* [What is ChatGPT?](#what-is-chatgpt)
+  * [Brief Overview of ChatGPT](#brief-overview-of-chatgpt)
+  * [How ChatGPT Works](#how-chatgpt-works)
+* [Benefits of Using ChatGPT for Data Analysis](#benefits-of-using-chatgpt-for-data-analysis)
+  * [Time Savings](#time-savings)
+  * [Improved Decision-Making](#improved-decision-making)
+  * [Enhanced Collaboration](#enhanced-collaboration)
+* [Getting Started with ChatGPT for Data Analysis](#getting-started-with-chatgpt-for-data-analysis)
+  * [Setting up ChatGPT](#setting-up-chatgpt)
+  * [Inputting Data](#inputting-data)
+  * [Generating Insights](#generating-insights)
+* [Examples of ChatGPT in Data Analysis](#examples-of-chatgpt-in-data-analysis)
+* [Tips for Using ChatGPT Effectively](#tips-for-using-chatgpt-effectively)
+* [Conclusion](#conclusion)
+* [FAQs](#faqs)
 
 ## **What is ChatGPT?**
 

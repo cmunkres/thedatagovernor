@@ -13,11 +13,11 @@ ogImage: /og/2023/01/Pexels-photo-450035.jpg
 
 So what is a data domain? A data domain is a defined area of knowledge or subject matter that a dataset pertains to. It is the specific context or category in which the data was collected and analyzed. Understanding the data domain is crucial for interpreting and utilizing the data accurately and effectively. For a complete overview, see our guide on [data governance framework](/what-is-data-governance-and-why-do-we-need-it/).
 
-* [Different Types of Domains](#aioseo-different-types-of-domains)
-* [Data Provenance](#aioseo-data-provenance)
-* [Ethical and Legal Considerations](#aioseo-ethical-and-legal-considerations)
-* [Top 5 Things to Know About Data Domains:](#aioseo-top-5-things-to-know-about-data-domains)
-* [Conclusion](#aioseo-conclusion)
+* [Different Types of Domains](#different-types-of-domains)
+* [Data Provenance](#data-provenance)
+* [Ethical and Legal Considerations](#ethical-and-legal-considerations)
+* [Top 5 Things to Know About Data Domains:](#top-5-things-to-know-about-data-domains)
+* [Conclusion](#conclusion)
 
 ## Different Types of Domains
 

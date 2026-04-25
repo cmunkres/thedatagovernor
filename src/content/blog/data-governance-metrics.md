@@ -15,10 +15,10 @@ Data Governance metrics and measurements are essential to a successful data mana
 
 In this deep dive, we'll explore the importance of metrics and measurement in [data governance maturity](/what-is-data-governance-and-why-do-we-need-it/) and how organizations can incorporate this pillar into their data management strategy.
 
-* [Why Metrics and Measurement are Critical](#aioseo-why-metrics-and-measurement-are-critical)
-* [What to Measure](#aioseo-what-to-measure)
-* [Incorporating Metrics and Measurement into Data Governance](#aioseo-incorporating-metrics-and-measurement-into-data-governance)
-* [Conclusion](#aioseo-conclusion)
+* [Why Metrics and Measurement are Critical](#why-metrics-and-measurement-are-critical)
+* [What to Measure](#what-to-measure)
+* [Incorporating Metrics and Measurement into Data Governance](#incorporating-metrics-and-measurement-into-data-governance)
+* [Conclusion](#conclusion)
 
 ## Why Metrics and Measurement are Critical
 

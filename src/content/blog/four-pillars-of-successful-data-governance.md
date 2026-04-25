@@ -15,11 +15,11 @@ In today's digital age, data has become one of the most valuable assets a compan
 
 The Data Management Association (DAMA) provides guidelines for effective data governance, including four key pillars that support successful data management.
 
-* [Pillar 1: Policy and Standards](#aioseo-pillar-1-policy-and-standards)
-* [Pillar 2: Stewardship](#aioseo-pillar-2-stewardship)
-* [Pillar 3: Metrics and Measurement](#aioseo-pillar-3-metrics-and-measurement)
-* [Pillar 4: Architecture and Technology](#aioseo-pillar-4-architecture-and-technology)
-* [Conclusion](#aioseo-conclusion)
+* [Pillar 1: Policy and Standards](#pillar-1-policy-and-standards)
+* [Pillar 2: Stewardship](#pillar-2-stewardship)
+* [Pillar 3: Metrics and Measurement](#pillar-3-metrics-and-measurement)
+* [Pillar 4: Architecture and Technology](#pillar-4-architecture-and-technology)
+* [Conclusion](#conclusion)
 
 https://youtu.be/AOqex3D0WgA 
 

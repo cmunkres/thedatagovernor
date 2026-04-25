@@ -13,9 +13,9 @@ ogImage: /og/2023/02/Pexels-photo-3811082-jpeg.jpg
 
 Effective [data governance policy](/what-is-data-governance-and-why-do-we-need-it/) starts with a well-defined set of policies & standards. These policies and standards provide the foundation for a comprehensive data governance program, serving as a roadmap for how data should be managed and used within an organization. In this deep dive, we'll explore the importance of policy and standards in data governance and what they should encompass.
 
-* [Why Policy and Standards are Essential](#aioseo-why-policy-and-standards-are-essential)
-* [What to Include in Policies and Standards](#aioseo-what-to-include-in-policies-and-standards)
-* [Conclusion](#aioseo-conclusion)
+* [Why Policy and Standards are Essential](#why-policy-and-standards-are-essential)
+* [What to Include in Policies and Standards](#what-to-include-in-policies-and-standards)
+* [Conclusion](#conclusion)
 
 ## Why Policy and Standards are Essential
 

@@ -15,12 +15,12 @@ Data mining and warehousing are two essential concepts in data management that e
 
 In this blog post, we will discuss in detail what data mining and warehousing are, their importance, and how they are related.
 
-* [What is Data Warehousing?](#aioseo-what-is-data-warehousing)
-* [What is Data Warehousing Benefits?](#aioseo-data-warehousing-benefits)
-* [What is Data Mining?](#aioseo-what-is-data-mining)
-* [What is Data Mining Benefits?](#aioseo-data-mining-benefits)
-* [Data Mining and Warehousing Relationship](#aioseo-data-mining-and-warehousing-relationship)
-* [Conclusion](#aioseo-conclusion)
+* [What is Data Warehousing?](#what-is-data-warehousing)
+* [What is Data Warehousing Benefits?](#data-warehousing-benefits)
+* [What is Data Mining?](#what-is-data-mining)
+* [What is Data Mining Benefits?](#data-mining-benefits)
+* [Data Mining and Warehousing Relationship](#data-mining-and-warehousing-relationship)
+* [Conclusion](#conclusion)
 
 https://youtu.be/s5TdsM-uB8o 
 

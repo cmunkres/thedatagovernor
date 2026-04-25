@@ -15,11 +15,11 @@ ogImage: /og/2023/05/what-is-sap-master-data-governance.jpg
 
 As we sail further into the digital age, we encounter an ever-increasing wealth of data. It's not just a matter of volume; the complexity, diversity, and strategic significance of data are also escalating at a phenomenal pace. Businesses worldwide are beginning to acknowledge that data is not just a byproduct of their operations but a core asset that, when managed effectively, can drive unparalleled business growth. This is where SAP Master Data Governance (MDG) comes into the picture.
 
-* [Defining SAP Master Data Governance (MDG)](#aioseo-defining-sap-master-data-governance-mdg)
-* [The Vital Role of SAP MDG in Business](#aioseo-the-vital-role-of-sap-mdg-in-business)
-* [Unpacking the Core Components of SAP MDG](#aioseo-unpacking-the-core-components-of-sap-mdg)
-* [SAP MDG: The Engine Driving Business Success](#aioseo-sap-mdg-the-engine-driving-business-success)
-* [Wrapping Up: The Power and Potential of SAP MDG](#aioseo-wrapping-up-the-power-and-potential-of-sap-mdg)
+* [Defining SAP Master Data Governance (MDG)](#defining-sap-master-data-governance-mdg)
+* [The Vital Role of SAP MDG in Business](#the-vital-role-of-sap-mdg-in-business)
+* [Unpacking the Core Components of SAP MDG](#unpacking-the-core-components-of-sap-mdg)
+* [SAP MDG: The Engine Driving Business Success](#sap-mdg-the-engine-driving-business-success)
+* [Wrapping Up: The Power and Potential of SAP MDG](#wrapping-up-the-power-and-potential-of-sap-mdg)
 
 ## **Defining SAP Master Data Governance (MDG)**
 

@@ -11,20 +11,20 @@ imageAlt: "Data Vs Information"
 ogImage: /og/2023/05/Data-vs-information.jpg
 ---
 
-* [Introduction](#aioseo-introduction)
-* [Defining Data and Information](#aioseo-defining-data-and-information)
-  * [What is Data?](#aioseo-what-is-data)
-  * [What is Information?](#aioseo-what-is-information)
-* [Understanding the Data-Information Hierarchy](#aioseo-understanding-the-data-information-hierarchy)
-* [Key Differences Between Data and Information](#aioseo-key-differences-between-data-and-information)
-* [The Crucial Role of Data and Information in Decision-Making](#aioseo-the-crucial-role-of-data-and-information-in-decision-making)
-* [Transforming Data into Information: Tools and Techniques](#aioseo-transforming-data-into-information-tools-and-techniques)
-  * [Data Cleaning](#aioseo-data-cleaning)
-  * [Data Integration](#aioseo-data-integration)
-  * [Data Analysis](#aioseo-data-analysis)
-  * [Data Visualization](#aioseo-data-visualization)
-* [Ensuring the Quality of Data and Information](#aioseo-ensuring-the-quality-of-data-and-information)
-* [Conclusion](#aioseo-conclusion)
+* [Introduction](#introduction)
+* [Defining Data and Information](#defining-data-and-information)
+  * [What is Data?](#what-is-data)
+  * [What is Information?](#what-is-information)
+* [Understanding the Data-Information Hierarchy](#understanding-the-data-information-hierarchy)
+* [Key Differences Between Data and Information](#key-differences-between-data-and-information)
+* [The Crucial Role of Data and Information in Decision-Making](#the-crucial-role-of-data-and-information-in-decision-making)
+* [Transforming Data into Information: Tools and Techniques](#transforming-data-into-information-tools-and-techniques)
+  * [Data Cleaning](#data-cleaning)
+  * [Data Integration](#data-integration)
+  * [Data Analysis](#data-analysis)
+  * [Data Visualization](#data-visualization)
+* [Ensuring the Quality of Data and Information](#ensuring-the-quality-of-data-and-information)
+* [Conclusion](#conclusion)
 
 ## Introduction
 

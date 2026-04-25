@@ -13,20 +13,20 @@ ogImage: /og/2023/05/mermaid-diagram-2023-05-14-143510-1024x675.jpg
 
 Artificial Intelligence (AI) is a cornerstone of the contemporary technological landscape. As we explore the depths of AI technology, we uncover a potential that is immense and transformative. This article endeavors to delve into the essence of what is AI technology, tracing its evolution, understanding its mechanisms, and examining its real-world implications and future prospects.
 
-* [AI Technology Defined: Understanding its Core Elements](#aioseo-ai-technology-defined-understanding-its-core-elements)
-* [Journey through Time: The Historical Progression of AI Technology](#aioseo-journey-through-time-the-historical-progression-of-ai-technology)
-* [The Power Underneath: Deep Learning and Neural Networks in AI Technology](#aioseo-the-power-underneath-deep-learning-and-neural-networks-in-ai-technology)
-* [Putting AI Technology to Work: Broad Spectrum Applications and Impact](#aioseo-putting-ai-technology-to-work-broad-spectrum-applications-and-impact)
-* [Ethical AI Technology: Walking the Tightrope Between Innovation and Responsibility](#aioseo-ethical-ai-technology-walking-the-tightrope-between-innovation-and-responsibility)
-* [AI Technology and the Future: The Path Forward](#aioseo-ai-technology-and-the-future-the-path-forward)
-* [AI Technology: The Building Blocks](#aioseo-ai-technology-the-building-blocks)
-  * [Machine Learning and Its Subsets](#aioseo-machine-learning-and-its-subsets)
-  * [Deep Learning: The Brain Mimic](#aioseo-deep-learning-the-brain-mimic)
-  * [Natural Language Processing: Communication Unlocked](#aioseo-natural-language-processing-communication-unlocked)
-  * [Computer Vision: Seeing Like a Human](#aioseo-computer-vision-seeing-like-a-human)
-* [Unlocking the Potential of AI Technology: A Sector-Wide Impact](#aioseo-unlocking-the-potential-of-ai-technology-a-sector-wide-impact)
-* [AI Technology's Societal Implications: A Paradigm Shift](#aioseo-ai-technologys-societal-implications-a-paradigm-shift)
-* [Future of AI Technology: The Next Frontier](#aioseo-future-of-ai-technology-the-next-frontier)
+* [AI Technology Defined: Understanding its Core Elements](#ai-technology-defined-understanding-its-core-elements)
+* [Journey through Time: The Historical Progression of AI Technology](#journey-through-time-the-historical-progression-of-ai-technology)
+* [The Power Underneath: Deep Learning and Neural Networks in AI Technology](#the-power-underneath-deep-learning-and-neural-networks-in-ai-technology)
+* [Putting AI Technology to Work: Broad Spectrum Applications and Impact](#putting-ai-technology-to-work-broad-spectrum-applications-and-impact)
+* [Ethical AI Technology: Walking the Tightrope Between Innovation and Responsibility](#ethical-ai-technology-walking-the-tightrope-between-innovation-and-responsibility)
+* [AI Technology and the Future: The Path Forward](#ai-technology-and-the-future-the-path-forward)
+* [AI Technology: The Building Blocks](#ai-technology-the-building-blocks)
+  * [Machine Learning and Its Subsets](#machine-learning-and-its-subsets)
+  * [Deep Learning: The Brain Mimic](#deep-learning-the-brain-mimic)
+  * [Natural Language Processing: Communication Unlocked](#natural-language-processing-communication-unlocked)
+  * [Computer Vision: Seeing Like a Human](#computer-vision-seeing-like-a-human)
+* [Unlocking the Potential of AI Technology: A Sector-Wide Impact](#unlocking-the-potential-of-ai-technology-a-sector-wide-impact)
+* [AI Technology's Societal Implications: A Paradigm Shift](#ai-technologys-societal-implications-a-paradigm-shift)
+* [Future of AI Technology: The Next Frontier](#future-of-ai-technology-the-next-frontier)
 
 ## AI Technology Defined: Understanding its Core Elements
 

@@ -13,12 +13,12 @@ ogImage: /og/2023/02/Data-discovery-scaled.jpg
 
 Data discovery in data analytics is a necessary process that enables businesses to explore and understand their data to identify insights, patterns, and trends. This process plays a vital role in data governance, analytics, management, and business intelligence. In this article, we will discuss how data discovery fits into these key areas and why it is essential for businesses to utilize this process.
 
-* [What is Data Discovery?](#aioseo-what-is-data-discovery)
-* [How Does the Data Discovery Phase Fit into Data Governance?](#aioseo-how-does-the-data-discovery-phase-fit-into-data-governance)
-* [How Does Data Discovery Fit into Data Analytics?](#aioseo-how-does-data-discovery-fit-into-data-analytics)
-* [How Does Data Discovery Fit into Data Management?](#aioseo-how-does-data-discovery-fit-into-data-management)
-* [How Does Data Discovery Fit into Business Intelligence?](#aioseo-how-does-data-discovery-fit-into-business-intelligence)
-* [Conclusion](#aioseo-conclusion)
+* [What is Data Discovery?](#what-is-data-discovery)
+* [How Does the Data Discovery Phase Fit into Data Governance?](#how-does-the-data-discovery-phase-fit-into-data-governance)
+* [How Does Data Discovery Fit into Data Analytics?](#how-does-data-discovery-fit-into-data-analytics)
+* [How Does Data Discovery Fit into Data Management?](#how-does-data-discovery-fit-into-data-management)
+* [How Does Data Discovery Fit into Business Intelligence?](#how-does-data-discovery-fit-into-business-intelligence)
+* [Conclusion](#conclusion)
 
 https://youtu.be/A2oRpfWi2Og 
 

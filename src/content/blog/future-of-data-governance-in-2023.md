@@ -13,14 +13,14 @@ ogImage: /og/2023/01/pexels-photo-4389369.jpg
 
 Data governance is a crucial aspect of any organization's operations, as it ensures that data is properly collected, stored, and used. In the next few years, we can expect to see significant changes in the way data governance is approached, as new technologies and regulations continue to shape the field. In this blog post, we'll take a look at some of the key trends and developments that are likely to shape the future of data governance in 2023 and beyond.
 
-* [Trend: Data privacy and security](#aioseo-trend-data-privacy-and-security)
-* [Trend: Artificial Intelligence and Machine Learning](#aioseo-trend-artificial-intelligence-and-machine-learning)
-* [Regulatory Developments](#aioseo-regulatory-developments)
-* [GDPR and CCPA](#aioseo-gdpr-and-ccpa)
-* [Cloud Computing](#aioseo-cloud-computing)
-* [Data Analytics](#aioseo-data-analytics)
-* [Collaboration and Communication](#aioseo-collaboration-and-communication)
-* [Conclusion](#aioseo-conclusion)
+* [Trend: Data privacy and security](#trend-data-privacy-and-security)
+* [Trend: Artificial Intelligence and Machine Learning](#trend-artificial-intelligence-and-machine-learning)
+* [Regulatory Developments](#regulatory-developments)
+* [GDPR and CCPA](#gdpr-and-ccpa)
+* [Cloud Computing](#cloud-computing)
+* [Data Analytics](#data-analytics)
+* [Collaboration and Communication](#collaboration-and-communication)
+* [Conclusion](#conclusion)
 
 https://www.youtube.com/watch?v=d3Fd-kcC908 
 

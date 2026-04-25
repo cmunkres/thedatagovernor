@@ -15,9 +15,9 @@ In today's digital age, data is the most valuable asset of any organization. It 
 
 Creating a comprehensive data policy is a complex and challenging task that requires careful planning and consideration. In this blog post, we will discuss the key elements of a data policy and provide examples of how organizations can create effective data policies for their enterprise.
 
-* [What are the steps to create a data policy?](#aioseo-what-are-the-steps-to-create-a-data-policy)
-* [Examples of Effective Data Policies](#aioseo-examples-of-effective-data-policies)
-* [Conclusion](#aioseo-conclusion)
+* [What are the steps to create a data policy?](#what-are-the-steps-to-create-a-data-policy)
+* [Examples of Effective Data Policies](#examples-of-effective-data-policies)
+* [Conclusion](#conclusion)
 
 https://youtu.be/TIWgbYPfyso 
 

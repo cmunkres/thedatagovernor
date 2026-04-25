@@ -13,10 +13,10 @@ ogImage: /og/2023/03/Data-science-explained-simply-blog-image-e1678901366702.jpg
 
 Learn where to get Data Science Explained Simply and unlock the potential of this powerful field! Understand the basics of data science and more. for Data science is a rapidly growing field that has become increasingly important today. From improving business operations to developing new medical treatments, data science has the potential to revolutionize many industries. However, it can seem intimidating and complex for those unfamiliar with the field.
 
-* [What is Data Science?](#aioseo-what-is-data-science)
-* [The Data Science Process](#aioseo-the-data-science-process)
-* [Data Science Tools and Techniques](#aioseo-data-science-tools-and-techniques)
-* [Conclusion](#aioseo-conclusion)
+* [What is Data Science?](#what-is-data-science)
+* [The Data Science Process](#the-data-science-process)
+* [Data Science Tools and Techniques](#data-science-tools-and-techniques)
+* [Conclusion](#conclusion)
 
 https://youtu.be/QWU3pqqm6bU 
 

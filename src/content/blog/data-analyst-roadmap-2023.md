@@ -17,13 +17,13 @@ But don't worry, because we've created a beginner-friendly roadmap that will bri
 
 So tighten your seatbelts, roll up your sleeves and let’s dive right into the adventure of becoming a top-notch [Data Analyst](https://amzn.to/3wmT5q6)!
 
-* [Get comfortable with Excel.](#aioseo-get-comfortable-with-excel)
-* [Learn a programming language.](#aioseo-learn-a-programming-language)
-* [Get familiar with SQL.](#aioseo-get-familiar-with-sql)
-* [Learn statistical methods.](#aioseo-learn-statistical-methods)
-* [Learn data visualization techniques.](#aioseo-learn-data-visualization-techniques)
-* [Find a mentor.](#aioseo-find-a-mentor)
-* [Get experience working with data.](#aioseo-get-experience-working-with-data)
+* [Get comfortable with Excel.](#get-comfortable-with-excel)
+* [Learn a programming language.](#learn-a-programming-language)
+* [Get familiar with SQL.](#get-familiar-with-sql)
+* [Learn statistical methods.](#learn-statistical-methods)
+* [Learn data visualization techniques.](#learn-data-visualization-techniques)
+* [Find a mentor.](#find-a-mentor)
+* [Get experience working with data.](#get-experience-working-with-data)
 
 ## Get comfortable with Excel.
 

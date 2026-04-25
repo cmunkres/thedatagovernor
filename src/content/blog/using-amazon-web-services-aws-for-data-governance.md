@@ -17,13 +17,13 @@ AWS is a cloud computing platform that provides a range of services, including d
 
 This blog post will explore some of the essential AWS services that can be used for data governance.
 
-* [Amazon S3:](#aioseo-amazon-s3)
-* [Amazon Glue:](#aioseo-amazon-glue)
-* [Amazon Athena:](#aioseo-amazon-athena)
-* [Amazon Kinesis:](#aioseo-amazon-kinesis)
-* [Amazon CloudTrail:](#aioseo-amazon-cloudtrail)
-* [Amazon Macie:](#aioseo-amazon-macie)
-* [Conclusion](#aioseo-conclusion)
+* [Amazon S3:](#amazon-s3)
+* [Amazon Glue:](#amazon-glue)
+* [Amazon Athena:](#amazon-athena)
+* [Amazon Kinesis:](#amazon-kinesis)
+* [Amazon CloudTrail:](#amazon-cloudtrail)
+* [Amazon Macie:](#amazon-macie)
+* [Conclusion](#conclusion)
 
 ## Amazon S3: 
 

@@ -13,10 +13,10 @@ ogImage: /og/2023/01/pexels-photo-3970330.jpg
 
 Data governance is an important part of any organization's digital strategy. As technology advances and data becomes more integral to operations, it's essential to have systems in place that protect data integrity and security. But what does the future of [what is data governance](/what-is-data-governance-and-why-do-we-need-it/) look like? Let’s explore the trends shaping the future of data governance.
 
-* [Increase in Regulatory Compliance Requirements](#aioseo-increase-in-regulatory-compliance-requirements)
-* [Data Security](#aioseo-data-security)
-* [Data Quality](#aioseo-data-quality)
-* [Concluion](#aioseo-concluion)
+* [Increase in Regulatory Compliance Requirements](#increase-in-regulatory-compliance-requirements)
+* [Data Security](#data-security)
+* [Data Quality](#data-quality)
+* [Concluion](#concluion)
 
 https://www.youtube.com/watch?v=bSDys6b3Q4c 
 
