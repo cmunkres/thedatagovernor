@@ -107,18 +107,15 @@ const fmtUpdated = updatedDate?.toLocaleDateString('en-US', { year: 'numeric', m
     <div class="article-header__inner" class:list={[image ? 'article-header__inner--with-img' : '']}>
       {image && (
         <div class="article-header__thumb">
-          <picture>
-            {!image.endsWith('.webp') && <source srcset={`${image}.webp`} type="image/webp" />}
-            <img
-              src={image}
-              alt={imageAlt}
-              width="480"
-              height="320"
-              loading="eager"
-              decoding="async"
-              fetchpriority="high"
-            />
-          </picture>
+          <img
+            src={image}
+            alt={imageAlt}
+            width="480"
+            height="320"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
         </div>
       )}
 
@@ -391,6 +388,7 @@ const fmtUpdated = updatedDate?.toLocaleDateString('en-US', { year: 'numeric', m
     margin: 2.5rem 0 0.75rem;
     padding-top: 1.5rem;
     border-top: 1px solid var(--rule);
+    scroll-margin-top: 100px;
   }
 
   .prose :global(h3) {
@@ -400,6 +398,7 @@ const fmtUpdated = updatedDate?.toLocaleDateString('en-US', { year: 'numeric', m
     line-height: 1.25;
     color: var(--ink);
     margin: 2rem 0 0.5rem;
+    scroll-margin-top: 100px;
   }
 
   .prose :global(h4) {
@@ -410,6 +409,7 @@ const fmtUpdated = updatedDate?.toLocaleDateString('en-US', { year: 'numeric', m
     text-transform: uppercase;
     color: var(--ink-mid);
     margin: 1.75rem 0 0.5rem;
+    scroll-margin-top: 100px;
   }
 
   .prose :global(p) { margin-bottom: 1.4rem; }
@@ -605,15 +605,8 @@ const fmtUpdated = updatedDate?.toLocaleDateString('en-US', { year: 'numeric', m
     gap: 0.5rem;
   }
 
-  /* Override astro-social-share default styles */
-  .share-block :global(.astro-social-share) {
-    margin: 0;
-    height: auto;
-    display: flex;
-    gap: 0.5rem;
-  }
-
-  .share-block :global(.astro-social-share a) {
+  /* astro-social-share individual button styling */
+  .share-block :global(.social-share-btn) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -621,17 +614,17 @@ const fmtUpdated = updatedDate?.toLocaleDateString('en-US', { year: 'numeric', m
     height: 34px;
     border: 1.5px solid var(--rule);
     color: var(--ink-mid);
+    text-decoration: none;
     transition: border-color 0.15s, color 0.15s, background 0.15s;
-    margin: 0;
   }
 
-  .share-block :global(.astro-social-share a:hover) {
+  .share-block :global(.social-share-btn:hover) {
     border-color: var(--ink);
     color: var(--ink);
     background: rgba(25,22,18,0.04);
   }
 
-  .share-block :global(.astro-social-share svg) {
+  .share-block :global(.social-share-btn svg) {
     height: 16px;
     width: 16px;
     fill: currentColor;
