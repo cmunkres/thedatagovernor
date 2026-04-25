@@ -32,7 +32,7 @@ Data Governance Maturity Model YouTube Video
   * [Step 6: Monitor and Measure Progress](#step-6-monitor-and-measure-progress)
   * [Step 7: Continuously Improve and Adapt](#step-7-continuously-improve-and-adapt)
 * [Conclusion](#conclusion)
-  * [Further Reading](#further-reading-41)
+  * [Further Reading](#further-reading)
 
 ## The Importance of Data Governance Maturity
 

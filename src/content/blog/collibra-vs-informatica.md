@@ -21,7 +21,7 @@ In this blog post, we will compare and contrast Collibra and Informatica. We wil
 
 * [Collibra](#collibra)
 * [Informatica](#informatica)
-* [Collibra vs Informatica Features](#features)
+* [Collibra vs Informatica Features](#collibra-vs-informatica-features)
 * [Pricing](#pricing)
 * [Integration](#integration)
 * [Support](#support)

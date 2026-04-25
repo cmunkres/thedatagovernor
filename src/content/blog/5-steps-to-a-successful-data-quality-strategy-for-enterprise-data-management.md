@@ -15,11 +15,11 @@ Data quality is a critical component of enterprise [data governance best practic
 
 A data quality strategy is a plan for how you will monitor and improve the quality of your data over time. In this blog post, we'll outline five steps for creating a data quality strategy for your enterprise data management.
 
-* [1\. Identify your data quality goals.](#identify-your-data-quality-goals)
-* [2\. Assess your current data quality.](#assess-your-current-data-quality)
-* [3\. Develop a data quality plan.](#develop-a-data-quality-plan)
-* [4\. Implement and monitor your data quality strategy.](#implement-and-monitor-your-data-quality-strategy)
-* [5\. Continuously refine and improve your data quality strategy](#continuously-refine-and-improve-your-data-quality-strategy)
+* [1\. Identify your data quality goals.](#1-identify-your-data-quality-goals)
+* [2\. Assess your current data quality.](#2-assess-your-current-data-quality)
+* [3\. Develop a data quality plan.](#3-develop-a-data-quality-plan)
+* [4\. Implement and monitor your data quality strategy.](#4-implement-and-monitor-your-data-quality-strategy)
+* [5\. Continuously refine and improve your data quality strategy](#5-continuously-refine-and-improve-your-data-quality-strategy)
 * [Conclusion](#conclusion)
 
 ## 1\. Identify your data quality goals. 

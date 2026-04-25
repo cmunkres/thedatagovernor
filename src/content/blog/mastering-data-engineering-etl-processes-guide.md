@@ -22,7 +22,7 @@ This comprehensive guide to mastering data engineering ETL processes will walk y
   * [I. Extract](#1-extract)
   * [II. Transform](#2-transform)
   * [III. Load](#3-load)
-* [C. Mastering Data Engineering ETL Processes: A Comprehensive Guide](#mastering-data-engineering-etl-processes-a-comprehensive-guide)
+* [C. Mastering Data Engineering ETL Processes: A Comprehensive Guide](#c-mastering-data-engineering-etl-processes-a-comprehensive-guide)
   * [I. ETL Best Practices](#i-etl-best-practices)
   * [II. ETL Tools and Technologies](#ii-etl-tools-and-technologies)
   * [III. Techniques for Mastering ETL Processes](#iii-techniques-for-mastering-etl-processes)

@@ -15,8 +15,8 @@ Have you ever wondered what the difference is between a data scientist vs data a
 
 It can be not very clear to figure out which profession is right for you, especially since both roles require a deep knowledge of data science principles. In this blog post, we'll explore the differences between a data scientist and a data analyst so that you can make an informed decision about your career path.
 
-* [What is a Data Analyst?](#data-analyst)
-* [What is a Data Scientist?](#data-scientist)
+* [What is a Data Analyst?](#what-is-a-data-analyst)
+* [What is a Data Scientist?](#what-is-a-data-scientist)
 * [Conclusion](#conclusion)
 
 ## What is a Data Analyst?
