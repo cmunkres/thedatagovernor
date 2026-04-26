@@ -5,6 +5,23 @@
 # Off-topic post removed — redirect to homepage
 /claude-pricing-explained/  /  301
 
+# Internal 404s discovered via linkinator audit 2026-04-26 — old WP slugs
+# linked from migrated posts but never matched a current post.
+/ace-your-data-analyst-interview-top-11-questions-and-how-to-prepare/  /data-analyst-interview-questions/  301
+/a-no-nonsense-roadmap-to-become-a-data-analyst-in-2023/  /data-analyst-roadmap-2023/  301
+/data-classification-data-governance/  /a-comprehensive-guide-to-data-classification-for-data-governance/  301
+/data-engineer-vs-data-scientist-the-dynamic-duo-of-data-management-and-analysis/  /data-engineer-vs-data-scientist-what-are-the-differences/  301
+/data-governance-in-healthcare-its-not-as-boring-as-you-think/  /data-governance-in-healthcare/  301
+/data-governance-maturity-model/  /a-comprehensive-guide-to-achieving-data-governance-maturity/  301
+/data-governance-the-four-pillars-of-successful-data-management/  /four-pillars-of-successful-data-governance/  301
+/data-scientist-vs-a-data-analyst-whats-the-difference/  /data-scientist-vs-data-analyst/  301
+/data-visualization-for-data-science-a-guide-to-effective-communication-of-data/  /data-visualization-for-data-science/  301
+/learn-data-science-2023-start-over/  /learn-data-science/  301
+/learn-data-science-2023-start-over  /learn-data-science/  301
+/master-data-management-a-comprehensive-overview/  /master-data-management/  301
+/mastering-enterprise-data-governance-essential-roles/  /chief-data-officer-guide-data-governance/  301
+/using-data-for-risk-management/  /data-risk-management/  301
+
 # WordPress category archive URLs (wp uses /category/slug/, Astro uses /category/slug/)
 # Already matching — no redirect needed
 
