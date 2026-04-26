@@ -8,10 +8,14 @@ const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.
 // Exclude placeholder
 const realPosts = posts.filter(p => (p.data.wpSlug ?? p.slug) !== 'welcome');
 
-const hero = realPosts[0];
-const featured = realPosts.slice(1, 4);
-const sidebar = realPosts.slice(4, 9);
-const grid = realPosts.slice(9, 21);
+// Pin hero to a featured pillar post if one is flagged in frontmatter;
+// otherwise fall back to most recent. Keeps the hero on-topic and stable.
+const featuredPillar = realPosts.find(p => p.data.featured === true);
+const hero = featuredPillar ?? realPosts[0];
+const remaining = realPosts.filter(p => p !== hero);
+const featured = remaining.slice(0, 3);
+const sidebar = remaining.slice(3, 8);
+const grid = remaining.slice(8, 20);
 
 function slug(p: typeof hero) { return p.data.wpSlug ?? p.slug; }
 function cat(p: typeof hero) { return p.data.categories?.[0] ?? 'Data Governance'; }

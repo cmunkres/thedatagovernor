@@ -1,5 +1,5 @@
 ---
-title: "Mastering Data Engineering ETL Processes: A Comprehensive Guide to Data Wrangling Like a Pro"
+title: "Mastering ETL: A Practitioner's Guide to Data Wrangling"
 description: "Master ETL processes in data engineering: extraction, transformation, loading patterns, pipeline design, and the performance optimization techniques that keep data flowing reliably."
 pubDate: 2023-04-21T18:38:20.000Z
 wpSlug: "mastering-data-engineering-etl-processes-guide"

@@ -9,6 +9,7 @@ draft: false
 image: /2023/05/the-five-stages-of-data-governance-maturity-1.png
 imageAlt: "The Five Stages of Data Governance Maturity"
 ogImage: /og/2023/05/the-five-stages-of-data-governance-maturity-1.jpg
+featured: true
 ---
 
 ## Introduction to a Data Governance Maturity Model

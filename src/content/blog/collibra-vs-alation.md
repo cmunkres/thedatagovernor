@@ -1,5 +1,5 @@
 ---
-title: "Collibra vs Alation: Which Data Governance Platform Is Right for You? (2026 Buyer’s Guide)"
+title: "Collibra vs Alation: 2026 Data Governance Buyer's Guide"
 description: "Collibra vs Alation compared on features, pricing, and fit. Choose the right data governance platform for your catalog, lineage, and stewardship needs in 2026."
 pubDate: 2026-04-08T17:34:47.000Z
 wpSlug: "collibra-vs-alation"

@@ -1,5 +1,5 @@
 ---
-title: "Unlock the Limitless Possibilities of Data Governance: Mastering Physical, Logical, and Conceptual Data Models"
+title: "Conceptual, Logical & Physical Data Models: A Practitioner's Guide"
 description: "Data Governance manages and oversees an organization's availability, usability, integrity, and security. It involves the implementation of policies, procedures, standards, and guidelines to ensure tha"
 pubDate: 2023-01-14T02:54:14.000Z
 wpSlug: "unlock-the-limitless-possibilities-of-data-governance-mastering-physical-logical-and-conceptual-data-models"

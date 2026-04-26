@@ -1,5 +1,5 @@
 ---
-title: "Best Data Governance Courses 2026: Complete Rankings from Free to Professional Certification"
+title: "Best Data Governance Courses 2026: Free to Certification"
 description: "Find the best data governance courses in 2026: ranked from free introductory options to CDMP and DCAM certifications, with honest assessments of what each actually delivers."
 pubDate: 2026-04-04T20:43:58.000Z
 wpSlug: "data-governance-courses"
