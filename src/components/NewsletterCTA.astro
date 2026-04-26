@@ -38,7 +38,7 @@ const action = `https://buttondown.email/api/emails/embed-subscribe/${username}`
         type="email"
         name="email"
         required
-        placeholder="you@company.com"
+        placeholder="your email address"
         class="newsletter-cta__input"
       />
       <button type="submit" class="newsletter-cta__btn">Subscribe</button>
@@ -138,6 +138,16 @@ const action = `https://buttondown.email/api/emails/embed-subscribe/${username}`
   }
   .newsletter-cta__btn:hover { background: var(--red-dark, #8a0e1f); }
   .newsletter-cta__btn:active { transform: translateY(1px); }
+  .newsletter-cta__btn:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .newsletter-cta__input,
+    .newsletter-cta__btn { transition: none; }
+    .newsletter-cta__btn:active { transform: none; }
+  }
 
   /* Footer variant: tighter, full-width feel */
   .newsletter-cta--footer {

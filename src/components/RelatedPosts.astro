@@ -45,17 +45,20 @@ function catSlug(c: string) {
 ---
 
 {related.length > 0 && (
-  <aside class="related-posts" aria-label="Related articles">
+  <aside class="related-posts" aria-label="Related reading">
     <h2 class="related-posts__heading">Related Reading</h2>
     <ul class="related-posts__list">
       {related.map((p) => {
         const cat = p.data.categories?.[0];
+        const href = `/${p.data.wpSlug ?? p.slug}/`;
         return (
           <li class="related-posts__item">
-            {cat && <a href={`/category/${catSlug(cat)}/`} class="related-posts__cat">{cat}</a>}
-            <a href={`/${p.data.wpSlug ?? p.slug}/`} class="related-posts__title">{p.data.title}</a>
-            <p class="related-posts__desc">{p.data.description}</p>
-            <span class="related-posts__date">{fmt(p.data.pubDate)}</span>
+            <a href={href} class="related-posts__link" aria-label={p.data.title}>
+              {cat && <span class="related-posts__cat">{cat}</span>}
+              <span class="related-posts__title">{p.data.title}</span>
+              <span class="related-posts__desc">{p.data.description}</span>
+              <span class="related-posts__date">{fmt(p.data.pubDate)}</span>
+            </a>
           </li>
         );
       })}
@@ -89,18 +92,31 @@ function catSlug(c: string) {
 
   .related-posts__item {
     display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    padding: 1rem 1rem 1.1rem;
     border: 1px solid var(--rule);
     border-radius: 3px;
     background: rgba(25, 22, 18, 0.02);
-    transition: border-color 0.15s, transform 0.15s;
+    transition: border-color 0.15s ease-out, transform 0.15s ease-out;
   }
   .related-posts__item:hover {
     border-color: var(--ink-mid);
     transform: translateY(-1px);
   }
+  .related-posts__item:focus-within {
+    border-color: var(--red);
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+
+  .related-posts__link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1rem 1rem 1.1rem;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+  .related-posts__link:focus { outline: none; }
 
   .related-posts__cat {
     font-family: var(--font-ui);
@@ -109,9 +125,7 @@ function catSlug(c: string) {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--red);
-    text-decoration: none;
   }
-  .related-posts__cat:hover { color: var(--red-dark); }
 
   .related-posts__title {
     font-family: var(--font-display);
@@ -119,10 +133,9 @@ function catSlug(c: string) {
     font-weight: 600;
     line-height: 1.25;
     color: var(--ink);
-    text-decoration: none;
-    transition: color 0.15s;
+    transition: color 0.15s ease-out;
   }
-  .related-posts__title:hover { color: var(--red); }
+  .related-posts__item:hover .related-posts__title { color: var(--red); }
 
   .related-posts__desc {
     font-size: 0.85rem;
@@ -145,7 +158,15 @@ function catSlug(c: string) {
     padding-top: 0.4rem;
   }
 
-  @media (max-width: 860px) {
+  @media (max-width: 1024px) {
+    .related-posts__list { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
     .related-posts__list { grid-template-columns: 1fr; gap: 1rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .related-posts__item,
+    .related-posts__title { transition: none; }
+    .related-posts__item:hover { transform: none; }
   }
 </style>
