@@ -1,0 +1,153 @@
+---
+interface Props {
+  variant?: 'inline' | 'footer';
+  heading?: string;
+  pitch?: string;
+}
+
+const {
+  variant = 'inline',
+  heading = 'Practitioner-grade data governance, in your inbox.',
+  pitch = 'Get the next post — frameworks, templates, and real-world commentary, no fluff. Unsubscribe anytime.',
+} = Astro.props;
+
+// Buttondown is the default — drop-in replace `BUTTONDOWN_USERNAME`
+// with your actual username. For Substack, ConvertKit, or
+// anything else, swap the form `action` and field names below.
+const provider = 'buttondown';
+const username = 'BUTTONDOWN_USERNAME';
+const action = `https://buttondown.email/api/emails/embed-subscribe/${username}`;
+---
+
+<aside class={`newsletter-cta newsletter-cta--${variant}`} data-provider={provider}>
+  <div class="newsletter-cta__inner">
+    <div class="newsletter-cta__copy">
+      <h3 class="newsletter-cta__heading">{heading}</h3>
+      <p class="newsletter-cta__pitch">{pitch}</p>
+    </div>
+    <form
+      action={action}
+      method="post"
+      target="popupwindow"
+      onsubmit={`window.open('https://buttondown.email/${username}', 'popupwindow');`}
+      class="newsletter-cta__form"
+    >
+      <label for={`newsletter-email-${variant}`} class="newsletter-cta__label">Email</label>
+      <input
+        id={`newsletter-email-${variant}`}
+        type="email"
+        name="email"
+        required
+        placeholder="you@company.com"
+        class="newsletter-cta__input"
+      />
+      <button type="submit" class="newsletter-cta__btn">Subscribe</button>
+    </form>
+  </div>
+</aside>
+
+<style>
+  .newsletter-cta {
+    margin: 2.5rem 0;
+    padding: 1.75rem 1.75rem 1.5rem;
+    background: var(--dark-bg);
+    color: #f0ece6;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+  }
+  .newsletter-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 90% 30%, rgba(193, 18, 31, 0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .newsletter-cta__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .newsletter-cta__heading {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #f8f5f0;
+    margin: 0;
+  }
+
+  .newsletter-cta__pitch {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: #c8c0b8;
+    margin: 0.4rem 0 0;
+  }
+
+  .newsletter-cta__form {
+    display: flex;
+    gap: 0.5rem;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .newsletter-cta__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .newsletter-cta__input {
+    flex: 1 1 220px;
+    padding: 0.65rem 0.85rem;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: #f8f5f0;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 2px;
+    outline: none;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .newsletter-cta__input::placeholder { color: rgba(200, 192, 184, 0.55); }
+  .newsletter-cta__input:focus {
+    border-color: var(--gold);
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .newsletter-cta__btn {
+    flex: 0 0 auto;
+    padding: 0.65rem 1.4rem;
+    font-family: var(--font-ui);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--red);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+  }
+  .newsletter-cta__btn:hover { background: var(--red-dark, #8a0e1f); }
+  .newsletter-cta__btn:active { transform: translateY(1px); }
+
+  /* Footer variant: tighter, full-width feel */
+  .newsletter-cta--footer {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  @media (min-width: 720px) {
+    .newsletter-cta__inner { flex-direction: row; align-items: center; gap: 2rem; }
+    .newsletter-cta__copy { flex: 1 1 auto; }
+    .newsletter-cta__form { flex: 0 0 auto; min-width: 340px; }
+  }
+</style>

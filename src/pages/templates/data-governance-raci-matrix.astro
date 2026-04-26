@@ -1,0 +1,215 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import NewsletterCTA from '@/components/NewsletterCTA.astro';
+
+const downloadUrl = '/templates/data-governance-raci-matrix.csv';
+const updatedDate = '2026-04-26';
+
+const schema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'HowTo',
+      'name': 'How to use a data governance RACI matrix',
+      'description': 'A step-by-step guide to adapting a data governance RACI matrix to your organization, customizing roles, validating with stakeholders, and operationalizing it.',
+      'totalTime': 'PT2H',
+      'step': [
+        { '@type': 'HowToStep', 'position': 1, 'name': 'Download the CSV', 'text': 'Save the matrix locally and open in Excel, Google Sheets, or your governance tool.' },
+        { '@type': 'HowToStep', 'position': 2, 'name': 'Map your roles', 'text': 'Replace the generic role columns with the actual titles in your organization (e.g., Data Owner → VP Finance for finance domain).' },
+        { '@type': 'HowToStep', 'position': 3, 'name': 'Validate with stakeholders', 'text': 'Walk each row with the named owners. Disagreement is the value — surface it now, not during an incident.' },
+        { '@type': 'HowToStep', 'position': 4, 'name': 'Publish and operationalize', 'text': 'Store the agreed matrix alongside your governance charter. Reference it in onboarding, incident playbooks, and access reviews.' },
+        { '@type': 'HowToStep', 'position': 5, 'name': 'Review annually', 'text': 'Re-run the matrix during your annual governance program review. Roles drift; the matrix should be a living artifact.' },
+      ],
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://thedatagovernor.com/' },
+        { '@type': 'ListItem', 'position': 2, 'name': 'Templates', 'item': 'https://thedatagovernor.com/templates/' },
+        { '@type': 'ListItem', 'position': 3, 'name': 'Data Governance RACI Matrix', 'item': 'https://thedatagovernor.com/templates/data-governance-raci-matrix/' },
+      ],
+    },
+  ],
+});
+---
+
+<BaseLayout
+  title="Data Governance RACI Matrix Template (Free CSV) | The Data Governor"
+  description="Free downloadable RACI matrix for data governance — 24 activities across data owners, stewards, custodians, councils, and executive sponsors. Practitioner-grade and editable."
+  canonicalPath="/templates/data-governance-raci-matrix/"
+  schema={schema}
+>
+  <article class="template-page">
+    <header class="template-page__header">
+      <a href="/templates/" class="label" style="font-size:0.65rem; letter-spacing:0.14em;">← All templates</a>
+      <h1 class="template-page__title">Data Governance RACI Matrix</h1>
+      <p class="template-page__deck">
+        A practitioner-grade RACI matrix for data governance covering 24 of the activities you actually have to assign — data quality, access, classification, retention, MDM, lineage, privacy. Drop it in, rename the columns, and validate with your stakeholders.
+      </p>
+
+      <div class="template-page__meta">
+        <a href={downloadUrl} download class="download-btn">
+          Download CSV (24 rows)
+        </a>
+        <span class="template-page__updated">Updated {updatedDate}</span>
+      </div>
+    </header>
+
+    <div class="article-rule" aria-hidden="true"></div>
+
+    <div class="prose template-page__body">
+      <h2>What's in the matrix</h2>
+      <p>
+        The matrix maps <strong>24 governance activities</strong> across five role columns. Each cell is one of the standard RACI letters:
+      </p>
+      <ul>
+        <li><strong>R — Responsible.</strong> Does the work.</li>
+        <li><strong>A — Accountable.</strong> Owns the outcome. One per activity, by convention.</li>
+        <li><strong>C — Consulted.</strong> Provides input before the decision.</li>
+        <li><strong>I — Informed.</strong> Notified after.</li>
+      </ul>
+
+      <h2>The five role columns</h2>
+      <table>
+        <thead>
+          <tr><th>Role</th><th>What they do</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Data Owner (Business)</strong></td><td>Senior business leader accountable for a data domain. Approves policies, classification, and access — does not perform the work.</td></tr>
+          <tr><td><strong>Data Steward</strong></td><td>Subject-matter expert who curates definitions, monitors quality, and resolves issues day-to-day.</td></tr>
+          <tr><td><strong>Data Custodian (IT)</strong></td><td>Engineering team that implements controls, maintains pipelines, and operates the platforms.</td></tr>
+          <tr><td><strong>Data Governance Council</strong></td><td>Cross-functional body that approves enterprise-wide standards and resolves cross-domain conflicts.</td></tr>
+          <tr><td><strong>Executive Sponsor</strong></td><td>C-level owner who provides air cover, secures funding, and is accountable for highest-impact decisions.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How to adapt it (about 2 hours)</h2>
+      <ol>
+        <li><strong>Download and open the CSV.</strong> Excel, Google Sheets, or your governance tool — all fine.</li>
+        <li><strong>Replace the column headers</strong> with the actual titles in your organization. "Data Owner" might become "VP, Customer Operations" for the customer domain. Consider per-domain matrices if responsibilities vary materially.</li>
+        <li><strong>Walk each row with the named owners.</strong> Disagreement here is the value — surface it now, before an incident forces it.</li>
+        <li><strong>Publish alongside your governance charter.</strong> Reference the matrix in onboarding, incident playbooks, and access reviews. A matrix that lives in someone's email is not a matrix.</li>
+        <li><strong>Review annually.</strong> Roles drift. Re-validate during the annual program review.</li>
+      </ol>
+
+      <h2>Common adaptations</h2>
+      <p>
+        <strong>Smaller orgs (under 500 employees):</strong> collapse Data Steward and Data Custodian into one column. The same person often plays both roles.
+      </p>
+      <p>
+        <strong>Regulated industries (financial services, healthcare):</strong> add a Compliance / Privacy column with R or A on classification, retention, access reviews, and incident response rows.
+      </p>
+      <p>
+        <strong>Federated (data mesh) organizations:</strong> duplicate the matrix per domain rather than running one enterprise matrix. Use the council column for cross-domain decisions only.
+      </p>
+
+      <h2>What this matrix doesn't replace</h2>
+      <p>
+        A RACI matrix codifies who does what — it does not motivate them to do it. You still need executive sponsorship, performance objectives tied to governance outcomes, and a culture that treats data as a shared asset. If you publish a matrix into a vacuum, the matrix wins zero arguments.
+      </p>
+
+      <p>
+        For the broader operating model the matrix sits inside, see the <a href="/a-comprehensive-guide-to-achieving-data-governance-maturity/">data governance maturity guide</a> and the <a href="/data-governance-best-practices/">best-practices reference</a>.
+      </p>
+
+      <div class="download-block">
+        <a href={downloadUrl} download class="download-btn">
+          Download the RACI matrix (CSV)
+        </a>
+        <p class="download-block__note">
+          24 activities · 5 roles · CSV format · No registration required
+        </p>
+      </div>
+    </div>
+
+    <NewsletterCTA
+      heading="Get the next templates as they ship."
+      pitch="Charter, classification policy, retention schedule, JD pack, maturity assessment — one email when each is published."
+    />
+  </article>
+</BaseLayout>
+
+<style>
+  .template-page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+  }
+  .template-page__header {
+    padding: 2.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+  .template-page__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+  .template-page__deck {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--ink-mid);
+    margin: 0.5rem 0 0;
+    font-style: italic;
+  }
+  .template-page__meta {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+  .template-page__updated {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  .download-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-family: var(--font-ui);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--red);
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background 0.15s, transform 0.1s;
+  }
+  .download-btn:hover { background: var(--red-dark, #8a0e1f); }
+  .download-btn:active { transform: translateY(1px); }
+
+  .article-rule {
+    height: 3px;
+    background: linear-gradient(90deg, var(--red) 0%, var(--gold) 50%, transparent 100%);
+    margin-bottom: 2.5rem;
+  }
+
+  .template-page__body { max-width: 740px; }
+
+  .download-block {
+    margin: 2.5rem 0 1rem;
+    padding: 1.75rem;
+    background: rgba(193, 18, 31, 0.04);
+    border-left: 4px solid var(--red);
+    text-align: center;
+  }
+  .download-block__note {
+    margin: 0.6rem 0 0;
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+</style>

@@ -24,6 +24,8 @@ export async function GET(_ctx: APIContext) {
     entry('/about/', undefined, '0.5'),
     entry('/contact/', undefined, '0.5'),
     entry('/data-governance-videos/', undefined, '0.6'),
+    entry('/templates/', undefined, '0.7'),
+    entry('/templates/data-governance-raci-matrix/', undefined, '0.7'),
     entry('/privacy-policy/', undefined, '0.3'),
     entry('/affiliate-disclosure/', undefined, '0.3'),
   ];

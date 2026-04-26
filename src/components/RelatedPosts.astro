@@ -1,0 +1,151 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+interface Props {
+  currentSlug: string;
+  categories?: string[];
+  tags?: string[];
+  limit?: number;
+}
+
+const { currentSlug, categories = [], tags = [], limit = 3 } = Astro.props;
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+
+function postSlug(p: CollectionEntry<'blog'>) {
+  return p.data.wpSlug ?? p.slug;
+}
+
+function score(p: CollectionEntry<'blog'>): number {
+  const pCats = p.data.categories ?? [];
+  const pTags = (p.data.tags ?? []).map((t) => t.toLowerCase());
+  const tagsLower = tags.map((t) => t.toLowerCase());
+  const catOverlap = pCats.filter((c) => categories.includes(c)).length;
+  const tagOverlap = pTags.filter((t) => tagsLower.includes(t)).length;
+  return catOverlap * 3 + tagOverlap;
+}
+
+const related = allPosts
+  .filter((p) => postSlug(p) !== currentSlug && postSlug(p) !== 'welcome')
+  .map((p) => ({ post: p, s: score(p) }))
+  .filter(({ s }) => s > 0)
+  .sort((a, b) => {
+    if (b.s !== a.s) return b.s - a.s;
+    return b.post.data.pubDate.valueOf() - a.post.data.pubDate.valueOf();
+  })
+  .slice(0, limit)
+  .map(({ post }) => post);
+
+function fmt(d: Date) {
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+function catSlug(c: string) {
+  return c.toLowerCase().replace(/\s+/g, '-');
+}
+---
+
+{related.length > 0 && (
+  <aside class="related-posts" aria-label="Related articles">
+    <h2 class="related-posts__heading">Related Reading</h2>
+    <ul class="related-posts__list">
+      {related.map((p) => {
+        const cat = p.data.categories?.[0];
+        return (
+          <li class="related-posts__item">
+            {cat && <a href={`/category/${catSlug(cat)}/`} class="related-posts__cat">{cat}</a>}
+            <a href={`/${p.data.wpSlug ?? p.slug}/`} class="related-posts__title">{p.data.title}</a>
+            <p class="related-posts__desc">{p.data.description}</p>
+            <span class="related-posts__date">{fmt(p.data.pubDate)}</span>
+          </li>
+        );
+      })}
+    </ul>
+  </aside>
+)}
+
+<style>
+  .related-posts {
+    margin: 2.5rem 0 0;
+    padding: 2rem 0 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .related-posts__heading {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0 0 1.5rem;
+  }
+
+  .related-posts__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .related-posts__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1rem 1rem 1.1rem;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    background: rgba(25, 22, 18, 0.02);
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .related-posts__item:hover {
+    border-color: var(--ink-mid);
+    transform: translateY(-1px);
+  }
+
+  .related-posts__cat {
+    font-family: var(--font-ui);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--red);
+    text-decoration: none;
+  }
+  .related-posts__cat:hover { color: var(--red-dark); }
+
+  .related-posts__title {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .related-posts__title:hover { color: var(--red); }
+
+  .related-posts__desc {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--ink-mid);
+    margin: 0.15rem 0 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .related-posts__date {
+    font-family: var(--font-ui);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-top: auto;
+    padding-top: 0.4rem;
+  }
+
+  @media (max-width: 860px) {
+    .related-posts__list { grid-template-columns: 1fr; gap: 1rem; }
+  }
+</style>

@@ -108,3 +108,20 @@ In addition to the steps outlined above, fostering a culture of data governance 
 * [measuring governance success](/data-governance-metrics-and-kpis-how-to-measure-success/)
 
   
+
+## Frequently Asked Questions
+
+### What are the stages of data governance maturity?
+Most maturity models describe five stages: initial (ad-hoc, undocumented), managed (some processes defined but inconsistent), defined (standardized policies and roles enterprise-wide), quantitatively managed (governance metrics drive decisions), and optimizing (continuous improvement with measurable business outcomes). DAMA-DMBOK, CMMI for Data Management, and IBM's DGMM all share this five-stage shape with minor terminology differences.
+
+### How do I assess my organization's data governance maturity?
+Start with a structured questionnaire across the eleven DAMA knowledge areas (governance, architecture, modeling, storage, security, integration, documents, reference and master data, warehousing, metadata, quality). Score each on a 1-5 scale based on documented evidence — policies that exist, roles that are filled, processes that are followed. Validate scores through stakeholder interviews. Avoid self-attestation without artifacts; that's how programs end up reporting Level 3 while operating at Level 1.
+
+### How long does it take to advance one maturity level?
+Twelve to eighteen months is realistic for a single level when the program has executive sponsorship, dedicated headcount, and a defined scope. Programs that try to mature all knowledge areas simultaneously typically advance none of them; pick two or three to target in any given year.
+
+### What's the difference between DAMA's DMM and CMMI for data?
+DAMA's framework is broader — it covers all eleven data management disciplines and is the foundation for CDMP certification. CMMI for Data Management is a more prescriptive process maturity model adapted from CMMI for software, with formal appraisal methods and SEI lineage. DAMA is more common in private-sector practitioner work; CMMI shows up in government and regulated industries where formal third-party appraisal is required.
+
+### Do I need a consultant to perform a maturity assessment?
+No. A practitioner with three to five years of governance experience can run a credible internal assessment using published rubrics. The value of a consultant is independence — stakeholders are less likely to argue with a third-party score — and benchmark data across peer organizations. If budget is tight, run the assessment internally and use peer-reviewed publications to benchmark.

@@ -44,7 +44,7 @@ The genesis of AI technology can be traced back to the mid-20th century with the
 
 Deep Learning, a subset of machine learning, has been instrumental in driving the recent advancements in AI technology. It mimics the neural processes of the human brain via artificial neural networks, empowering AI systems to learn from unstructured and unlabeled data.
 
-![](/2023/05/mermaid-diagram-2023-05-14-143510-1024x675.png)
+![Mermaid diagram of artificial intelligence subfields: machine learning, deep learning, natural language processing, computer vision, and robotics](/2023/05/mermaid-diagram-2023-05-14-143510-1024x675.png)
 
 Deep Learning and Neural Networks in AI Technology
 

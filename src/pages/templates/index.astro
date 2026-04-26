@@ -1,0 +1,207 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import NewsletterCTA from '@/components/NewsletterCTA.astro';
+
+interface Template {
+  slug: string;
+  title: string;
+  description: string;
+  format: string;
+  status: 'available' | 'coming-soon';
+}
+
+const templates: Template[] = [
+  {
+    slug: 'data-governance-raci-matrix',
+    title: 'Data Governance RACI Matrix',
+    description: 'Role and responsibility matrix covering 24 governance activities across data owners, stewards, custodians, councils, and executive sponsors.',
+    format: 'CSV + reference guide',
+    status: 'available',
+  },
+  {
+    slug: 'data-governance-charter',
+    title: 'Data Governance Council Charter',
+    description: 'Editable charter template defining mandate, scope, membership, decision rights, escalation paths, and meeting cadence for a governance council.',
+    format: 'Word doc',
+    status: 'coming-soon',
+  },
+  {
+    slug: 'data-classification-policy',
+    title: 'Data Classification Policy',
+    description: 'Four-tier classification policy (public, internal, confidential, restricted) with handling requirements, examples, and enforcement guidance.',
+    format: 'Word doc',
+    status: 'coming-soon',
+  },
+  {
+    slug: 'data-retention-policy',
+    title: 'Data Retention & Disposal Policy',
+    description: 'Retention schedule template with regulatory mappings (GDPR, CCPA, HIPAA, SOX), defensible disposal procedures, and legal hold handling.',
+    format: 'Word doc + Excel schedule',
+    status: 'coming-soon',
+  },
+  {
+    slug: 'data-steward-job-description',
+    title: 'Data Steward Job Description',
+    description: 'Practitioner-grade JD covering responsibilities, qualifications, success metrics, and interview questions for hiring data stewards.',
+    format: 'Word doc',
+    status: 'coming-soon',
+  },
+  {
+    slug: 'governance-maturity-self-assessment',
+    title: 'Governance Maturity Self-Assessment',
+    description: 'Spreadsheet-based assessment across the 11 DAMA knowledge areas with scoring guide, gap analysis, and roadmap output.',
+    format: 'Excel workbook',
+    status: 'coming-soon',
+  },
+];
+---
+
+<BaseLayout
+  title="Data Governance Templates | The Data Governor"
+  description="Free practitioner-grade templates for data governance: RACI matrices, council charters, classification and retention policies, job descriptions, and maturity assessments."
+  canonicalPath="/templates/"
+>
+  <div class="page-wrap">
+    <header class="page-header">
+      <span class="label" style="font-size:0.65rem; letter-spacing:0.14em;">Resources</span>
+      <h1 class="page-title">Data Governance Templates</h1>
+      <p class="page-deck">
+        Practitioner-built templates you can drop into your governance program. No registration walls, no gated PDFs — just usable artifacts shaped by real implementations.
+      </p>
+    </header>
+    <div class="article-rule" aria-hidden="true"></div>
+
+    <section class="templates-grid">
+      {templates.map((t) => (
+        <article class={`template-card template-card--${t.status}`}>
+          <span class="template-card__format">{t.format}</span>
+          {t.status === 'available' ? (
+            <a href={`/templates/${t.slug}/`} class="template-card__title-link">
+              <h2 class="template-card__title">{t.title}</h2>
+            </a>
+          ) : (
+            <h2 class="template-card__title">{t.title}</h2>
+          )}
+          <p class="template-card__desc">{t.description}</p>
+          {t.status === 'available' ? (
+            <a href={`/templates/${t.slug}/`} class="template-card__cta">View template →</a>
+          ) : (
+            <span class="template-card__badge">Coming soon</span>
+          )}
+        </article>
+      ))}
+    </section>
+
+    <NewsletterCTA
+      heading="Get new templates as they ship."
+      pitch="One email when each template is published — RACI, charter, classification, retention, and more. No spam."
+    />
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: 2.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+  .page-deck {
+    font-family: var(--font-body);
+    font-size: 1.08rem;
+    line-height: 1.6;
+    color: var(--ink-mid);
+    max-width: 680px;
+    margin: 0.75rem 0 0;
+  }
+  .article-rule {
+    height: 3px;
+    background: linear-gradient(90deg, var(--red) 0%, var(--gold) 50%, transparent 100%);
+    margin-bottom: 2.5rem;
+  }
+  .templates-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .template-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem 1.5rem 1.6rem;
+    background: rgba(25, 22, 18, 0.02);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .template-card--coming-soon {
+    opacity: 0.65;
+  }
+  .template-card--available:hover {
+    border-color: var(--ink-mid);
+    transform: translateY(-2px);
+  }
+  .template-card__format {
+    font-family: var(--font-ui);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .template-card__title-link {
+    text-decoration: none;
+  }
+  .template-card__title {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--ink);
+    margin: 0;
+    transition: color 0.15s;
+  }
+  .template-card__title-link:hover .template-card__title { color: var(--red); }
+  .template-card__desc {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--ink-mid);
+    margin: 0;
+  }
+  .template-card__cta {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--red);
+    text-decoration: none;
+  }
+  .template-card__cta:hover { opacity: 0.75; }
+  .template-card__badge {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  @media (max-width: 720px) {
+    .templates-grid { grid-template-columns: 1fr; }
+  }
+</style>

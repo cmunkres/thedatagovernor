@@ -85,3 +85,20 @@ While there are challenges involved in establishing effective AI governance, the
 
 * [How AI is Transforming Data Governance in 2026](/ai-transforming-data-governance-2026/)
 * [what is AI governance](/what-is-ai-technology-a-comprehensive-exploration/)
+
+## Frequently Asked Questions
+
+### What is AI governance in plain terms?
+AI governance is the system of policies, processes, and accountability structures that determine how AI models are designed, deployed, monitored, and retired in an organization. It covers data sourcing, model risk, bias testing, explainability, human-in-the-loop requirements, vendor due diligence, and incident response — essentially the operating model that keeps AI aligned with regulation, ethics, and business intent.
+
+### How is AI governance different from data governance?
+Data governance manages the inputs — data quality, lineage, classification, access, retention. AI governance manages the system that consumes those inputs and produces decisions or content. They overlap heavily (you cannot govern an AI model without governing its training data) but the AI layer adds model-specific concerns: explainability, drift, bias, prompt injection, and human oversight thresholds.
+
+### What frameworks exist for AI governance?
+The most cited are the NIST AI Risk Management Framework (AI RMF), ISO/IEC 42001 (AI management system standard), and the OECD AI Principles. Sector-specific overlays exist: SR 11-7 for banking model risk in the US, the EU AI Act for any system serving EU users, and FDA guidance for medical AI. Most organizations adopt NIST AI RMF as the baseline and layer regulatory specifics on top.
+
+### Who is responsible for AI governance in an organization?
+Typical models put accountability with a chief data officer, chief AI officer, or chief risk officer, with operational responsibility distributed across an AI governance committee that includes legal, compliance, security, data science, and business unit leadership. The most common failure mode is treating AI governance as an IT problem; it requires the same cross-functional ownership as enterprise risk management.
+
+### How does the EU AI Act affect AI governance programs?
+The EU AI Act classifies AI systems by risk tier — unacceptable, high, limited, minimal — and imposes increasing obligations on each. High-risk systems (used in employment, credit, education, critical infrastructure, law enforcement) require documented risk management, data governance, technical documentation, human oversight, and post-market monitoring. Even non-EU organizations are in scope if their AI systems serve EU users. Most US enterprises are now treating EU AI Act compliance as their de facto baseline.

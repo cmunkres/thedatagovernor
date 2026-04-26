@@ -410,7 +410,7 @@ Outcome metrics connect governance to business value. Executives understand effi
 
 Organizations should track both activity metrics (necessary for operational management) and outcome metrics (necessary for demonstrating value). Balanced scorecards combine both perspectives.
 
-![](/2026/03/governance-balanced-scorecard.png)
+![Data governance balanced scorecard showing strategic, operational, risk, and stakeholder perspectives with example KPIs](/2026/03/governance-balanced-scorecard.png)
 
 ### Create Feedback Loops for Governance Improvement
 

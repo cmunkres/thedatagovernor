@@ -1,5 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import RelatedPosts from '@/components/RelatedPosts.astro';
+import NewsletterCTA from '@/components/NewsletterCTA.astro';
 
 interface FaqPair { q: string; a: string; }
 
@@ -55,7 +57,7 @@ const shareLinks = {
   title={`${title} | The Data Governor`}
   description={description}
   canonicalPath={`/${slug}/`}
-  ogImage={ogImage ?? image ?? '/logo.png'}
+  ogImage={ogImage ?? image ?? `/og/auto/${slug}.png`}
   pubDate={pubDate}
   updatedDate={updatedDate}
   type="article"
@@ -169,6 +171,17 @@ const shareLinks = {
   <div class="article-layout">
     <article class="article-body prose">
       <slot />
+
+      <!-- Inline newsletter capture -->
+      <NewsletterCTA variant="inline" />
+
+      <!-- Related posts -->
+      <RelatedPosts
+        currentSlug={slug}
+        categories={categories}
+        tags={tags}
+        limit={3}
+      />
 
       <!-- Share section -->
       <div class="share-block">

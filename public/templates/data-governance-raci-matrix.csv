@@ -1,0 +1,25 @@
+Activity,Data Owner (Business),Data Steward,Data Custodian (IT),Data Governance Council,Executive Sponsor
+Define data quality requirements,A,R,C,I,I
+Approve data quality SLAs,A,R,C,C,I
+Monitor data quality KPIs,I,R,A,C,I
+Resolve data quality incidents,A,R,R,C,I
+Authorize new data sources,A,C,R,C,I
+Approve data sharing agreements,A,C,C,R,A
+Define classification levels,C,C,C,R,A
+Apply classification to data assets,A,R,R,C,I
+Maintain business glossary terms,A,R,I,C,I
+Define data retention schedule,A,R,C,C,I
+Authorize data disposal,A,R,R,C,I
+Define access policies,A,C,C,R,I
+Approve access requests (sensitive),A,R,C,C,I
+Conduct access reviews,A,R,R,C,I
+Maintain data lineage,I,R,A,C,I
+Approve metadata standards,C,R,C,A,I
+Investigate privacy incidents,A,R,R,C,A
+Respond to data subject requests,A,R,R,C,I
+Define MDM survivorship rules,A,R,C,C,I
+Approve master record merges,A,R,C,C,I
+Define reference data,A,R,C,C,I
+Vendor due diligence (data),A,C,R,C,I
+Approve cross-border data transfers,A,C,C,R,A
+Annual governance program review,C,C,C,R,A
