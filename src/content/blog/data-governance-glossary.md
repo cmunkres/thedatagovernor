@@ -6,6 +6,7 @@ wpSlug: "data-governance-glossary"
 categories: ["Data Governance"]
 tags: ["data governance", "glossary", "data management", "metadata", "compliance", "definitions"]
 draft: false
+featured: true
 image: /2026/03/aioseo-ai-a-sleek-professional-dig-medium-auto-landscape-20260320-141900.png
 imageAlt: "Data Governance Glossary — 80 practitioner-grade definitions"
 ogImage: /og/2026/03/aioseo-ai-a-sleek-professional-dig-medium-auto-landscape-20260320-141900.jpg

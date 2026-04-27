@@ -72,13 +72,30 @@ const shareLinks = {
         "url": `https://thedatagovernor.com/${slug}/`,
         "datePublished": pubDate.toISOString(),
         "dateModified": (updatedDate ?? pubDate).toISOString(),
-        "author": { "@type": "Person", "@id": "https://thedatagovernor.com/about/#person", "name": author },
+        "author": {
+          "@type": "Person",
+          "@id": "https://thedatagovernor.com/about/#person",
+          "name": author,
+          "url": "https://thedatagovernor.com/about/",
+          "description": "Data governance practitioner with nearly 20 years of experience implementing enterprise data programs across financial services, healthcare, and retail.",
+          "jobTitle": "Senior Data Governance Practitioner",
+          "knowsAbout": ["Data Governance", "Master Data Management", "Data Quality", "Data Catalogs", "Data Stewardship", "Regulatory Compliance"],
+          "sameAs": [
+            "https://www.linkedin.com/in/clintonmunkres/",
+            "https://www.youtube.com/@thedatagovernor"
+          ]
+        },
         "publisher": {
           "@type": "Organization",
           "@id": "https://thedatagovernor.com/#organization",
           "name": "The Data Governor",
           "url": "https://thedatagovernor.com",
-          "logo": { "@type": "ImageObject", "url": "https://thedatagovernor.com/logo.png" }
+          "description": "Practitioner blog covering data governance, master data management, metadata, and data strategy — written from the trenches by working professionals, not vendor marketing.",
+          "logo": { "@type": "ImageObject", "url": "https://thedatagovernor.com/logo.png" },
+          "sameAs": [
+            "https://www.linkedin.com/in/clintonmunkres/",
+            "https://www.youtube.com/@thedatagovernor"
+          ]
         },
         "image": ogImage ? `https://thedatagovernor.com${ogImage}` : `https://thedatagovernor.com/logo.png`,
         "mainEntityOfPage": { "@type": "WebPage", "@id": `https://thedatagovernor.com/${slug}/` },
