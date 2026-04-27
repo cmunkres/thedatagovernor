@@ -1,5 +1,5 @@
 ---
-title: "Navigating the Data Engineer Roadmap 2023: The Skills and Trends You Need to Know"
+title: "Data Engineer Roadmap: Skills and Trends to Know"
 description: "Navigate the data engineer roadmap: the key technical skills, cloud platforms, and trends you need to stay competitive and advance your data engineering career."
 pubDate: 2023-01-23T18:46:22.000Z
 wpSlug: "navigating-the-data-engineer-roadmap-2023-the-skills-and-trends-you-need-to-know"

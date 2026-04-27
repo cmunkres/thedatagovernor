@@ -1,5 +1,5 @@
 ---
-title: "EU AI Act Data Governance Requirements: Compliance Guide for August 2026"
+title: "EU AI Act Data Governance: 2026 Compliance Guide"
 description: "EU AI Act data governance rules apply August 2026. This guide covers training data quality, model documentation, bias controls, and enforcement obligations."
 pubDate: 2026-03-24T18:53:37.000Z
 wpSlug: "eu-ai-act-data-governance-requirements"

@@ -1,5 +1,5 @@
 ---
-title: "Data Analyst Project Walkthrough: A Step-by-Step Guide for 2023"
+title: "Data Analyst Project Walkthrough: Step-by-Step Guide"
 description: "Walk through a real data analyst project step by step: from data collection and cleaning through exploratory analysis to the final insights and deliverables that matter most."
 pubDate: 2023-02-21T15:16:19.000Z
 wpSlug: "data-analyst-project-walkthrough-a-step-by-step-guide"

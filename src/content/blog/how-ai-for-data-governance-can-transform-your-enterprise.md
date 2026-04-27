@@ -1,5 +1,5 @@
 ---
-title: "How AI for Data Governance can Transform your Enterprise in 2023"
+title: "AI for Data Governance: How It Transforms the Enterprise"
 description: "AI for data governance automates classification, quality checks, and access control at enterprise scale. Learn how to apply these tools to your governance program effectively."
 pubDate: 2023-02-15T14:30:12.000Z
 wpSlug: "how-ai-for-data-governance-can-transform-your-enterprise"

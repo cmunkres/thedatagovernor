@@ -1,5 +1,5 @@
 ---
-title: "Data Governance Glossary: 80 Terms Every Practitioner Should Know (2026)"
+title: "Data Governance Glossary: 80 Terms (2026)"
 description: "The definitive practitioner's glossary of data governance terms — from access control to zero-trust data — with practical context, not vendor marketing."
 pubDate: 2026-04-25T00:00:00.000Z
 wpSlug: "data-governance-glossary"

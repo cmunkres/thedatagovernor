@@ -1,5 +1,5 @@
 ---
-title: "The Magnificent Seven: 7 Must-Have Tools for Data Analysts in 2023"
+title: "7 Must-Have Tools for Data Analysts in 2026"
 description: "Unveil the top 7 must-have tools for data analysts in 2023 that will boost your analytical skills, optimize your workflow, and empower you to make data-driven decisions with ease and confidence."
 pubDate: 2023-04-18T15:32:52.000Z
 wpSlug: "7-must-have-tools-for-data-analysts"

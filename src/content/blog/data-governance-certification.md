@@ -1,5 +1,5 @@
 ---
-title: "Data Governance Certification: A Guide to the Top Certifications in 2023"
+title: "Data Governance Certification: Top Programs (2026)"
 description: "Data governance certification can help you improve your career prospects and advance your career. In this guide, we'll discuss the top data governance certifications in 2023 and help you choose the ri"
 pubDate: 2023-04-04T17:34:51.000Z
 wpSlug: "data-governance-certification"

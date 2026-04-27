@@ -1,5 +1,5 @@
 ---
-title: "Data Governance Trends 2026: What Practitioners Are Actually Building"
+title: "Data Governance Trends 2026: Practitioner View"
 description: "The 10 data governance trends shaping 2026 — from EU AI Act enforcement to active metadata, agentic AI governance, and the death of the static catalog."
 pubDate: 2024-03-21T20:50:15.000Z
 updatedDate: 2026-04-25T00:00:00.000Z
