@@ -1,0 +1,18 @@
+# The Data Governor
+
+> Practitioner-level coverage of data governance frameworks, data management, metadata, compliance, and data strategy. Long-form articles, glossary, and templates for data governance professionals.
+
+## What this site is
+
+The Data Governor is an editorial site about data governance — the policies, processes, roles, metadata, and tooling that organizations use to manage data as an asset. It is written for practitioners (data governance leads, stewards, architects, compliance officers) rather than executives or generalists.
+
+## Key sections
+
+- [Home — latest articles](https://thedatagovernor.com/)
+- [Glossary of data governance terms](https://thedatagovernor.com/glossary/)
+- [Templates and downloads](https://thedatagovernor.com/templates/)
+- [Article archive by year](https://thedatagovernor.com/2026/)
+
+## About
+
+The Data Governor is part of the Boringhaus portfolio. Articles are practitioner-authored, no paywall, no AI-generated filler.
