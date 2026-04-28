@@ -122,6 +122,44 @@ const catCount = catCounts.size;
         "sameAs": ["https://boringhaus.com/"],
         "worksFor": { "@id": "https://thedatagovernor.com/#organization" },
       },
+      {
+        "@type": "FAQPage",
+        "@id": "https://thedatagovernor.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is data governance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Data governance is the system of decision rights, accountabilities, policies, and processes that an organization uses to manage data as an asset. It defines who can take which actions on which data, under what circumstances, and using what methods. It covers data quality, metadata, lineage, access control, classification, retention, and regulatory compliance.",
+            },
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between data governance and data management?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Data governance defines the rules — who decides, who is accountable, what the policies are. Data management executes against those rules — pipelines, storage, quality monitoring, cataloging, integration. Governance is the policy layer; management is the operational layer. The two are interdependent but distinct disciplines.",
+            },
+          },
+          {
+            "@type": "Question",
+            "name": "Who should own data governance in an organization?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ownership is typically split: a Chief Data Officer or equivalent executive owns the program, a data governance council sets policy, data stewards in business domains own the rules for their data, and data engineering executes the technical controls. The exact structure depends on company size and regulatory exposure, but governance is never just an IT or just a business function — it has to span both.",
+            },
+          },
+          {
+            "@type": "Question",
+            "name": "Is The Data Governor written by practitioners?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The Data Governor is a practitioner-authored editorial site. Articles are written from real implementation experience, not by AI or by content marketers. There is no paywall, no sign-up, and no sponsored content.",
+            },
+          },
+        ],
+      },
     ],
   })}
 >
